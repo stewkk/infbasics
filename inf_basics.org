@@ -7,7 +7,8 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
 
 
-+ [[https://stewkk.github.io/infbasics/inf_basics.pdf][Лекция в pdf формате]]
++ [[https://stewkk.github.io/infbasics/inf_basics.pdf][Лекции в pdf формате]]
++ [[https://stewkk.github.io/infbasics/][Лекции в виде сайта]]
 + Преподаватель
   - Коновалов Александр Владимирович
   - 89175404352
