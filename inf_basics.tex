@@ -1,8 +1,8 @@
-% Created 2021-09-05 Sun 16:16
+% Created 2021-09-07 Tue 22:33
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\usepackage[T2A]{fontenc}
 \usepackage{graphicx}
 \usepackage{grffile}
 \usepackage{longtable}
@@ -13,9 +13,8 @@
 \usepackage{textcomp}
 \usepackage{amssymb}
 \usepackage{capt-of}
-\usepackage{hyperref}
+\usepackage[colorlinks]{hyperref}
 \usepackage[russian, english]{babel}
-\usepackage[T2A]{fontenc}
 \author{Starovoytov Alexandr, Grechko Georgy}
 \date{\textit{<2021-09-04 Sat 13:50>}}
 \title{Informatics basics}
@@ -42,22 +41,20 @@
 \item a.v.konovalov87@mail.ru
 \end{itemize}
 \end{itemize}
-\section{лекция 1}
-\label{sec:org513590a}
-\subsection{Основные понятия информатики}
-\label{sec:orgff7ea6b}
-\subsubsection{Данные}
-\label{sec:org76ed9aa}
+\section{Основные понятия информатики}
+\label{sec:orga0049bf}
+\subsection{Данные}
+\label{sec:org4a5138c}
 это представление фактов, понятий, инструкций в форме, приемлемой
 для обмена, интерпретации или обработки человеком или с помощью
 автоматических средств
-\subsubsection{Алгоритм}
-\label{sec:org32625a7}
+\subsection{Алгоритм}
+\label{sec:org83621c3}
 это конечная совокупность точно заданных правил решения прозвольного класса
 задач или набор инструкций, описывающий порядок действий исполнителя для
 решения некотрой задачи
-\subsubsection{Свойства алгоритма:}
-\label{sec:org4c2305f}
+\subsection{Свойства алгоритма:}
+\label{sec:orgd91fc1a}
 \begin{enumerate}
 \item Дискретность \\
 делится на отдельные элементарные части,
@@ -75,33 +72,33 @@
 по заданному алгоритму вычислительный процесс должен через конечное
 число шагов остановиться и выдать искомый результат.
 \end{enumerate}
-\subsubsection{Компьютерная программа}
-\label{sec:org8808944}
+\subsection{Компьютерная программа}
+\label{sec:org39f5d91}
 это алгоритм, записанный на некотором языке программирования
-\subsubsection{Язык программирования}
-\label{sec:org578a3d5}
+\subsection{Язык программирования}
+\label{sec:org6dd8efd}
 формальный язык, предназначенный для записи компьютерных программ
-\subsubsection{Компьютер}
-\label{sec:org31db885}
+\subsection{Компьютер}
+\label{sec:org38f2c17}
 программно управляемое устройство для обработки информации
-\subsubsection{Подпрограмма}
-\label{sec:org263b723}
+\subsection{Подпрограмма}
+\label{sec:org4331f45}
 некоторый именованный блок кода. \\
 Вызывающая программа приостанавливается, управление передается
 подпрограмме,
 по завершению управление передается обратно
-\subsubsection{Сопрограмма}
-\label{sec:org332ad20}
+\subsection{Сопрограмма}
+\label{sec:org29de8c0}
 в отличие от подпрограммы работает поочередно с вызывающей программой.
 При повторном вызове возобновит выполнение с момента, где остановилась
-\subsection{Парадигмы программирования}
-\label{sec:org74d8740}
+\section{Парадигмы программирования}
+\label{sec:org239eb17}
 совокупность идей и понятий, определяющих стиль написания компьютерных
 программ (подход к программированию). Это способ концептуализации,
 определяющий организацию вычислений и структурирование работы, выполняемой
 компьютером.
-\subsubsection{Основные группы парадигм}
-\label{sec:org7189a9f}
+\subsection{Основные группы парадигм}
+\label{sec:org6343475}
 \begin{enumerate}
 \item Императивные \\
 способ записи программ, в котором указывается последовательность
@@ -151,18 +148,18 @@
 Например, посмотреть поля и значения в объекте класса
 \end{enumerate}
 \end{enumerate}
-\subsubsection{примеры}
-\label{sec:org222ba37}
+\subsection{примеры}
+\label{sec:orge285bc2}
 \begin{verbatim}
 ИП: sort(array);
 ФП: sorted_list = sort(list)
     sorted_list - константа, т.к. нет присваивания
 ЛП: sort(unsorted, sorted)
 \end{verbatim}
-\subsection{язык Scheme}
-\label{sec:orgac36592}
-\subsubsection{информация о языке}
-\label{sec:orge0dc944}
+\section{язык Scheme}
+\label{sec:org1def0a5}
+\subsection{информация о языке}
+\label{sec:org66161f6}
 Lisp 1950-е годы Джон МакКарти \\
 LISt Processing \\
 Scheme 1970-е годы Абельсон и Сассман \\
@@ -176,4 +173,141 @@ Scheme 1970-е годы Абельсон и Сассман \\
 \item Racket
 \end{itemize}
 \end{itemize}
+\subsection{основные постулаты языка LISP}
+\label{sec:org691ee22}
+\begin{enumerate}
+\item единство кода и данных
+\item все есть список
+\item выражение является списком \\
+операция указывается в первом элементе
+\item все выражения вычисляют значения (почти все)
+\end{enumerate}
+\subsection{операторы}
+\label{sec:org640015c}
+\begin{verbatim}
+;; <терм> ::= <атом>|<список>
+;; <атом> ::= <перем>|<число>|<симол>|<строка>
+;; <список> ::= (<термы>)
+;; <термы> ::= <пусто> | <терм><термы>
+;; <пусто> ::=
+;; i-am-variable - имя переменной может включать "-", "+", "*", "/"...
+(+ 1 2 3) ;; список
+;; "+" - имя функции сложения
+;; "1 2 3" - аргументы
+;; элементы списка разделяются пробелами
+
+\end{verbatim}
+
+\begin{verbatim}
+((a 1)(b 2)(c 3)) ;; список списков
+
+;; по умолчанию выражение вида
+;; (f a b c) - вызов функции
+;; ((f x) y) - сначала вызывается (f x),
+;; то, что она вычислит с аргументом y
+;; Особая форма - первый элемент списка - ключевое слово
+
+(define pi 3.1415926)
+;; pi - имя переменной
+;; 3.14.. - значение
+
+(define pi (* 4 (atan 1)))
+
+(define (f a b c) ;; опеределяет функции
+    (+ (* 2 a) (/ b c)))
+
+;; (if <выраж 1>
+;;     <выраж 2>
+;;     <выраж 3>)
+
+;; Если <выраж 1> - ложь,
+;; значением (if ...) станет значение <выраж3>
+;; (<выраж 2> не вычисляется), и наоборот
+
+;; #f - ложь
+;; #t - истина
+;; if считает истиной все что не ложь
+\end{verbatim}
+\begin{verbatim}
+(if 1 2 3)
+\end{verbatim}
+
+\begin{verbatim}
+(if #f (/ 1 0) (/ 10 5))
+
+\end{verbatim}
+
+\begin{verbatim}
+(if #t (/ 1 0) (/ 10 5))
+\end{verbatim}
+
+\begin{verbatim}
+;; (< x y)
+;; (> x y)
+;; (= x y)
+;; >=
+;; <=
+;; (/ x y)
+(/ 10 3)
+\end{verbatim}
+
+
+(quotient x y) - целое деление
+(quotient 30 7) -> 4
+(remainder x y) -> остаток
+(remainder 30 7) -> 2
+
+;; ``особые формы''
+(and e1 e2 \ldots{} en) - возвращает \#f если хотя бы один ei = \#f, иначе en
+(or \ldots{}) - вернет первое не ложное значение
+
+
+(and 1 2 \#f (/ 1 0)) -> \#f
+(or (= x 0) (/ 1 0)) - не приведет к ошибке деления на 0, никогда
+(not x) - логическое отрицание \#f -> \#t
+not x -> \#f, x != \#f
+вычисления ленивые!
+,\#+end\textsubscript{example}
+
+,\#+begin\textsubscript{src} scheme
+(+ 1 2 3)
+\#+end\textsubscript{src}
+
+\begin{verbatim}
+(+ 1 2 3 4)
+
+(define pi (* 4 (atan 1)))
+
+(define (area r) (* r r))
+
+(define e (exp 1))
+
+(define (hypot x y) (sqrt (+ (* x x) (* y y))))
+; if всегда в 3 строки
+(define (fac x) (if (= x 0)
+                     1 (* (fac (- x 1)) x)))
+
+(define (my-positive? n) (> n 0))
+(define (my-abs x)
+  (if (< x 0)
+      (-x)
+      x))
+
+(define (factorial n)
+  (define loop acc i)
+  (if (> i n)
+      acc
+      (loop (* acc i) (+ i 1)))
+  (loop 1 1))
+
+(define (my-odd n)
+  (= 0 (remainder n 2)))
+
+(define (my-even n)
+  (= 1 (remainder n 2)))
+
+
+(my-odd 5)
+(my-even 5)
+\end{verbatim}
 \end{document}
