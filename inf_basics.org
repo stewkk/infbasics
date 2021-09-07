@@ -140,7 +140,7 @@ Scheme 1970-е годы Абельсон и Сассман \\
 #+RESULTS:
 : 6
 
-#+begin_src scheme :session
+#+begin_src scheme :session :exports both
 ((a 1)(b 2)(c 3)) ;; список списков
 
 ;; по умолчанию выражение вида
@@ -170,14 +170,14 @@ Scheme 1970-е годы Абельсон и Сассман \\
 ;; #t - истина
 ;; if считает истиной все что не ложь
 #+end_src
-#+begin_src scheme :session
+#+begin_src scheme :session :exports both
 (if 1 2 3)
 #+end_src
 
 #+RESULTS:
 : 2
 
-#+begin_src scheme :session
+#+begin_src scheme :session :exports both
 (if #f (/ 1 0) (/ 10 5))
 
 #+end_src
@@ -185,7 +185,7 @@ Scheme 1970-е годы Абельсон и Сассман \\
 #+RESULTS:
 : 2
 
-#+begin_src scheme
+#+begin_src scheme :exports both
 (if #t (/ 1 0) (/ 10 5))
 #+end_src
 

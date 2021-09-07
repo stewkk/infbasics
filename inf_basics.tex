@@ -1,4 +1,4 @@
-% Created 2021-09-07 Tue 22:33
+% Created 2021-09-07 Tue 22:43
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -42,19 +42,19 @@
 \end{itemize}
 \end{itemize}
 \section{Основные понятия информатики}
-\label{sec:orga0049bf}
+\label{sec:org81024fb}
 \subsection{Данные}
-\label{sec:org4a5138c}
+\label{sec:org10f35e7}
 это представление фактов, понятий, инструкций в форме, приемлемой
 для обмена, интерпретации или обработки человеком или с помощью
 автоматических средств
 \subsection{Алгоритм}
-\label{sec:org83621c3}
+\label{sec:orgb56f114}
 это конечная совокупность точно заданных правил решения прозвольного класса
 задач или набор инструкций, описывающий порядок действий исполнителя для
 решения некотрой задачи
 \subsection{Свойства алгоритма:}
-\label{sec:orgd91fc1a}
+\label{sec:org591aba2}
 \begin{enumerate}
 \item Дискретность \\
 делится на отдельные элементарные части,
@@ -73,32 +73,32 @@
 число шагов остановиться и выдать искомый результат.
 \end{enumerate}
 \subsection{Компьютерная программа}
-\label{sec:org39f5d91}
+\label{sec:org3a0802d}
 это алгоритм, записанный на некотором языке программирования
 \subsection{Язык программирования}
-\label{sec:org6dd8efd}
+\label{sec:org0de4314}
 формальный язык, предназначенный для записи компьютерных программ
 \subsection{Компьютер}
-\label{sec:org38f2c17}
+\label{sec:orgd6babe9}
 программно управляемое устройство для обработки информации
 \subsection{Подпрограмма}
-\label{sec:org4331f45}
+\label{sec:orge724f3f}
 некоторый именованный блок кода. \\
 Вызывающая программа приостанавливается, управление передается
 подпрограмме,
 по завершению управление передается обратно
 \subsection{Сопрограмма}
-\label{sec:org29de8c0}
+\label{sec:org27f4ca7}
 в отличие от подпрограммы работает поочередно с вызывающей программой.
 При повторном вызове возобновит выполнение с момента, где остановилась
 \section{Парадигмы программирования}
-\label{sec:org239eb17}
+\label{sec:org15e219b}
 совокупность идей и понятий, определяющих стиль написания компьютерных
 программ (подход к программированию). Это способ концептуализации,
 определяющий организацию вычислений и структурирование работы, выполняемой
 компьютером.
 \subsection{Основные группы парадигм}
-\label{sec:org6343475}
+\label{sec:org64776a3}
 \begin{enumerate}
 \item Императивные \\
 способ записи программ, в котором указывается последовательность
@@ -149,7 +149,7 @@
 \end{enumerate}
 \end{enumerate}
 \subsection{примеры}
-\label{sec:orge285bc2}
+\label{sec:orge6471c3}
 \begin{verbatim}
 ИП: sort(array);
 ФП: sorted_list = sort(list)
@@ -157,9 +157,9 @@
 ЛП: sort(unsorted, sorted)
 \end{verbatim}
 \section{язык Scheme}
-\label{sec:org1def0a5}
+\label{sec:org527f3fc}
 \subsection{информация о языке}
-\label{sec:org66161f6}
+\label{sec:org09b002a}
 Lisp 1950-е годы Джон МакКарти \\
 LISt Processing \\
 Scheme 1970-е годы Абельсон и Сассман \\
@@ -174,7 +174,7 @@ Scheme 1970-е годы Абельсон и Сассман \\
 \end{itemize}
 \end{itemize}
 \subsection{основные постулаты языка LISP}
-\label{sec:org691ee22}
+\label{sec:org04dbe82}
 \begin{enumerate}
 \item единство кода и данных
 \item все есть список
@@ -183,7 +183,7 @@ Scheme 1970-е годы Абельсон и Сассман \\
 \item все выражения вычисляют значения (почти все)
 \end{enumerate}
 \subsection{операторы}
-\label{sec:org640015c}
+\label{sec:org08254f4}
 \begin{verbatim}
 ;; <терм> ::= <атом>|<список>
 ;; <атом> ::= <перем>|<число>|<симол>|<строка>
@@ -228,14 +228,25 @@ Scheme 1970-е годы Абельсон и Сассман \\
 ;; #t - истина
 ;; if считает истиной все что не ложь
 \end{verbatim}
+
 \begin{verbatim}
 (if 1 2 3)
 \end{verbatim}
 
 \begin{verbatim}
+2
+\end{verbatim}
+
+
+\begin{verbatim}
 (if #f (/ 1 0) (/ 10 5))
 
 \end{verbatim}
+
+\begin{verbatim}
+2
+\end{verbatim}
+
 
 \begin{verbatim}
 (if #t (/ 1 0) (/ 10 5))
