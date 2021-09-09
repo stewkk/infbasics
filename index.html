@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-09-09 Thu 12:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Informatics basics</title>
+<meta name="author" content="Starovoytov Alexandr, Grechko Georgy" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Informatics basics</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org2688599">1. Основные понятия информатики</a>
+<ul>
+<li><a href="#orgb601d53">1.1. Данные</a></li>
+<li><a href="#org1785d5d">1.2. Алгоритм</a></li>
+<li><a href="#org1fc8975">1.3. Свойства алгоритма:</a></li>
+<li><a href="#org6432ff6">1.4. Компьютерная программа</a></li>
+<li><a href="#org240f729">1.5. Язык программирования</a></li>
+<li><a href="#org6dfd133">1.6. Компьютер</a></li>
+<li><a href="#org56f7f2d">1.7. Подпрограмма</a></li>
+<li><a href="#orgcce2778">1.8. Сопрограмма</a></li>
+</ul>
+</li>
+<li><a href="#orgb1af660">2. Парадигмы программирования</a>
+<ul>
+<li><a href="#orgdba7109">2.1. Основные группы парадигм</a></li>
+<li><a href="#orgf411f9e">2.2. примеры</a></li>
+</ul>
+</li>
+<li><a href="#orgb40e015">3. язык Scheme</a>
+<ul>
+<li><a href="#orga6332e8">3.1. информация о языке</a></li>
+<li><a href="#orgb558b58">3.2. основные постулаты языка LISP</a></li>
+<li><a href="#org7d6bd44">3.3. операторы</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<ul class="org-ul">
+<li><a href="https://stewkk.github.io/infbasics/inf_basics.pdf">Лекции в pdf формате</a></li>
+<li><a href="https://stewkk.github.io/infbasics/">Лекции в виде сайта</a></li>
+<li>Преподаватель
+<ul class="org-ul">
+<li>Коновалов Александр Владимирович</li>
+<li>89175404352</li>
+<li>akonovalov@bmstu.ru</li>
+<li>a.v.konovalov87@mail.ru</li>
+</ul></li>
+</ul>
+<div id="outline-container-org2688599" class="outline-2">
+<h2 id="org2688599"><span class="section-number-2">1.</span> Основные понятия информатики</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgb601d53" class="outline-3">
+<h3 id="orgb601d53"><span class="section-number-3">1.1.</span> Данные</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+это представление фактов, понятий, инструкций в форме, приемлемой
+для обмена, интерпретации или обработки человеком или с помощью
+автоматических средств
+</p>
+</div>
+</div>
+<div id="outline-container-org1785d5d" class="outline-3">
+<h3 id="org1785d5d"><span class="section-number-3">1.2.</span> Алгоритм</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+это конечная совокупность точно заданных правил решения прозвольного класса
+задач или набор инструкций, описывающий порядок действий исполнителя для
+решения некотрой задачи
+</p>
+</div>
+</div>
+<div id="outline-container-org1fc8975" class="outline-3">
+<h3 id="org1fc8975"><span class="section-number-3">1.3.</span> Свойства алгоритма:</h3>
+<div class="outline-text-3" id="text-1-3">
+<ol class="org-ol">
+<li>Дискретность <br />
+делится на отдельные элементарные части,
+отвечающие за определенные действия.</li>
+<li>Детерминированность <br />
+на одних и тех же входных данных - один и тот же результат.</li>
+<li>Понятность <br />
+элементы алгоритма должны быть понятны исполнителю.</li>
+<li>Завершаемость <br />
+если не завершается - то это вычислительный процесс.</li>
+<li>Массовость <br />
+алгоритм пригоден для решения всех задач данного типа.</li>
+<li>Результативность <br />
+указывает на наличие таких исходных данных, для которых реализуемый
+по заданному алгоритму вычислительный процесс должен через конечное
+число шагов остановиться и выдать искомый результат.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org6432ff6" class="outline-3">
+<h3 id="org6432ff6"><span class="section-number-3">1.4.</span> Компьютерная программа</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+это алгоритм, записанный на некотором языке программирования
+</p>
+</div>
+</div>
+<div id="outline-container-org240f729" class="outline-3">
+<h3 id="org240f729"><span class="section-number-3">1.5.</span> Язык программирования</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+формальный язык, предназначенный для записи компьютерных программ
+</p>
+</div>
+</div>
+<div id="outline-container-org6dfd133" class="outline-3">
+<h3 id="org6dfd133"><span class="section-number-3">1.6.</span> Компьютер</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+программно управляемое устройство для обработки информации
+</p>
+</div>
+</div>
+<div id="outline-container-org56f7f2d" class="outline-3">
+<h3 id="org56f7f2d"><span class="section-number-3">1.7.</span> Подпрограмма</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+некоторый именованный блок кода. <br />
+Вызывающая программа приостанавливается, управление передается
+подпрограмме,
+по завершению управление передается обратно
+</p>
+</div>
+</div>
+<div id="outline-container-orgcce2778" class="outline-3">
+<h3 id="orgcce2778"><span class="section-number-3">1.8.</span> Сопрограмма</h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+в отличие от подпрограммы работает поочередно с вызывающей программой.
+При повторном вызове возобновит выполнение с момента, где остановилась
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb1af660" class="outline-2">
+<h2 id="orgb1af660"><span class="section-number-2">2.</span> Парадигмы программирования</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+совокупность идей и понятий, определяющих стиль написания компьютерных
+программ (подход к программированию). Это способ концептуализации,
+определяющий организацию вычислений и структурирование работы, выполняемой
+компьютером.
+</p>
+</div>
+<div id="outline-container-orgdba7109" class="outline-3">
+<h3 id="orgdba7109"><span class="section-number-3">2.1.</span> Основные группы парадигм</h3>
+<div class="outline-text-3" id="text-2-1">
+<ol class="org-ol">
+<li>Императивные <br />
+способ записи программ, в котором указывается последовательность
+действий <br />
+основной признак - оператор присваивания (меняющий значение переменной)
+<ol class="org-ol">
+<li>Структурное программирование <br />
+программа является композицией блоков с одним входом и
+одним выходом <br />
+(есть операторы ветвления и цикла, но нет goto)</li>
+<li>Процедурное программирование <br />
+совокупность подпрограмм, где одни подпрограммы вызывают другие</li>
+<li>Объектно-ориентированное <br />
+программа рассматривается как набор некоторых взаимодействующих
+объектов. <br />
+Объект сочетает в себе данные и методы их обработки,
+методы вызываются в ответ на сообщение: <br />
+посылаем сообщение объекту -&gt; вызывает метод -&gt; возвращает ответ <br />
+объекты объединяются в классы</li>
+</ol></li>
+<li>Декларативные <br />
+способ записи программ, в котором описывается взаимосвязь между
+данными, описывается цель, но не последовательность шагов ее вычисления
+<ol class="org-ol">
+<li><p>
+Функциональное <br />
+алгоритм записывается как набор взаимосвязанных функций, функции
+рассматриваются с математической точки зрения, <br />
+описывает взаимосвязь между данными и результатом
+</p>
+<div class="org-src-container">
+<pre class="src src-"c"">      x = f(y) + g(z);
+</pre>
+</div></li>
+<li>Логическое (Prolog + отчасти SQL) <br />
+алгоритм описывает взаимосвязь между понятиями. <br />
+Выполнение программы сводится к выполнению запросов</li>
+</ol></li>
+<li>Метапрограммирование <br />
+метаирония. Программа рассматривается как данные/объект для
+другой программы
+<ol class="org-ol">
+<li>Программу пишут программы <br />
+Например: макросы, генераторы кода, шаблоны С++ (фигня нечитаемая
+зачем он постоянно в руках часы крутит попит симпл димпл круче
+нет попит симпл димпл попит симпл димпл маленький красивый
+попит большой и милый)</li>
+<li>Программа взаимодействует с вычислительной средой <br />
+Рефлексия или интроспекция - самоанализ. <br />
+Например, посмотреть поля и значения в объекте класса</li>
+</ol></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgf411f9e" class="outline-3">
+<h3 id="orgf411f9e"><span class="section-number-3">2.2.</span> примеры</h3>
+<div class="outline-text-3" id="text-2-2">
+<pre class="example" id="org0bb100d">
+ИП: sort(array);
+ФП: sorted_list = sort(list)
+    sorted_list - константа, т.к. нет присваивания
+ЛП: sort(unsorted, sorted)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb40e015" class="outline-2">
+<h2 id="orgb40e015"><span class="section-number-2">3.</span> язык Scheme</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orga6332e8" class="outline-3">
+<h3 id="orga6332e8"><span class="section-number-3">3.1.</span> информация о языке</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Lisp 1950-е годы Джон МакКарти <br />
+LISt Processing <br />
+Scheme 1970-е годы Абельсон и Сассман <br />
+изучаем R5RS <br />
+современная редакция R7RS
+</p>
+<ul class="org-ul">
+<li>другие языки семейства LISP:
+<ul class="org-ul">
+<li>Common Lisp</li>
+<li>Clojure</li>
+<li>Racket</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb558b58" class="outline-3">
+<h3 id="orgb558b58"><span class="section-number-3">3.2.</span> основные постулаты языка LISP</h3>
+<div class="outline-text-3" id="text-3-2">
+<ol class="org-ol">
+<li>единство кода и данных</li>
+<li>все есть список</li>
+<li>выражение является списком <br />
+операция указывается в первом элементе</li>
+<li>все выражения вычисляют значения (почти все)</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org7d6bd44" class="outline-3">
+<h3 id="org7d6bd44"><span class="section-number-3">3.3.</span> операторы</h3>
+<div class="outline-text-3" id="text-3-3">
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&lt;&#1090;&#1077;&#1088;&#1084;&gt; ::= &lt;&#1072;&#1090;&#1086;&#1084;&gt;|&lt;&#1089;&#1087;&#1080;&#1089;&#1086;&#1082;&gt;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&lt;&#1072;&#1090;&#1086;&#1084;&gt; ::= &lt;&#1087;&#1077;&#1088;&#1077;&#1084;&gt;|&lt;&#1095;&#1080;&#1089;&#1083;&#1086;&gt;|&lt;&#1089;&#1080;&#1084;&#1086;&#1083;&gt;|&lt;&#1089;&#1090;&#1088;&#1086;&#1082;&#1072;&gt;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&lt;&#1089;&#1087;&#1080;&#1089;&#1086;&#1082;&gt; ::= (&lt;&#1090;&#1077;&#1088;&#1084;&#1099;&gt;)</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&lt;&#1090;&#1077;&#1088;&#1084;&#1099;&gt; ::= &lt;&#1087;&#1091;&#1089;&#1090;&#1086;&gt; | &lt;&#1090;&#1077;&#1088;&#1084;&gt;&lt;&#1090;&#1077;&#1088;&#1084;&#1099;&gt;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&lt;&#1087;&#1091;&#1089;&#1090;&#1086;&gt; ::=</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">i-am-variable - &#1080;&#1084;&#1103; &#1087;&#1077;&#1088;&#1077;&#1084;&#1077;&#1085;&#1085;&#1086;&#1081; &#1084;&#1086;&#1078;&#1077;&#1090; &#1074;&#1082;&#1083;&#1102;&#1095;&#1072;&#1090;&#1100; "-", "+", "*", "/"...</span>
+<span style="color: #51afef;">(</span>+ <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">3</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1089;&#1087;&#1080;&#1089;&#1086;&#1082;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">"+" - &#1080;&#1084;&#1103; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080; &#1089;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1103;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">"1 2 3" - &#1072;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1099;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1101;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090;&#1099; &#1089;&#1087;&#1080;&#1089;&#1082;&#1072; &#1088;&#1072;&#1079;&#1076;&#1077;&#1083;&#1103;&#1102;&#1090;&#1089;&#1103; &#1087;&#1088;&#1086;&#1073;&#1077;&#1083;&#1072;&#1084;&#1080;</span>
+
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #c678dd;">(</span>a <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #c678dd;">)(</span>b <span style="color: #da8548; font-weight: bold;">2</span><span style="color: #c678dd;">)(</span>c <span style="color: #da8548; font-weight: bold;">3</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1089;&#1087;&#1080;&#1089;&#1086;&#1082; &#1089;&#1087;&#1080;&#1089;&#1082;&#1086;&#1074;</span>
+
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1087;&#1086; &#1091;&#1084;&#1086;&#1083;&#1095;&#1072;&#1085;&#1080;&#1102; &#1074;&#1099;&#1088;&#1072;&#1078;&#1077;&#1085;&#1080;&#1077; &#1074;&#1080;&#1076;&#1072;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(f a b c) - &#1074;&#1099;&#1079;&#1086;&#1074; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">((f x) y) - &#1089;&#1085;&#1072;&#1095;&#1072;&#1083;&#1072; &#1074;&#1099;&#1079;&#1099;&#1074;&#1072;&#1077;&#1090;&#1089;&#1103; (f x),</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1090;&#1086;, &#1095;&#1090;&#1086; &#1086;&#1085;&#1072; &#1074;&#1099;&#1095;&#1080;&#1089;&#1083;&#1080;&#1090; &#1089; &#1072;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1086;&#1084; y</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1054;&#1089;&#1086;&#1073;&#1072;&#1103; &#1092;&#1086;&#1088;&#1084;&#1072; - &#1087;&#1077;&#1088;&#1074;&#1099;&#1081; &#1101;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090; &#1089;&#1087;&#1080;&#1089;&#1082;&#1072; - &#1082;&#1083;&#1102;&#1095;&#1077;&#1074;&#1086;&#1077; &#1089;&#1083;&#1086;&#1074;&#1086;</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">pi</span> <span style="color: #da8548; font-weight: bold;">3.1415926</span><span style="color: #51afef;">)</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">pi - &#1080;&#1084;&#1103; &#1087;&#1077;&#1088;&#1077;&#1084;&#1077;&#1085;&#1085;&#1086;&#1081;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">3.14.. - &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1077;</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">pi</span> <span style="color: #c678dd;">(</span>* <span style="color: #da8548; font-weight: bold;">4</span> <span style="color: #98be65;">(</span>atan <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">f</span> a b c<span style="color: #c678dd;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1086;&#1087;&#1077;&#1088;&#1077;&#1076;&#1077;&#1083;&#1103;&#1077;&#1090; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;</span>
+    <span style="color: #c678dd;">(</span>+ <span style="color: #98be65;">(</span>* <span style="color: #da8548; font-weight: bold;">2</span> a<span style="color: #98be65;">)</span> <span style="color: #98be65;">(</span>/ b c<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(if &lt;&#1074;&#1099;&#1088;&#1072;&#1078; 1&gt;</span>
+<span style="color: #5B6268;">;;     </span><span style="color: #5B6268;">&lt;&#1074;&#1099;&#1088;&#1072;&#1078; 2&gt;</span>
+<span style="color: #5B6268;">;;     </span><span style="color: #5B6268;">&lt;&#1074;&#1099;&#1088;&#1072;&#1078; 3&gt;)</span>
+
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1045;&#1089;&#1083;&#1080; &lt;&#1074;&#1099;&#1088;&#1072;&#1078; 1&gt; - &#1083;&#1086;&#1078;&#1100;,</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1077;&#1084; (if ...) &#1089;&#1090;&#1072;&#1085;&#1077;&#1090; &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1077; &lt;&#1074;&#1099;&#1088;&#1072;&#1078;3&gt;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(&lt;&#1074;&#1099;&#1088;&#1072;&#1078; 2&gt; &#1085;&#1077; &#1074;&#1099;&#1095;&#1080;&#1089;&#1083;&#1103;&#1077;&#1090;&#1089;&#1103;), &#1080; &#1085;&#1072;&#1086;&#1073;&#1086;&#1088;&#1086;&#1090;</span>
+
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">#f - &#1083;&#1086;&#1078;&#1100;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">#t - &#1080;&#1089;&#1090;&#1080;&#1085;&#1072;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">if &#1089;&#1095;&#1080;&#1090;&#1072;&#1077;&#1090; &#1080;&#1089;&#1090;&#1080;&#1085;&#1086;&#1081; &#1074;&#1089;&#1077; &#1095;&#1090;&#1086; &#1085;&#1077; &#1083;&#1086;&#1078;&#1100;</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">if</span> <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">3</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<pre class="example">
+2
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">if</span> #f <span style="color: #c678dd;">(</span>/ <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span>/ <span style="color: #da8548; font-weight: bold;">10</span> <span style="color: #da8548; font-weight: bold;">5</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+</pre>
+</div>
+
+<pre class="example">
+2
+</pre>
+
+
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">if</span> #t <span style="color: #c678dd;">(</span>/ <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span>/ <span style="color: #da8548; font-weight: bold;">10</span> <span style="color: #da8548; font-weight: bold;">5</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(&lt; x y)</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(&gt; x y)</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(= x y)</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&gt;=</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&lt;=</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(/ x y)</span>
+<span style="color: #51afef;">(</span>/ <span style="color: #da8548; font-weight: bold;">10</span> <span style="color: #da8548; font-weight: bold;">3</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(quotient x y) - &#1094;&#1077;&#1083;&#1086;&#1077; &#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1077;</span>
+<span style="color: #51afef;">(</span>quotient <span style="color: #da8548; font-weight: bold;">30</span> <span style="color: #da8548; font-weight: bold;">7</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(remainder x y) -&gt; &#1086;&#1089;&#1090;&#1072;&#1090;&#1086;&#1082;</span>
+<span style="color: #51afef;">(</span>remainder <span style="color: #da8548; font-weight: bold;">30</span> <span style="color: #da8548; font-weight: bold;">7</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">"&#1086;&#1089;&#1086;&#1073;&#1099;&#1077; &#1092;&#1086;&#1088;&#1084;&#1099;"</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(and e1 e2 ... en) - &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1097;&#1072;&#1077;&#1090; #f &#1077;&#1089;&#1083;&#1080; &#1093;&#1086;&#1090;&#1103; &#1073;&#1099; &#1086;&#1076;&#1080;&#1085; ei = #f, &#1080;&#1085;&#1072;&#1095;&#1077; en</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(or ...) - &#1074;&#1077;&#1088;&#1085;&#1077;&#1090; &#1087;&#1077;&#1088;&#1074;&#1086;&#1077; &#1085;&#1077; &#1083;&#1086;&#1078;&#1085;&#1086;&#1077; &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1077;</span>
+
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">and</span> <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> #f <span style="color: #c678dd;">(</span>/ <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+</div>
+<ol class="org-ol">
+<li><a id="org2f1e1b5"></a><span class="todo TODO">TODO</span> ошибка все-таки возникает<br />
+<div class="outline-text-6" id="text-3-3-0-0-1">
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(or (= x 0) (/ 1 0)) - &#1085;&#1077; &#1087;&#1088;&#1080;&#1074;&#1077;&#1076;&#1077;&#1090; &#1082; &#1086;&#1096;&#1080;&#1073;&#1082;&#1077; &#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103; &#1085;&#1072; 0, &#1085;&#1080;&#1082;&#1086;&#1075;&#1076;&#1072;</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">or</span> <span style="color: #c678dd;">(</span>= <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span>/ <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">or</span> <span style="color: #c678dd;">(</span>= <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span>/ <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(not x) - &#1083;&#1086;&#1075;&#1080;&#1095;&#1077;&#1089;&#1082;&#1086;&#1077; &#1086;&#1090;&#1088;&#1080;&#1094;&#1072;&#1085;&#1080;&#1077; #f -&gt; #t</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">not x -&gt; #f, x != #f</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1074;&#1099;&#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1080;&#1103; &#1083;&#1077;&#1085;&#1080;&#1074;&#1099;&#1077;!</span>
+</pre>
+</div>
+
+<p>
+,#+begin<sub>src</sub> scheme
+(+ 1 2 3)
+#+end<sub>src</sub>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #51afef;">(</span>+ <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">3</span> <span style="color: #da8548; font-weight: bold;">4</span><span style="color: #51afef;">)</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">pi</span> <span style="color: #c678dd;">(</span>* <span style="color: #da8548; font-weight: bold;">4</span> <span style="color: #98be65;">(</span>atan <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">area</span> r<span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span>* r r<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">e</span> <span style="color: #c678dd;">(</span>exp <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">hypot</span> x y<span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span>sqrt <span style="color: #98be65;">(</span>+ <span style="color: #a9a1e1;">(</span>* x x<span style="color: #a9a1e1;">)</span> <span style="color: #a9a1e1;">(</span>* y y<span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+<span style="color: #5B6268;">; </span><span style="color: #5B6268;">if &#1074;&#1089;&#1077;&#1075;&#1076;&#1072; &#1074; 3 &#1089;&#1090;&#1088;&#1086;&#1082;&#1080;</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">fac</span> x<span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span><span style="color: #51afef;">if</span> <span style="color: #98be65;">(</span>= x <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #98be65;">)</span>
+                     <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #98be65;">(</span>* <span style="color: #a9a1e1;">(</span>fac <span style="color: #51afef;">(</span>- x <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #51afef;">)</span><span style="color: #a9a1e1;">)</span> x<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">my-positive?</span> n<span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span>&gt; n <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">my-abs</span> x<span style="color: #c678dd;">)</span>
+  <span style="color: #c678dd;">(</span><span style="color: #51afef;">if</span> <span style="color: #98be65;">(</span>&lt; x <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #98be65;">)</span>
+      <span style="color: #98be65;">(</span>-x<span style="color: #98be65;">)</span>
+      x<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">factorial</span> n<span style="color: #c678dd;">)</span>
+  <span style="color: #c678dd;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">loop</span> acc i<span style="color: #c678dd;">)</span>
+  <span style="color: #c678dd;">(</span><span style="color: #51afef;">if</span> <span style="color: #98be65;">(</span>&gt; i n<span style="color: #98be65;">)</span>
+      acc
+      <span style="color: #98be65;">(</span>loop <span style="color: #a9a1e1;">(</span>* acc i<span style="color: #a9a1e1;">)</span> <span style="color: #a9a1e1;">(</span>+ i <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span>
+  <span style="color: #c678dd;">(</span>loop <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">my-odd</span> n<span style="color: #c678dd;">)</span>
+  <span style="color: #c678dd;">(</span>= <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #98be65;">(</span>remainder n <span style="color: #da8548; font-weight: bold;">2</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">my-even</span> n<span style="color: #c678dd;">)</span>
+  <span style="color: #c678dd;">(</span>= <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #98be65;">(</span>remainder n <span style="color: #da8548; font-weight: bold;">2</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+
+<span style="color: #51afef;">(</span>my-odd <span style="color: #da8548; font-weight: bold;">5</span><span style="color: #51afef;">)</span>
+<span style="color: #51afef;">(</span>my-even <span style="color: #da8548; font-weight: bold;">5</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2021-09-04 Sat 13:50</p>
+<p class="author">Author: Starovoytov Alexandr, Grechko Georgy</p>
+<p class="date">Created: 2021-09-09 Thu 12:32</p>
+</div>
+</body>
+</html>
