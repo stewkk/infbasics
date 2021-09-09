@@ -3,196 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-09-09 Thu 13:02 -->
+<!-- 2021-09-09 Thu 13:35 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Informatics basics</title>
 <meta name="author" content="Starovoytov Alexandr, Grechko Georgy" />
 <meta name="generator" content="Org Mode" />
-<style>
-  #content { max-width: 60em; margin: auto; }
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: auto;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    top: -8px;
-    right: 12px;
-    padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
-  }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-</style>
+<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/jessekelly881/Theme-Retro/master/retro.css" />
 </head>
 <body>
 <div id="content" class="content">
@@ -201,29 +18,29 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org9968733">1. Основные понятия информатики</a>
+<li><a href="#orge578a83">Основные понятия информатики</a>
 <ul>
-<li><a href="#org2d16681">1.1. Данные</a></li>
-<li><a href="#org1ad2c6c">1.2. Алгоритм</a></li>
-<li><a href="#org7975371">1.3. Свойства алгоритма:</a></li>
-<li><a href="#org60ff900">1.4. Компьютерная программа</a></li>
-<li><a href="#org0a1ec6a">1.5. Язык программирования</a></li>
-<li><a href="#orgce3f8c4">1.6. Компьютер</a></li>
-<li><a href="#orgd741b39">1.7. Подпрограмма</a></li>
-<li><a href="#org8a84224">1.8. Сопрограмма</a></li>
+<li><a href="#org28e14ab">Данные</a></li>
+<li><a href="#org05f1ffa">Алгоритм</a></li>
+<li><a href="#org151bdaa">Свойства алгоритма:</a></li>
+<li><a href="#org7e0919c">Компьютерная программа</a></li>
+<li><a href="#org86a2d01">Язык программирования</a></li>
+<li><a href="#org0d2d659">Компьютер</a></li>
+<li><a href="#orge25242e">Подпрограмма</a></li>
+<li><a href="#orgf488782">Сопрограмма</a></li>
 </ul>
 </li>
-<li><a href="#orgd122412">2. Парадигмы программирования</a>
+<li><a href="#orgd050d1d">Парадигмы программирования</a>
 <ul>
-<li><a href="#org74ed85a">2.1. Основные группы парадигм</a></li>
-<li><a href="#org31f633d">2.2. примеры</a></li>
+<li><a href="#org9123180">Основные группы парадигм</a></li>
+<li><a href="#orgf6dc4cb">примеры</a></li>
 </ul>
 </li>
-<li><a href="#org31528e2">3. язык Scheme</a>
+<li><a href="#org4083520">язык Scheme</a>
 <ul>
-<li><a href="#org1789cfc">3.1. информация о языке</a></li>
-<li><a href="#org3793337">3.2. основные постулаты языка LISP</a></li>
-<li><a href="#org5668f66">3.3. операторы</a></li>
+<li><a href="#orgbce3bd4">информация о языке</a></li>
+<li><a href="#orgab5b883">основные постулаты языка LISP</a></li>
+<li><a href="#org115ddd5">операторы</a></li>
 </ul>
 </li>
 </ul>
@@ -240,13 +57,13 @@
 <li>a.v.konovalov87@mail.ru</li>
 </ul></li>
 </ul>
-<div id="outline-container-org9968733" class="outline-2">
-<h2 id="org9968733"><span class="section-number-2">1.</span> Основные понятия информатики</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-orge578a83" class="outline-2">
+<h2 id="orge578a83">Основные понятия информатики</h2>
+<div class="outline-text-2" id="text-orge578a83">
 </div>
-<div id="outline-container-org2d16681" class="outline-3">
-<h3 id="org2d16681"><span class="section-number-3">1.1.</span> Данные</h3>
-<div class="outline-text-3" id="text-1-1">
+<div id="outline-container-org28e14ab" class="outline-3">
+<h3 id="org28e14ab">Данные</h3>
+<div class="outline-text-3" id="text-org28e14ab">
 <p>
 это представление фактов, понятий, инструкций в форме, приемлемой
 для обмена, интерпретации или обработки человеком или с помощью
@@ -254,9 +71,9 @@
 </p>
 </div>
 </div>
-<div id="outline-container-org1ad2c6c" class="outline-3">
-<h3 id="org1ad2c6c"><span class="section-number-3">1.2.</span> Алгоритм</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-org05f1ffa" class="outline-3">
+<h3 id="org05f1ffa">Алгоритм</h3>
+<div class="outline-text-3" id="text-org05f1ffa">
 <p>
 это конечная совокупность точно заданных правил решения прозвольного класса
 задач или набор инструкций, описывающий порядок действий исполнителя для
@@ -264,9 +81,9 @@
 </p>
 </div>
 </div>
-<div id="outline-container-org7975371" class="outline-3">
-<h3 id="org7975371"><span class="section-number-3">1.3.</span> Свойства алгоритма:</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-org151bdaa" class="outline-3">
+<h3 id="org151bdaa">Свойства алгоритма:</h3>
+<div class="outline-text-3" id="text-org151bdaa">
 <ol class="org-ol">
 <li>Дискретность <br />
 делится на отдельные элементарные части,
@@ -286,33 +103,33 @@
 </ol>
 </div>
 </div>
-<div id="outline-container-org60ff900" class="outline-3">
-<h3 id="org60ff900"><span class="section-number-3">1.4.</span> Компьютерная программа</h3>
-<div class="outline-text-3" id="text-1-4">
+<div id="outline-container-org7e0919c" class="outline-3">
+<h3 id="org7e0919c">Компьютерная программа</h3>
+<div class="outline-text-3" id="text-org7e0919c">
 <p>
 это алгоритм, записанный на некотором языке программирования
 </p>
 </div>
 </div>
-<div id="outline-container-org0a1ec6a" class="outline-3">
-<h3 id="org0a1ec6a"><span class="section-number-3">1.5.</span> Язык программирования</h3>
-<div class="outline-text-3" id="text-1-5">
+<div id="outline-container-org86a2d01" class="outline-3">
+<h3 id="org86a2d01">Язык программирования</h3>
+<div class="outline-text-3" id="text-org86a2d01">
 <p>
 формальный язык, предназначенный для записи компьютерных программ
 </p>
 </div>
 </div>
-<div id="outline-container-orgce3f8c4" class="outline-3">
-<h3 id="orgce3f8c4"><span class="section-number-3">1.6.</span> Компьютер</h3>
-<div class="outline-text-3" id="text-1-6">
+<div id="outline-container-org0d2d659" class="outline-3">
+<h3 id="org0d2d659">Компьютер</h3>
+<div class="outline-text-3" id="text-org0d2d659">
 <p>
 программно управляемое устройство для обработки информации
 </p>
 </div>
 </div>
-<div id="outline-container-orgd741b39" class="outline-3">
-<h3 id="orgd741b39"><span class="section-number-3">1.7.</span> Подпрограмма</h3>
-<div class="outline-text-3" id="text-1-7">
+<div id="outline-container-orge25242e" class="outline-3">
+<h3 id="orge25242e">Подпрограмма</h3>
+<div class="outline-text-3" id="text-orge25242e">
 <p>
 некоторый именованный блок кода. <br />
 Вызывающая программа приостанавливается, управление передается
@@ -321,9 +138,9 @@
 </p>
 </div>
 </div>
-<div id="outline-container-org8a84224" class="outline-3">
-<h3 id="org8a84224"><span class="section-number-3">1.8.</span> Сопрограмма</h3>
-<div class="outline-text-3" id="text-1-8">
+<div id="outline-container-orgf488782" class="outline-3">
+<h3 id="orgf488782">Сопрограмма</h3>
+<div class="outline-text-3" id="text-orgf488782">
 <p>
 в отличие от подпрограммы работает поочередно с вызывающей программой.
 При повторном вызове возобновит выполнение с момента, где остановилась
@@ -331,9 +148,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgd122412" class="outline-2">
-<h2 id="orgd122412"><span class="section-number-2">2.</span> Парадигмы программирования</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgd050d1d" class="outline-2">
+<h2 id="orgd050d1d">Парадигмы программирования</h2>
+<div class="outline-text-2" id="text-orgd050d1d">
 <p>
 совокупность идей и понятий, определяющих стиль написания компьютерных
 программ (подход к программированию). Это способ концептуализации,
@@ -341,9 +158,9 @@
 компьютером.
 </p>
 </div>
-<div id="outline-container-org74ed85a" class="outline-3">
-<h3 id="org74ed85a"><span class="section-number-3">2.1.</span> Основные группы парадигм</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-org9123180" class="outline-3">
+<h3 id="org9123180">Основные группы парадигм</h3>
+<div class="outline-text-3" id="text-org9123180">
 <ol class="org-ol">
 <li>Императивные <br />
 способ записи программ, в котором указывается последовательность
@@ -398,10 +215,10 @@
 </ol>
 </div>
 </div>
-<div id="outline-container-org31f633d" class="outline-3">
-<h3 id="org31f633d"><span class="section-number-3">2.2.</span> примеры</h3>
-<div class="outline-text-3" id="text-2-2">
-<pre class="example" id="orgfb7c4ee">
+<div id="outline-container-orgf6dc4cb" class="outline-3">
+<h3 id="orgf6dc4cb">примеры</h3>
+<div class="outline-text-3" id="text-orgf6dc4cb">
+<pre class="example" id="org535c23b">
 ИП: sort(array);
 ФП: sorted_list = sort(list)
     sorted_list - константа, т.к. нет присваивания
@@ -410,13 +227,13 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org31528e2" class="outline-2">
-<h2 id="org31528e2"><span class="section-number-2">3.</span> язык Scheme</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org4083520" class="outline-2">
+<h2 id="org4083520">язык Scheme</h2>
+<div class="outline-text-2" id="text-org4083520">
 </div>
-<div id="outline-container-org1789cfc" class="outline-3">
-<h3 id="org1789cfc"><span class="section-number-3">3.1.</span> информация о языке</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-orgbce3bd4" class="outline-3">
+<h3 id="orgbce3bd4">информация о языке</h3>
+<div class="outline-text-3" id="text-orgbce3bd4">
 <p>
 Lisp 1950-е годы Джон МакКарти <br />
 LISt Processing <br />
@@ -434,9 +251,9 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </ul>
 </div>
 </div>
-<div id="outline-container-org3793337" class="outline-3">
-<h3 id="org3793337"><span class="section-number-3">3.2.</span> основные постулаты языка LISP</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-orgab5b883" class="outline-3">
+<h3 id="orgab5b883">основные постулаты языка LISP</h3>
+<div class="outline-text-3" id="text-orgab5b883">
 <ol class="org-ol">
 <li>единство кода и данных</li>
 <li>все есть список</li>
@@ -446,9 +263,9 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </ol>
 </div>
 </div>
-<div id="outline-container-org5668f66" class="outline-3">
-<h3 id="org5668f66"><span class="section-number-3">3.3.</span> операторы</h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-org115ddd5" class="outline-3">
+<h3 id="org115ddd5">операторы</h3>
+<div class="outline-text-3" id="text-org115ddd5">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&lt;&#1090;&#1077;&#1088;&#1084;&gt; ::= &lt;&#1072;&#1090;&#1086;&#1084;&gt;|&lt;&#1089;&#1087;&#1080;&#1089;&#1086;&#1082;&gt;</span>
 <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&lt;&#1072;&#1090;&#1086;&#1084;&gt; ::= &lt;&#1087;&#1077;&#1088;&#1077;&#1084;&gt;|&lt;&#1095;&#1080;&#1089;&#1083;&#1086;&gt;|&lt;&#1089;&#1080;&#1084;&#1086;&#1083;&gt;|&lt;&#1089;&#1090;&#1088;&#1086;&#1082;&#1072;&gt;</span>
@@ -568,18 +385,14 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 <pre class="example">
 #f
 </pre>
-</div>
-<ol class="org-ol">
-<li><a id="org8e46251"></a><span class="todo TODO">TODO</span> ошибка все-таки возникает<br />
-<div class="outline-text-6" id="text-3-3-0-0-1">
+
 <div class="org-src-container">
-<pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(or (= x 0) (/ 1 0)) - &#1085;&#1077; &#1087;&#1088;&#1080;&#1074;&#1077;&#1076;&#1077;&#1090; &#1082; &#1086;&#1096;&#1080;&#1073;&#1082;&#1077; &#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103; &#1085;&#1072; 0, &#1085;&#1080;&#1082;&#1086;&#1075;&#1076;&#1072;</span>
-<span style="color: #51afef;">(</span><span style="color: #51afef;">or</span> <span style="color: #c678dd;">(</span>= <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span>/ <span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+<pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(or (= x 0) (/ 1 x)) - &#1085;&#1077; &#1087;&#1088;&#1080;&#1074;&#1077;&#1076;&#1077;&#1090; &#1082; &#1086;&#1096;&#1080;&#1073;&#1082;&#1077; &#1076;&#1077;&#1083;&#1077;&#1085;&#1080;&#1103; &#1085;&#1072; 0, &#1085;&#1080;&#1082;&#1086;&#1075;&#1076;&#1072;</span>
 </pre>
 </div>
 
 <pre class="example">
-#t
+#&lt;unspecified&gt;
 </pre>
 
 
@@ -752,15 +565,13 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 #f
 </pre>
 </div>
-</li>
-</ol>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: 2021-09-04 Sat 13:50</p>
 <p class="author">Author: Starovoytov Alexandr, Grechko Georgy</p>
-<p class="date">Created: 2021-09-09 Thu 13:02</p>
+<p class="date">Created: 2021-09-09 Thu 13:35</p>
 </div>
 </body>
 </html>

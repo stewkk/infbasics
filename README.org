@@ -1,6 +1,8 @@
 #+TITLE: Informatics basics
 #+AUTHOR: Starovoytov Alexandr, Grechko Georgy
 #+DATE: <2021-09-04 Sat 13:50>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/jessekelly881/Theme-Retro/master/retro.css" />
+#+OPTIONS: num:nil html-style:nil
 
 + [[https://stewkk.github.io/infbasics/inf_basics.pdf][Лекции в pdf формате]]
 + [[https://stewkk.github.io/infbasics/][Лекции в виде сайта]]
@@ -231,14 +233,9 @@ Scheme 1970-е годы Абельсон и Сассман \\
 
 #+RESULTS:
 : #f
-***** TODO ошибка все-таки возникает
 #+begin_src scheme :session :exports both
-;; (or (= x 0) (/ 1 0)) - не приведет к ошибке деления на 0, никогда
-(or (= 0 0) (/ 1 0))
+;; (or (= x 0) (/ 1 x)) - не приведет к ошибке деления на 0, никогда
 #+end_src
-
-#+RESULTS:
-: #t
 
 #+begin_src scheme :session :exports both
 (or (= 1 0) (/ 1 0))
