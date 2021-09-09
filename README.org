@@ -1,8 +1,7 @@
 #+TITLE: Informatics basics
 #+AUTHOR: Starovoytov Alexandr, Grechko Georgy
 #+DATE: <2021-09-04 Sat 13:50>
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/jessekelly881/Theme-Retro/master/retro.css" />
-#+OPTIONS: num:nil html-style:nil
+#+SETUPFILE: retro_dark.theme
 
 + [[https://stewkk.github.io/infbasics/inf_basics.pdf][Лекции в pdf формате]]
 + [[https://stewkk.github.io/infbasics/][Лекции в виде сайта]]
