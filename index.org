@@ -1,9 +1,6 @@
 #+TITLE: Informatics basics
 #+AUTHOR: Starovoytov Alexandr, Grechko Georgy
 #+DATE: <2021-09-04 Sat 13:50>
-#+latex_header: \usepackage[russian]{babel}
-# #+latex_header: \usepackage[T2A]{fontenc}
-# #+latex_header: \usepackage[colorlinks]{hyperref}
 
 + [[https://stewkk.github.io/infbasics/inf_basics.pdf][Лекции в pdf формате]]
 + [[https://stewkk.github.io/infbasics/][Лекции в виде сайта]]
@@ -255,49 +252,88 @@ Scheme 1970-е годы Абельсон и Сассман \\
 ;; вычисления ленивые!
 #+end_src
 
-,#+begin_src scheme
+#+begin_src scheme
 (+ 1 2 3)
 #+end_src
 
 #+RESULTS:
+: 6
 
-#+begin_src scheme
-(+ 1 2 3 4)
-
+#+begin_src scheme :session :export both
 (define pi (* 4 (atan 1)))
-
+#+end_src
+#+begin_src scheme :session :export both
 (define (area r) (* r r))
-
+#+end_src
+#+begin_src scheme :session :export both
 (define e (exp 1))
-
+#+end_src
+#+begin_src scheme :session :export both
 (define (hypot x y) (sqrt (+ (* x x) (* y y))))
 ; if всегда в 3 строки
+#+end_src
+#+begin_src scheme :session :export both
 (define (fac x) (if (= x 0)
                      1 (* (fac (- x 1)) x)))
-
+#+end_src
+#+begin_src scheme :session :export both
 (define (my-positive? n) (> n 0))
+#+end_src
+#+begin_src scheme :session :export both
 (define (my-abs x)
   (if (< x 0)
       (-x)
       x))
 
+#+end_src
+#+begin_src scheme :session :export both
 (define (factorial n)
   (define loop acc i)
   (if (> i n)
       acc
       (loop (* acc i) (+ i 1)))
   (loop 1 1))
-
+#+end_src
+#+begin_src scheme :session :export both
 (define (my-odd n)
   (= 0 (remainder n 2)))
+#+end_src
 
+#+RESULTS:
+: #<unspecified>
+
+#+begin_src scheme :session :export both
 (define (my-even n)
   (= 1 (remainder n 2)))
+#+end_src
 
+#+RESULTS:
+: #<unspecified>
 
-(my-odd 5)
-(my-even 5)
+#+begin_src scheme :session :export both
+(my-odd 1)
+#+end_src
+
+#+RESULTS:
+: #f
+
+#+begin_src scheme :session :export both
+(my-odd 2)
 #+end_src
 
 #+RESULTS:
 : #t
+
+#+begin_src scheme :session :export both
+(my-even 1)
+#+end_src
+
+#+RESULTS:
+: #t
+
+#+begin_src scheme :session :export both
+(my-even 2)
+#+end_src
+
+#+RESULTS:
+: #f
