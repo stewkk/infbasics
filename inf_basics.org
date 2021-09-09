@@ -170,6 +170,8 @@ Scheme 1970-е годы Абельсон и Сассман \\
 ;; #t - истина
 ;; if считает истиной все что не ложь
 #+end_src
+
+
 #+begin_src scheme :session :exports both
 (if 1 2 3)
 #+end_src
@@ -205,23 +207,53 @@ Scheme 1970-е годы Абельсон и Сассман \\
 #+RESULTS:
 : 10/3
 
+#+begin_src scheme :session :export both
+;; (quotient x y) - целое деление
+(quotient 30 7)
+#+end_src
 
-(quotient x y) - целое деление
-(quotient 30 7) -> 4
-(remainder x y) -> остаток
-(remainder 30 7) -> 2
+#+RESULTS:
+: 4
 
+#+begin_src scheme :session :export both
+;; (remainder x y) -> остаток
+(remainder 30 7)
+#+end_src
+
+#+RESULTS:
+: 2
+
+#+begin_src scheme :session :export both
 ;; "особые формы"
-(and e1 e2 ... en) - возвращает #f если хотя бы один ei = #f, иначе en
-(or ...) - вернет первое не ложное значение
+;; (and e1 e2 ... en) - возвращает #f если хотя бы один ei = #f, иначе en
+;; (or ...) - вернет первое не ложное значение
 
 
-(and 1 2 #f (/ 1 0)) -> #f
-(or (= x 0) (/ 1 0)) - не приведет к ошибке деления на 0, никогда
-(not x) - логическое отрицание #f -> #t
-not x -> #f, x != #f
-вычисления ленивые!
-,#+end_example
+(and 1 2 #f (/ 1 0))
+#+end_src
+
+#+RESULTS:
+: #f
+***** TODO ошибка все-таки возникает
+#+begin_src scheme :session :export both
+;; (or (= x 0) (/ 1 0)) - не приведет к ошибке деления на 0, никогда
+(or (= 0 0) (/ 1 0))
+#+end_src
+
+#+RESULTS:
+: #t
+
+#+begin_src scheme :session :export both
+(or (= 1 0) (/ 1 0))
+#+end_src
+
+#+RESULTS:
+
+#+begin_src scheme :session :export both
+;; (not x) - логическое отрицание #f -> #t
+;; not x -> #f, x != #f
+;; вычисления ленивые!
+#+end_src
 
 ,#+begin_src scheme
 (+ 1 2 3)
