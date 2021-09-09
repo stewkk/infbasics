@@ -204,7 +204,7 @@ Scheme 1970-е годы Абельсон и Сассман \\
 #+RESULTS:
 : 10/3
 
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 ;; (quotient x y) - целое деление
 (quotient 30 7)
 #+end_src
@@ -212,7 +212,7 @@ Scheme 1970-е годы Абельсон и Сассман \\
 #+RESULTS:
 : 4
 
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 ;; (remainder x y) -> остаток
 (remainder 30 7)
 #+end_src
@@ -220,7 +220,7 @@ Scheme 1970-е годы Абельсон и Сассман \\
 #+RESULTS:
 : 2
 
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 ;; "особые формы"
 ;; (and e1 e2 ... en) - возвращает #f если хотя бы один ei = #f, иначе en
 ;; (or ...) - вернет первое не ложное значение
@@ -232,7 +232,7 @@ Scheme 1970-е годы Абельсон и Сассман \\
 #+RESULTS:
 : #f
 ***** TODO ошибка все-таки возникает
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 ;; (or (= x 0) (/ 1 0)) - не приведет к ошибке деления на 0, никогда
 (or (= 0 0) (/ 1 0))
 #+end_src
@@ -240,13 +240,13 @@ Scheme 1970-е годы Абельсон и Сассман \\
 #+RESULTS:
 : #t
 
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (or (= 1 0) (/ 1 0))
 #+end_src
 
 #+RESULTS:
 
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 ;; (not x) - логическое отрицание #f -> #t
 ;; not x -> #f, x != #f
 ;; вычисления ленивые!
@@ -259,34 +259,34 @@ Scheme 1970-е годы Абельсон и Сассман \\
 #+RESULTS:
 : 6
 
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (define pi (* 4 (atan 1)))
 #+end_src
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (define (area r) (* r r))
 #+end_src
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (define e (exp 1))
 #+end_src
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (define (hypot x y) (sqrt (+ (* x x) (* y y))))
 ; if всегда в 3 строки
 #+end_src
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (define (fac x) (if (= x 0)
                      1 (* (fac (- x 1)) x)))
 #+end_src
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (define (my-positive? n) (> n 0))
 #+end_src
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (define (my-abs x)
   (if (< x 0)
       (-x)
       x))
 
 #+end_src
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (define (factorial n)
   (define loop acc i)
   (if (> i n)
@@ -294,7 +294,7 @@ Scheme 1970-е годы Абельсон и Сассман \\
       (loop (* acc i) (+ i 1)))
   (loop 1 1))
 #+end_src
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (define (my-odd n)
   (= 0 (remainder n 2)))
 #+end_src
@@ -302,7 +302,7 @@ Scheme 1970-е годы Абельсон и Сассман \\
 #+RESULTS:
 : #<unspecified>
 
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (define (my-even n)
   (= 1 (remainder n 2)))
 #+end_src
@@ -310,28 +310,28 @@ Scheme 1970-е годы Абельсон и Сассман \\
 #+RESULTS:
 : #<unspecified>
 
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (my-odd 1)
 #+end_src
 
 #+RESULTS:
 : #f
 
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (my-odd 2)
 #+end_src
 
 #+RESULTS:
 : #t
 
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (my-even 1)
 #+end_src
 
 #+RESULTS:
 : #t
 
-#+begin_src scheme :session :export both
+#+begin_src scheme :session :exports both
 (my-even 2)
 #+end_src
 
