@@ -3,9 +3,7 @@
 #+DATE: <2021-09-04 Sat 13:50>
 #+SETUPFILE: retro_dark.theme
 
-+ [[https://stewkk.github.io/infbasics/inf_basics.pdf][Лекции в pdf формате]]
-+ [[https://stewkk.github.io/infbasics/][Лекции в виде сайта]]
-+ Преподаватель
+* Преподаватель
   - Коновалов Александр Владимирович
   - 89175404352
   - akonovalov@bmstu.ru
@@ -103,7 +101,7 @@
     sorted_list - константа, т.к. нет присваивания
 ЛП: sort(unsorted, sorted)
 #+end_example
-* язык Scheme
+* Язык Scheme
 ** информация о языке
 Lisp 1950-е годы Джон МакКарти \\
 LISt Processing \\
