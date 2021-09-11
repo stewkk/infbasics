@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-09-09 Thu 22:23 -->
+<!-- 2021-09-11 Sat 15:24 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Informatics basics</title>
@@ -196,6 +196,27 @@
 <style type="text/css">
 /* Base */html,body {    background-color: #222;    min-height: 100%;    line-height: 1.5;}body {    color: #fafafa;    font-family: "Courier New";}::selection {    background-color:  #2ecc40;    color: white;}/* Responsive content positioning */@media only screen and (min-width: 1020px) /* Large screens */{    body{        padding: 10vh 25vw;    }}@media only screen and (max-width: 1020px) and (min-width: 750px) /* Small screens */{    body{        padding: 5vh 10vw;    }}@media only screen and (max-width: 750px) /* Small screens */{    body{        padding: 2vh 5vw;    }}/* Headers */h1{font-size: 2.5rem;}h2{font-size: 1.7rem;}h1 > .subtitle, h3, h4, h5, h6{font-size: 1.3rem;}.title{    margin-bottom: 2.5rem;}/* Padding & Margin */* {margin: 0; padding: 0;}pre, blockquote, ul, ol, p, table{    margin: 1rem 0;}h1, h2{margin-top: 2rem; line-height: 2rem;}h3, h4, h5, h6{margin-top: 1rem;}/* Links  */a, a:visited {    color: #01ff70;    text-decoration: underline;}a:hover, a:focus, a:active {    color: #2ecc40;}/* Code */pre {    font-family: "Courier New";    padding: .5rem;    background-color: #333;    padding: 0.5rem;    border-radius: 0.2rem;    font-size: 0.9rem;    color: #EEE;    overflow-x: auto;}.org-keyword{    color: #01ff70;}.org-rainbow-delimiters-depth-1{    color: #2ecc40;}.org-rainbow-delimiters-depth-2{    color: #01ff70;}/* Blockquotes */blockquote {    border-left: 3px solid #01ff70;    padding-left: 1rem;}li{    list-style-position: inside;}/* Tags */.tag{    margin-top: 0.5rem;    display: block;    color: white;    font-size: var(--font-size-xsmall);}.tag > span{		font-weight: 400;    font-size: 0.8rem;    background-color: #444;    text-transform: uppercase;    border-radius: 2px;    width: fit-content;    height: auto;    padding: 1px 5px;}/* Keywords */.todo{    color: #2ecc40;}.done{    color: #444;}/* Overflows */.outline-text-2, .outline-text-3, .outline-text-4{	  max-width: 100%;	  overflow-x: auto;}/* Table */tr:nth-child(even) {    background-color: #333;}th, td{    padding: 0.5rem;    text-align: center;}.underline{    text-decoration: underline;}img{    max-width: 100%;    height: auto;}
 </style>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
@@ -204,38 +225,51 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf2e83d9">1. Преподаватель</a></li>
-<li><a href="#orgdedc74d">2. Основные понятия информатики</a>
+<li><a href="#org5d287fe">1. Преподаватель</a></li>
+<li><a href="#org6b2c996">2. Основные понятия информатики</a>
 <ul>
-<li><a href="#org655d030">2.1. Данные</a></li>
-<li><a href="#orgb095ef0">2.2. Алгоритм</a></li>
-<li><a href="#org7331bac">2.3. Свойства алгоритма:</a></li>
-<li><a href="#org9b1da09">2.4. Компьютерная программа</a></li>
-<li><a href="#orgc9d490a">2.5. Язык программирования</a></li>
-<li><a href="#org1b8aa4d">2.6. Компьютер</a></li>
-<li><a href="#orgb86d87b">2.7. Подпрограмма</a></li>
-<li><a href="#orgcc675bd">2.8. Сопрограмма</a></li>
+<li><a href="#org1695055">2.1. Данные</a></li>
+<li><a href="#org9a7d083">2.2. Алгоритм</a></li>
+<li><a href="#org9a2826a">2.3. Свойства алгоритма:</a></li>
+<li><a href="#orgde909e0">2.4. Компьютерная программа</a></li>
+<li><a href="#org1b387d0">2.5. Язык программирования</a></li>
+<li><a href="#org1172412">2.6. Компьютер</a></li>
+<li><a href="#orgfb68665">2.7. Подпрограмма</a></li>
+<li><a href="#orge4a1f09">2.8. Сопрограмма</a></li>
 </ul>
 </li>
-<li><a href="#org45271d4">3. Парадигмы программирования</a>
+<li><a href="#org5b76095">3. Парадигмы программирования</a>
 <ul>
-<li><a href="#orgbbf720f">3.1. Основные группы парадигм</a></li>
-<li><a href="#org21e91ba">3.2. примеры</a></li>
+<li><a href="#orga5b801b">3.1. Основные группы парадигм</a></li>
+<li><a href="#org03cdcc6">3.2. примеры</a></li>
 </ul>
 </li>
-<li><a href="#orgdb6797f">4. Язык Scheme</a>
+<li><a href="#org01943a8">4. Язык Scheme</a>
 <ul>
-<li><a href="#org5d60142">4.1. информация о языке</a></li>
-<li><a href="#org422423f">4.2. основные постулаты языка LISP</a></li>
-<li><a href="#org74e6f01">4.3. операторы</a></li>
+<li><a href="#org7a5061e">4.1. информация о языке</a></li>
+<li><a href="#org6225d6f">4.2. основные постулаты языка LISP</a></li>
+<li><a href="#org91f3b6d">4.3. операторы</a></li>
+</ul>
+</li>
+<li><a href="#orgc15fc51">5. Лекция 2</a>
+<ul>
+<li><a href="#org835163a">5.1. Codestyle in if-statements</a></li>
+<li><a href="#org2d84b9a">5.2. Выражение cond</a></li>
+<li><a href="#org741ba99">5.3. Выражение case</a>
+<ul>
+<li><a href="#org20cf151">5.3.1. <span class="todo TODO">TODO</span> добавить самостоятельно</a></li>
+</ul>
+</li>
+<li><a href="#org22b85dd">5.4. Простые (не составные) значения</a></li>
+<li><a href="#org66b1134">5.5. Функции высших порядков</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgf2e83d9" class="outline-2">
-<h2 id="orgf2e83d9"><span class="section-number-2">1.</span> Преподаватель</h2>
+<div id="outline-container-org5d287fe" class="outline-2">
+<h2 id="org5d287fe"><span class="section-number-2">1.</span> Преподаватель</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>Коновалов Александр Владимирович</li>
@@ -245,12 +279,12 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-orgdedc74d" class="outline-2">
-<h2 id="orgdedc74d"><span class="section-number-2">2.</span> Основные понятия информатики</h2>
+<div id="outline-container-org6b2c996" class="outline-2">
+<h2 id="org6b2c996"><span class="section-number-2">2.</span> Основные понятия информатики</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org655d030" class="outline-3">
-<h3 id="org655d030"><span class="section-number-3">2.1.</span> Данные</h3>
+<div id="outline-container-org1695055" class="outline-3">
+<h3 id="org1695055"><span class="section-number-3">2.1.</span> Данные</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 это представление фактов, понятий, инструкций в форме, приемлемой
@@ -259,8 +293,8 @@
 </p>
 </div>
 </div>
-<div id="outline-container-orgb095ef0" class="outline-3">
-<h3 id="orgb095ef0"><span class="section-number-3">2.2.</span> Алгоритм</h3>
+<div id="outline-container-org9a7d083" class="outline-3">
+<h3 id="org9a7d083"><span class="section-number-3">2.2.</span> Алгоритм</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 это конечная совокупность точно заданных правил решения прозвольного класса
@@ -269,8 +303,8 @@
 </p>
 </div>
 </div>
-<div id="outline-container-org7331bac" class="outline-3">
-<h3 id="org7331bac"><span class="section-number-3">2.3.</span> Свойства алгоритма:</h3>
+<div id="outline-container-org9a2826a" class="outline-3">
+<h3 id="org9a2826a"><span class="section-number-3">2.3.</span> Свойства алгоритма:</h3>
 <div class="outline-text-3" id="text-2-3">
 <ol class="org-ol">
 <li>Дискретность <br />
@@ -291,32 +325,32 @@
 </ol>
 </div>
 </div>
-<div id="outline-container-org9b1da09" class="outline-3">
-<h3 id="org9b1da09"><span class="section-number-3">2.4.</span> Компьютерная программа</h3>
+<div id="outline-container-orgde909e0" class="outline-3">
+<h3 id="orgde909e0"><span class="section-number-3">2.4.</span> Компьютерная программа</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 это алгоритм, записанный на некотором языке программирования
 </p>
 </div>
 </div>
-<div id="outline-container-orgc9d490a" class="outline-3">
-<h3 id="orgc9d490a"><span class="section-number-3">2.5.</span> Язык программирования</h3>
+<div id="outline-container-org1b387d0" class="outline-3">
+<h3 id="org1b387d0"><span class="section-number-3">2.5.</span> Язык программирования</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 формальный язык, предназначенный для записи компьютерных программ
 </p>
 </div>
 </div>
-<div id="outline-container-org1b8aa4d" class="outline-3">
-<h3 id="org1b8aa4d"><span class="section-number-3">2.6.</span> Компьютер</h3>
+<div id="outline-container-org1172412" class="outline-3">
+<h3 id="org1172412"><span class="section-number-3">2.6.</span> Компьютер</h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
 программно управляемое устройство для обработки информации
 </p>
 </div>
 </div>
-<div id="outline-container-orgb86d87b" class="outline-3">
-<h3 id="orgb86d87b"><span class="section-number-3">2.7.</span> Подпрограмма</h3>
+<div id="outline-container-orgfb68665" class="outline-3">
+<h3 id="orgfb68665"><span class="section-number-3">2.7.</span> Подпрограмма</h3>
 <div class="outline-text-3" id="text-2-7">
 <p>
 некоторый именованный блок кода. <br />
@@ -326,8 +360,8 @@
 </p>
 </div>
 </div>
-<div id="outline-container-orgcc675bd" class="outline-3">
-<h3 id="orgcc675bd"><span class="section-number-3">2.8.</span> Сопрограмма</h3>
+<div id="outline-container-orge4a1f09" class="outline-3">
+<h3 id="orge4a1f09"><span class="section-number-3">2.8.</span> Сопрограмма</h3>
 <div class="outline-text-3" id="text-2-8">
 <p>
 в отличие от подпрограммы работает поочередно с вызывающей программой.
@@ -336,8 +370,8 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org45271d4" class="outline-2">
-<h2 id="org45271d4"><span class="section-number-2">3.</span> Парадигмы программирования</h2>
+<div id="outline-container-org5b76095" class="outline-2">
+<h2 id="org5b76095"><span class="section-number-2">3.</span> Парадигмы программирования</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 совокупность идей и понятий, определяющих стиль написания компьютерных
@@ -346,8 +380,8 @@
 компьютером.
 </p>
 </div>
-<div id="outline-container-orgbbf720f" class="outline-3">
-<h3 id="orgbbf720f"><span class="section-number-3">3.1.</span> Основные группы парадигм</h3>
+<div id="outline-container-orga5b801b" class="outline-3">
+<h3 id="orga5b801b"><span class="section-number-3">3.1.</span> Основные группы парадигм</h3>
 <div class="outline-text-3" id="text-3-1">
 <ol class="org-ol">
 <li>Императивные <br />
@@ -403,10 +437,10 @@
 </ol>
 </div>
 </div>
-<div id="outline-container-org21e91ba" class="outline-3">
-<h3 id="org21e91ba"><span class="section-number-3">3.2.</span> примеры</h3>
+<div id="outline-container-org03cdcc6" class="outline-3">
+<h3 id="org03cdcc6"><span class="section-number-3">3.2.</span> примеры</h3>
 <div class="outline-text-3" id="text-3-2">
-<pre class="example" id="orgb121aed">
+<pre class="example" id="orgf8d7216">
 ИП: sort(array);
 ФП: sorted_list = sort(list)
     sorted_list - константа, т.к. нет присваивания
@@ -415,12 +449,12 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgdb6797f" class="outline-2">
-<h2 id="orgdb6797f"><span class="section-number-2">4.</span> Язык Scheme</h2>
+<div id="outline-container-org01943a8" class="outline-2">
+<h2 id="org01943a8"><span class="section-number-2">4.</span> Язык Scheme</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org5d60142" class="outline-3">
-<h3 id="org5d60142"><span class="section-number-3">4.1.</span> информация о языке</h3>
+<div id="outline-container-org7a5061e" class="outline-3">
+<h3 id="org7a5061e"><span class="section-number-3">4.1.</span> информация о языке</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 Lisp 1950-е годы Джон МакКарти <br />
@@ -439,8 +473,8 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </ul>
 </div>
 </div>
-<div id="outline-container-org422423f" class="outline-3">
-<h3 id="org422423f"><span class="section-number-3">4.2.</span> основные постулаты языка LISP</h3>
+<div id="outline-container-org6225d6f" class="outline-3">
+<h3 id="org6225d6f"><span class="section-number-3">4.2.</span> основные постулаты языка LISP</h3>
 <div class="outline-text-3" id="text-4-2">
 <ol class="org-ol">
 <li>единство кода и данных</li>
@@ -451,8 +485,8 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </ol>
 </div>
 </div>
-<div id="outline-container-org74e6f01" class="outline-3">
-<h3 id="org74e6f01"><span class="section-number-3">4.3.</span> операторы</h3>
+<div id="outline-container-org91f3b6d" class="outline-3">
+<h3 id="org91f3b6d"><span class="section-number-3">4.3.</span> операторы</h3>
 <div class="outline-text-3" id="text-4-3">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&lt;&#1090;&#1077;&#1088;&#1084;&gt; ::= &lt;&#1072;&#1090;&#1086;&#1084;&gt;|&lt;&#1089;&#1087;&#1080;&#1089;&#1086;&#1082;&gt;</span>
@@ -755,11 +789,176 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </div>
 </div>
 </div>
+
+<div id="outline-container-orgc15fc51" class="outline-2">
+<h2 id="orgc15fc51"><span class="section-number-2">5.</span> Лекция 2</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org835163a" class="outline-3">
+<h3 id="org835163a"><span class="section-number-3">5.1.</span> Codestyle in if-statements</h3>
+<div class="outline-text-3" id="text-5-1">
+<ol class="org-ol">
+<li>Условное выражение лучше писать в 3 строки: <br />
+условие <br />
+ветка 1 <br />
+ветка 2</li>
+<li><p>
+Плохой стиль - использовать в ветках #t и #f
+</p>
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1085;&#1077;&#1074;&#1077;&#1088;&#1085;&#1086;</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">if</span> e1
+    e2
+    #t<span style="color: #51afef;">)</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1074;&#1077;&#1088;&#1085;&#1086;</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">or</span> <span style="color: #c678dd;">(</span>not e1<span style="color: #c678dd;">)</span> e2<span style="color: #51afef;">)</span>
+
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1085;&#1077;&#1074;&#1077;&#1088;&#1085;&#1086;</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">if</span> e1
+    #t
+    e2<span style="color: #51afef;">)</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1074;&#1077;&#1088;&#1085;&#1086;</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">or</span> e1 e2<span style="color: #51afef;">)</span>
+
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1085;&#1077;&#1074;&#1077;&#1088;&#1085;&#1086;</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">if</span> e1
+    e2
+    #f<span style="color: #51afef;">)</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1074;&#1077;&#1088;&#1085;&#1086;</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">and</span> e1 e2<span style="color: #51afef;">)</span>
+
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1085;&#1077;&#1074;&#1077;&#1088;&#1085;&#1086;</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">if</span> e1
+    #f
+    e2<span style="color: #51afef;">)</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1074;&#1077;&#1088;&#1085;&#1086;</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">and</span> <span style="color: #c678dd;">(</span>not e1<span style="color: #c678dd;">)</span> e2<span style="color: #51afef;">)</span>
+</pre>
+</div></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org2d84b9a" class="outline-3">
+<h3 id="org2d84b9a"><span class="section-number-3">5.2.</span> Выражение cond</h3>
+<div class="outline-text-3" id="text-5-2">
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">cond</span> <span style="color: #c678dd;">(</span>c1 e1<span style="color: #c678dd;">)</span>
+      <span style="color: #c678dd;">(</span>c2 e2<span style="color: #c678dd;">)</span>
+      ...
+      <span style="color: #c678dd;">(</span>cn en<span style="color: #c678dd;">)</span>
+      <span style="color: #c678dd;">(</span><span style="color: #51afef;">else</span> eE<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1084;&#1086;&#1078;&#1085;&#1086; &#1073;&#1077;&#1079; else</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1076;&#1083;&#1103; &#1087;&#1077;&#1088;&#1074;&#1086;&#1075;&#1086; &#1078;&#1077; &#1091;&#1089;&#1083;&#1086;&#1074;&#1080;&#1103; ci &#1085;&#1077; &#1103;&#1074;&#1083;&#1103;&#1102;&#1097; #f &#1074;&#1099;&#1087;&#1086;&#1083;&#1085;&#1103;&#1077;&#1090; ei, &#1080;&#1085;&#1072;&#1095;&#1077; eE</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1076;&#1086;&#1087;&#1091;&#1089;&#1090;&#1080;&#1084;&#1086; &#1087;&#1080;&#1089;&#1072;&#1090;&#1100; #f #t</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org741ba99" class="outline-3">
+<h3 id="org741ba99"><span class="section-number-3">5.3.</span> Выражение case</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+не будет на экзамене,
+</p>
+</div>
+<div id="outline-container-org20cf151" class="outline-4">
+<h4 id="org20cf151"><span class="section-number-4">5.3.1.</span> <span class="todo TODO">TODO</span> добавить самостоятельно</h4>
+</div>
+</div>
+<div id="outline-container-org22b85dd" class="outline-3">
+<h3 id="org22b85dd"><span class="section-number-3">5.4.</span> Простые (не составные) значения</h3>
+<div class="outline-text-3" id="text-5-4">
+<ul class="org-ul">
+<li>Числа: 5, 100500, 6.12324, -1 1/3&#x2026;</li>
+<li>строки: &ldquo;Hello&rdquo;, можно использовать esape-последовательности языка C</li>
+<li>Логический тип: #t #f</li>
+<li>Литерный (character): #\x, #\newline</li>
+<li>Символьный (symbol): &rsquo;hello</li>
+<li>Процедурный (lambda (&#x2026;))</li>
+<li>&#x2026;</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org66b1134" class="outline-3">
+<h3 id="org66b1134"><span class="section-number-3">5.5.</span> Функции высших порядков</h3>
+<div class="outline-text-3" id="text-5-5">
+<div class="org-src-container">
+<pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1050;&#1086;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1080;&#1103; (lambda ...) &#1089;&#1090;&#1088;&#1086;&#1080;&#1090; &#1087;&#1088;&#1086;&#1094;&#1077;&#1076;&#1091;&#1088;&#1091;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1087;&#1088;&#1080;&#1085;&#1103;&#1090;&#1085;&#1086; "&#1087;&#1088;&#1086;&#1094;&#1077;&#1076;&#1091;&#1088;&#1072;", &#1072; &#1085;&#1077; "&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1103;"</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #c678dd;">(</span><span style="color: #ECBE7B;">&lt;&#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1099;&gt;</span><span style="color: #c678dd;">)</span>
+  <span style="color: #ECBE7B;">&lt;&#1074;&#1099;&#1088;&#1072;&#1078;&#1077;&#1085;&#1080;&#1077;&gt;</span><span style="color: #51afef;">)</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1042; &#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1077; &#1087;&#1086;&#1083;&#1091;&#1095;&#1072;&#1077;&#1090;&#1089;&#1103; &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1077;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1086;&#1077; &#1084;&#1086;&#1078;&#1085;&#1086; &#1074;&#1099;&#1079;&#1074;&#1072;&#1090;&#1100;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1053;&#1072;&#1087;&#1088;&#1080;&#1084;&#1077;&#1088;:</span>
+<span style="color: #51afef;">(</span><span style="color: #c678dd;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #98be65;">(</span>x y<span style="color: #98be65;">)</span>
+   <span style="color: #98be65;">(</span>+ x y<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span>
+ <span style="color: #da8548; font-weight: bold;">5</span> <span style="color: #da8548; font-weight: bold;">3</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt; 8</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #c678dd;">(</span>x y<span style="color: #c678dd;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt;</span>
+  <span style="color: #c678dd;">(</span>+ x y<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;;    </span><span style="color: #5B6268;">-&gt; &#1057;&#1058;&#1056;&#1054;&#1048;&#1058; &#1055;&#1056;&#1054;&#1062;&#1045;&#1044;&#1059;&#1056;&#1059;</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1101;&#1090;&#1072; &#1087;&#1088;&#1086;&#1094;&#1077;&#1076;&#1091;&#1088;&#1072; &#1074;&#1099;&#1079;&#1099;&#1074;&#1072;&#1077;&#1090;&#1089;&#1103; &#1089; 2-&#1084;&#1103; &#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1072;&#1084;&#1080;: 5 3</span>
+
+<span style="color: #51afef;">(</span><span style="color: #c678dd;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #98be65;">(</span>f<span style="color: #98be65;">)</span> <span style="color: #98be65;">(</span>f <span style="color: #a9a1e1;">(</span>f <span style="color: #da8548; font-weight: bold;">2</span><span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1087;&#1088;&#1080;&#1085;&#1080;&#1084;&#1072;&#1077;&#1090; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102; &#1074;&#1099;&#1079;&#1099;&#1074;&#1072;&#1077;&#1090; &#1077;&#1077; &#1089; 2, &#1074;&#1099;&#1079;&#1099;&#1074;&#1072;&#1077;&#1090; &#1077;&#1077; &#1086;&#1090; &#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1072; &#1087;&#1077;&#1088;&#1074;&#1086;&#1075;&#1086; &#1074;&#1099;&#1079;&#1086;&#1074;&#1072;</span>
+ <span style="color: #c678dd;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #98be65;">(</span>x<span style="color: #98be65;">)</span> <span style="color: #98be65;">(</span>* x x<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt; 16</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(2^2)^2 = 16</span>
+
+<span style="color: #51afef;">(</span><span style="color: #c678dd;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #98be65;">(</span>f<span style="color: #98be65;">)</span> <span style="color: #98be65;">(</span>f <span style="color: #a9a1e1;">(</span>f <span style="color: #da8548; font-weight: bold;">81</span><span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span> sqrt<span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt; 3</span>
+
+<span style="color: #51afef;">(</span><span style="color: #c678dd;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #98be65;">(</span>f<span style="color: #98be65;">)</span> <span style="color: #98be65;">(</span>f <span style="color: #a9a1e1;">(</span>f <span style="color: #da8548; font-weight: bold;">81</span><span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span>
+ lambda <span style="color: #c678dd;">(</span>y<span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span>sqrt y<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt; 3</span>
+
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(lambda (x) (g x)) &#1090;&#1086;&#1078;&#1076;. g - &#1093;&#1074;&#1072;&#1090;&#1072;&#1077;&#1090; &#1076;&#1083;&#1103; &#1086;&#1087;&#1080;&#1089;&#1072;&#1085;&#1080;&#1103; &#1083;&#1102;&#1073;&#1086;&#1075;&#1086; &#1072;&#1083;&#1075;&#1086;&#1088;&#1080;&#1090;&#1084;&#1072;</span>
+
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">(lambda (x y) (n x y)) &#1090;&#1086;&#1078;&#1076;. n</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">n - &#1082;&#1086;&#1085;&#1074;&#1077;&#1088;&#1089;&#1080;&#1103; &#1073;&#1091;&#1082;&#1074;&#1072; "&#1101;&#1090;&#1072;"</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">pi</span> <span style="color: #c678dd;">(</span>* <span style="color: #da8548; font-weight: bold;">4</span> <span style="color: #98be65;">(</span>atan <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">square</span>
+  <span style="color: #c678dd;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #98be65;">(</span>x<span style="color: #98be65;">)</span> <span style="color: #98be65;">(</span>* x x<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1090;&#1086; &#1078;&#1077;, &#1095;&#1090;&#1086; &#1080;:</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">square</span> x<span style="color: #c678dd;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt; &#1057;&#1086;&#1082;&#1088;&#1072;&#1097;&#1077;&#1085;&#1085;&#1072;&#1103; &#1079;&#1072;&#1087;&#1080;&#1089;&#1100;</span>
+  <span style="color: #c678dd;">(</span>* x x<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>         <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt; (&#1089;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1081; &#1089;&#1072;&#1093;&#1072;&#1088;)</span>
+
+<span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1082;&#1086;&#1084;&#1087;&#1080;&#1083;&#1080;&#1088;&#1091;&#1077;&#1090;&#1089;&#1103; &#1074; &#1086;&#1076;&#1080;&#1085; &#1080; &#1090;&#1086;&#1090; &#1078;&#1077; &#1082;&#1086;&#1076;</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">f</span> ...<span style="color: #c678dd;">)</span> ...<span style="color: #51afef;">)</span>
+<span style="color: #5B6268;">;;   </span><span style="color: #5B6268;">||</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">f</span> <span style="color: #c678dd;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #98be65;">(</span>...<span style="color: #98be65;">)</span> ...<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">multi-apply</span> f x n<span style="color: #c678dd;">)</span>
+  <span style="color: #c678dd;">(</span><span style="color: #51afef;">if</span> <span style="color: #98be65;">(</span>= n <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #98be65;">)</span>
+      x
+      <span style="color: #98be65;">(</span>f <span style="color: #a9a1e1;">(</span>multi-apply f x <span style="color: #51afef;">(</span>- n <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #51afef;">)</span><span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> = x
+f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> = f<span style="color: #51afef;">(</span>f<span style="color: #c678dd;">(</span>f...f<span style="color: #98be65;">(</span>x<span style="color: #98be65;">)</span>...<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+<span style="color: #5B6268;">;;      </span><span style="color: #5B6268;">n &#1088;&#1072;&#1079;</span>
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">square</span> x<span style="color: #c678dd;">)</span>
+  <span style="color: #c678dd;">(</span>* x x<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+<span style="color: #51afef;">(</span>multi-apply square <span style="color: #da8548; font-weight: bold;">3</span> <span style="color: #da8548; font-weight: bold;">3</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt; 6561 = 3^8</span>
+<span style="color: #51afef;">(</span>multi-apply square <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">4</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt; 65536 = 2^16</span>
+<span style="color: #51afef;">(</span>multi-apply
+ <span style="color: #c678dd;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #98be65;">(</span>z<span style="color: #98be65;">)</span> <span style="color: #98be65;">(</span>+ <span style="color: #da8548; font-weight: bold;">1</span> z<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span>
+ <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">7</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt; 7</span>
+
+<span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">select</span> n<span style="color: #c678dd;">)</span>
+  <span style="color: #c678dd;">(</span><span style="color: #51afef;">cond</span><span style="color: #98be65;">(</span><span style="color: #a9a1e1;">(</span>= n <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #a9a1e1;">)</span> +<span style="color: #98be65;">)</span>
+       <span style="color: #98be65;">(</span><span style="color: #a9a1e1;">(</span>= n <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #a9a1e1;">)</span> -<span style="color: #98be65;">)</span>
+       <span style="color: #98be65;">(</span><span style="color: #a9a1e1;">(</span>= n <span style="color: #da8548; font-weight: bold;">2</span><span style="color: #a9a1e1;">)</span> <span style="color: #a9a1e1;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #51afef;">(</span>x y<span style="color: #51afef;">)</span>
+                  <span style="color: #51afef;">(</span>sqrt <span style="color: #c678dd;">(</span>+ <span style="color: #98be65;">(</span>* x x<span style="color: #98be65;">)</span> <span style="color: #98be65;">(</span>* y y<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span><span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span>
+       <span style="color: #98be65;">(</span><span style="color: #51afef;">else</span> <span style="color: #a9a1e1;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #51afef;">(</span>x y<span style="color: #51afef;">)</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+<span style="color: #51afef;">(</span><span style="color: #c678dd;">(</span>select <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">3</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt; 5</span>
+<span style="color: #51afef;">(</span><span style="color: #c678dd;">(</span>select <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #c678dd;">)</span> <span style="color: #da8548; font-weight: bold;">10</span> <span style="color: #da8548; font-weight: bold;">7</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt; 3</span>
+<span style="color: #51afef;">(</span><span style="color: #c678dd;">(</span>select <span style="color: #da8548; font-weight: bold;">2</span><span style="color: #c678dd;">)</span> <span style="color: #da8548; font-weight: bold;">3</span> <span style="color: #da8548; font-weight: bold;">4</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt; 5</span>
+<span style="color: #51afef;">(</span><span style="color: #c678dd;">(</span>select <span style="color: #da8548; font-weight: bold;">10</span><span style="color: #c678dd;">)</span> <span style="color: #da8548; font-weight: bold;">100</span> <span style="color: #da8548; font-weight: bold;">500</span><span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">-&gt; 0</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: 2021-09-04 Sat 13:50</p>
 <p class="author">Author: Starovoytov Alexandr, Grechko Georgy</p>
-<p class="date">Created: 2021-09-09 Thu 22:23</p>
+<p class="date">Created: 2021-09-11 Sat 15:24</p>
 </div>
 </body>
 </html>
