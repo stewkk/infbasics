@@ -754,7 +754,7 @@ int loop(int n, int i, int res) {
 Операции над списками:
 1. cons
 
-   ,#+begin_src scheme
+   #+begin_src scheme
    (cons <голова> <хвост>) -> <список>
    <голова> - некоторое значение
    <хвост> - список
