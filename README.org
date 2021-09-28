@@ -1,6 +1,5 @@
 #+TITLE: Informatics basics
 #+AUTHOR: Starovoytov Alexandr, Grechko Georgy
-#+DATE: <2021-09-25 Sat 15:50>
 #+SETUPFILE: retro_dark.theme
 
 [[https://github.com/stewkk/iu9-scheme/][Лабы и дз]]
