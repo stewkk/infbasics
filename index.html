@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-09-28 Tue 11:25 -->
+<!-- 2021-10-04 Mon 19:04 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Informatics basics</title>
@@ -226,79 +226,96 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgda3724a">1. Преподаватель</a></li>
-<li><a href="#org80a377a">2. Основные понятия информатики</a>
+<li><a href="#org8fbe5a2">1. Преподаватель</a></li>
+<li><a href="#org667413d">2. Основные понятия информатики</a>
 <ul>
-<li><a href="#org5bf9bfa">2.1. Данные</a></li>
-<li><a href="#org335a8e4">2.2. Алгоритм</a></li>
-<li><a href="#org6f6be30">2.3. Свойства алгоритма:</a></li>
-<li><a href="#org3bd1dbf">2.4. Компьютерная программа</a></li>
-<li><a href="#org8e0a445">2.5. Язык программирования</a></li>
-<li><a href="#orgdc2b28f">2.6. Компьютер</a></li>
-<li><a href="#org225d3c3">2.7. Подпрограмма</a></li>
-<li><a href="#org517454e">2.8. Сопрограмма</a></li>
+<li><a href="#org0490ac8">2.1. Данные</a></li>
+<li><a href="#orgabd9715">2.2. Алгоритм</a></li>
+<li><a href="#org684d670">2.3. Свойства алгоритма:</a></li>
+<li><a href="#orgbae777b">2.4. Компьютерная программа</a></li>
+<li><a href="#orgbdc1899">2.5. Язык программирования</a></li>
+<li><a href="#org0e6bf13">2.6. Компьютер</a></li>
+<li><a href="#org0055ab2">2.7. Подпрограмма</a></li>
+<li><a href="#orgdac1abf">2.8. Сопрограмма</a></li>
 </ul>
 </li>
-<li><a href="#orgecd92c2">3. Парадигмы программирования</a>
+<li><a href="#org18c9295">3. Парадигмы программирования</a>
 <ul>
-<li><a href="#org694e15d">3.1. Основные группы парадигм</a></li>
-<li><a href="#orgfb6fe01">3.2. примеры</a></li>
+<li><a href="#org24d05a7">3.1. Основные группы парадигм</a></li>
+<li><a href="#orgc33b4d1">3.2. примеры</a></li>
 </ul>
 </li>
-<li><a href="#org51cfc15">4. Язык Scheme</a>
+<li><a href="#orgdc98014">4. Язык Scheme</a>
 <ul>
-<li><a href="#orgd3a0ab4">4.1. информация о языке</a></li>
-<li><a href="#orgf82f537">4.2. основные постулаты языка LISP</a></li>
-<li><a href="#orgca1e8b9">4.3. операторы</a></li>
+<li><a href="#orga692228">4.1. информация о языке</a></li>
+<li><a href="#orgfd149bb">4.2. основные постулаты языка LISP</a></li>
+<li><a href="#org188a1c6">4.3. операторы</a></li>
 </ul>
 </li>
-<li><a href="#org84372bc">5. Лекция 2</a>
+<li><a href="#orgb71a1ab">5. Лекция 2</a>
 <ul>
-<li><a href="#orgda1e048">5.1. Codestyle in if-statements</a></li>
-<li><a href="#orgde19f53">5.2. Выражение cond</a></li>
-<li><a href="#org6ab1d35">5.3. Выражение case</a>
+<li><a href="#org894c625">5.1. Codestyle in if-statements</a></li>
+<li><a href="#org0eb8fee">5.2. Выражение cond</a></li>
+<li><a href="#org223c25d">5.3. Выражение case</a>
 <ul>
-<li><a href="#org4a4cff7">5.3.1. <span class="todo TODO">TODO</span> добавить самостоятельно</a></li>
+<li><a href="#org965fdbd">5.3.1. <span class="todo TODO">TODO</span> добавить самостоятельно</a></li>
 </ul>
 </li>
-<li><a href="#orge796539">5.4. Простые (не составные) значения</a></li>
-<li><a href="#orgaed2422">5.5. Функции высших порядков</a></li>
+<li><a href="#orgcb9be95">5.4. Простые (не составные) значения</a></li>
+<li><a href="#org0ef1c20">5.5. Функции высших порядков</a></li>
 </ul>
 </li>
-<li><a href="#orgda67f02">6. Лекция 3</a>
+<li><a href="#org4c4e083">6. Лекция 3</a>
 <ul>
-<li><a href="#org467e321">6.1. let, let* и letrec</a></li>
+<li><a href="#orgef7ec43">6.1. let, let* и letrec</a></li>
 </ul>
 </li>
-<li><a href="#orgd17b346">7. Лекция 4</a>
+<li><a href="#org7b1aa1f">7. Лекция 4</a>
 <ul>
-<li><a href="#org48fe860">7.1. хвостовая рекурсия</a>
+<li><a href="#org0d841c7">7.1. хвостовая рекурсия</a>
 <ul>
-<li><a href="#org1ab6d9b">7.1.1. рекурсия</a></li>
-<li><a href="#org011aaac">7.1.2. как цикл while выражать в виде рекурсии</a></li>
-<li><a href="#orgc0073a6">7.1.3. определение хвостовой рекурсии</a></li>
-<li><a href="#orgcf39409">7.1.4. вызов подпрограммы</a></li>
-<li><a href="#orgcc18161">7.1.5. <span class="todo TODO">TODO</span> fix name</a></li>
-<li><a href="#orga263da3">7.1.6. списки</a></li>
+<li><a href="#org5f2dc50">7.1.1. рекурсия</a></li>
+<li><a href="#orge0f0196">7.1.2. как цикл while выражать в виде рекурсии</a></li>
+<li><a href="#orge3c2643">7.1.3. определение хвостовой рекурсии</a></li>
+<li><a href="#org2522817">7.1.4. вызов подпрограммы</a></li>
+<li><a href="#orga979f96">7.1.5. <span class="todo TODO">TODO</span> fix name</a></li>
+<li><a href="#orgf890eb9">7.1.6. списки</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org36080fc">8. Лекция 5</a>
+<li><a href="#org99eb613">8. Лекция 5</a>
 <ul>
-<li><a href="#org7b08ac8">8.1. функция map</a></li>
-<li><a href="#org0382bc1">8.2. списков не существует (в Scheme)</a></li>
-<li><a href="#org0823492">8.3. Функции с переменным числом параметров</a></li>
+<li><a href="#org9cf62ee">8.1. функция map</a></li>
+<li><a href="#org84a6a57">8.2. списков не существует (в Scheme)</a></li>
+<li><a href="#org8425d5d">8.3. Функции с переменным числом параметров</a></li>
 </ul>
 </li>
-<li><a href="#orgf3291db">9. Лекция 6</a>
+<li><a href="#org4b93954">9. Лекция 6</a>
 <ul>
-<li><a href="#org075af42">9.1. Вычислительная сложность</a>
+<li><a href="#orgbfce5e1">9.1. Вычислительная сложность</a>
 <ul>
-<li><a href="#org0e66f23">9.1.1. <span class="todo TODO">TODO</span> вынести комментарии из кода</a></li>
-<li><a href="#orgab6ea7e">9.1.2. Сравнение на равенство</a></li>
-<li><a href="#orgea334ca">9.1.3. дз сдвигается на неделю (28.09 сдаем только первые 2 задачи)</a></li>
-<li><a href="#org0f9008b">9.1.4. как достигать линейной сложности</a></li>
+<li><a href="#org77eb138">9.1.1. <span class="todo TODO">TODO</span> вынести комментарии из кода</a></li>
+<li><a href="#org8363cfd">9.1.2. Сравнение на равенство</a></li>
+<li><a href="#orgb4366b5">9.1.3. дз сдвигается на неделю (28.09 сдаем только первые 2 задачи)</a></li>
+<li><a href="#org9b74c85">9.1.4. как достигать линейной сложности</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgfb02222">10. Лекция 7</a></li>
+<li><a href="#orgc3d875e">11. Лекция 8</a>
+<ul>
+<li><a href="#сведения-ко-второй-части-домашнего-задания">11.1. Сведения ко второй части домашнего задания</a>
+<ul>
+<li><a href="#тип-данных-vector">11.1.1. Тип данных <code>vector</code></a></li>
+<li><a href="#строки">11.1.2. Строки</a></li>
+</ul>
+</li>
+<li><a href="#императивное-программирование-на-языке-scheme">11.2. Императивное программирование на языке Scheme</a>
+<ul>
+<li><a href="#begin">11.2.1. 1. <code>begin</code></a></li>
+<li><a href="#присваивания-set">11.2.2. 2. Присваивания, <code>set!</code></a></li>
 </ul>
 </li>
 </ul>
@@ -310,8 +327,8 @@
 <a href="https://github.com/stewkk/iu9-scheme/">Лабы и дз</a>
 </p>
 
-<div id="outline-container-orgda3724a" class="outline-2">
-<h2 id="orgda3724a"><span class="section-number-2">1.</span> Преподаватель</h2>
+<div id="outline-container-org8fbe5a2" class="outline-2">
+<h2 id="org8fbe5a2"><span class="section-number-2">1.</span> Преподаватель</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li>Коновалов Александр Владимирович</li>
@@ -321,12 +338,12 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org80a377a" class="outline-2">
-<h2 id="org80a377a"><span class="section-number-2">2.</span> Основные понятия информатики</h2>
+<div id="outline-container-org667413d" class="outline-2">
+<h2 id="org667413d"><span class="section-number-2">2.</span> Основные понятия информатики</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org5bf9bfa" class="outline-3">
-<h3 id="org5bf9bfa"><span class="section-number-3">2.1.</span> Данные</h3>
+<div id="outline-container-org0490ac8" class="outline-3">
+<h3 id="org0490ac8"><span class="section-number-3">2.1.</span> Данные</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 это представление фактов, понятий, инструкций в форме, приемлемой
@@ -335,8 +352,8 @@
 </p>
 </div>
 </div>
-<div id="outline-container-org335a8e4" class="outline-3">
-<h3 id="org335a8e4"><span class="section-number-3">2.2.</span> Алгоритм</h3>
+<div id="outline-container-orgabd9715" class="outline-3">
+<h3 id="orgabd9715"><span class="section-number-3">2.2.</span> Алгоритм</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 это конечная совокупность точно заданных правил решения прозвольного класса
@@ -345,8 +362,8 @@
 </p>
 </div>
 </div>
-<div id="outline-container-org6f6be30" class="outline-3">
-<h3 id="org6f6be30"><span class="section-number-3">2.3.</span> Свойства алгоритма:</h3>
+<div id="outline-container-org684d670" class="outline-3">
+<h3 id="org684d670"><span class="section-number-3">2.3.</span> Свойства алгоритма:</h3>
 <div class="outline-text-3" id="text-2-3">
 <ol class="org-ol">
 <li>Дискретность <br />
@@ -367,32 +384,32 @@
 </ol>
 </div>
 </div>
-<div id="outline-container-org3bd1dbf" class="outline-3">
-<h3 id="org3bd1dbf"><span class="section-number-3">2.4.</span> Компьютерная программа</h3>
+<div id="outline-container-orgbae777b" class="outline-3">
+<h3 id="orgbae777b"><span class="section-number-3">2.4.</span> Компьютерная программа</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 это алгоритм, записанный на некотором языке программирования
 </p>
 </div>
 </div>
-<div id="outline-container-org8e0a445" class="outline-3">
-<h3 id="org8e0a445"><span class="section-number-3">2.5.</span> Язык программирования</h3>
+<div id="outline-container-orgbdc1899" class="outline-3">
+<h3 id="orgbdc1899"><span class="section-number-3">2.5.</span> Язык программирования</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 формальный язык, предназначенный для записи компьютерных программ
 </p>
 </div>
 </div>
-<div id="outline-container-orgdc2b28f" class="outline-3">
-<h3 id="orgdc2b28f"><span class="section-number-3">2.6.</span> Компьютер</h3>
+<div id="outline-container-org0e6bf13" class="outline-3">
+<h3 id="org0e6bf13"><span class="section-number-3">2.6.</span> Компьютер</h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
 программно управляемое устройство для обработки информации
 </p>
 </div>
 </div>
-<div id="outline-container-org225d3c3" class="outline-3">
-<h3 id="org225d3c3"><span class="section-number-3">2.7.</span> Подпрограмма</h3>
+<div id="outline-container-org0055ab2" class="outline-3">
+<h3 id="org0055ab2"><span class="section-number-3">2.7.</span> Подпрограмма</h3>
 <div class="outline-text-3" id="text-2-7">
 <p>
 некоторый именованный блок кода. <br />
@@ -402,8 +419,8 @@
 </p>
 </div>
 </div>
-<div id="outline-container-org517454e" class="outline-3">
-<h3 id="org517454e"><span class="section-number-3">2.8.</span> Сопрограмма</h3>
+<div id="outline-container-orgdac1abf" class="outline-3">
+<h3 id="orgdac1abf"><span class="section-number-3">2.8.</span> Сопрограмма</h3>
 <div class="outline-text-3" id="text-2-8">
 <p>
 в отличие от подпрограммы работает поочередно с вызывающей программой.
@@ -412,8 +429,8 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgecd92c2" class="outline-2">
-<h2 id="orgecd92c2"><span class="section-number-2">3.</span> Парадигмы программирования</h2>
+<div id="outline-container-org18c9295" class="outline-2">
+<h2 id="org18c9295"><span class="section-number-2">3.</span> Парадигмы программирования</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 совокупность идей и понятий, определяющих стиль написания компьютерных
@@ -422,8 +439,8 @@
 компьютером.
 </p>
 </div>
-<div id="outline-container-org694e15d" class="outline-3">
-<h3 id="org694e15d"><span class="section-number-3">3.1.</span> Основные группы парадигм</h3>
+<div id="outline-container-org24d05a7" class="outline-3">
+<h3 id="org24d05a7"><span class="section-number-3">3.1.</span> Основные группы парадигм</h3>
 <div class="outline-text-3" id="text-3-1">
 <ol class="org-ol">
 <li>Императивные <br />
@@ -479,10 +496,10 @@
 </ol>
 </div>
 </div>
-<div id="outline-container-orgfb6fe01" class="outline-3">
-<h3 id="orgfb6fe01"><span class="section-number-3">3.2.</span> примеры</h3>
+<div id="outline-container-orgc33b4d1" class="outline-3">
+<h3 id="orgc33b4d1"><span class="section-number-3">3.2.</span> примеры</h3>
 <div class="outline-text-3" id="text-3-2">
-<pre class="example" id="orge34d21a">
+<pre class="example" id="orgde27716">
 ИП: sort(array);
 ФП: sorted_list = sort(list)
     sorted_list - константа, т.к. нет присваивания
@@ -491,12 +508,12 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org51cfc15" class="outline-2">
-<h2 id="org51cfc15"><span class="section-number-2">4.</span> Язык Scheme</h2>
+<div id="outline-container-orgdc98014" class="outline-2">
+<h2 id="orgdc98014"><span class="section-number-2">4.</span> Язык Scheme</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-orgd3a0ab4" class="outline-3">
-<h3 id="orgd3a0ab4"><span class="section-number-3">4.1.</span> информация о языке</h3>
+<div id="outline-container-orga692228" class="outline-3">
+<h3 id="orga692228"><span class="section-number-3">4.1.</span> информация о языке</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 Lisp 1950-е годы Джон МакКарти <br />
@@ -515,8 +532,8 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf82f537" class="outline-3">
-<h3 id="orgf82f537"><span class="section-number-3">4.2.</span> основные постулаты языка LISP</h3>
+<div id="outline-container-orgfd149bb" class="outline-3">
+<h3 id="orgfd149bb"><span class="section-number-3">4.2.</span> основные постулаты языка LISP</h3>
 <div class="outline-text-3" id="text-4-2">
 <ol class="org-ol">
 <li>единство кода и данных</li>
@@ -527,8 +544,8 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </ol>
 </div>
 </div>
-<div id="outline-container-orgca1e8b9" class="outline-3">
-<h3 id="orgca1e8b9"><span class="section-number-3">4.3.</span> операторы</h3>
+<div id="outline-container-org188a1c6" class="outline-3">
+<h3 id="org188a1c6"><span class="section-number-3">4.3.</span> операторы</h3>
 <div class="outline-text-3" id="text-4-3">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&lt;&#1090;&#1077;&#1088;&#1084;&gt; ::= &lt;&#1072;&#1090;&#1086;&#1084;&gt;|&lt;&#1089;&#1087;&#1080;&#1089;&#1086;&#1082;&gt;</span>
@@ -832,12 +849,12 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </div>
 </div>
 
-<div id="outline-container-org84372bc" class="outline-2">
-<h2 id="org84372bc"><span class="section-number-2">5.</span> Лекция 2</h2>
+<div id="outline-container-orgb71a1ab" class="outline-2">
+<h2 id="orgb71a1ab"><span class="section-number-2">5.</span> Лекция 2</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-orgda1e048" class="outline-3">
-<h3 id="orgda1e048"><span class="section-number-3">5.1.</span> Codestyle in if-statements</h3>
+<div id="outline-container-org894c625" class="outline-3">
+<h3 id="org894c625"><span class="section-number-3">5.1.</span> Codestyle in if-statements</h3>
 <div class="outline-text-3" id="text-5-1">
 <ol class="org-ol">
 <li>Условное выражение лучше писать в 3 строки: <br />
@@ -880,8 +897,8 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </ol>
 </div>
 </div>
-<div id="outline-container-orgde19f53" class="outline-3">
-<h3 id="orgde19f53"><span class="section-number-3">5.2.</span> Выражение cond</h3>
+<div id="outline-container-org0eb8fee" class="outline-3">
+<h3 id="org0eb8fee"><span class="section-number-3">5.2.</span> Выражение cond</h3>
 <div class="outline-text-3" id="text-5-2">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">cond</span> <span style="color: #c678dd;">(</span>c1 e1<span style="color: #c678dd;">)</span>
@@ -895,19 +912,19 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </div>
 </div>
 </div>
-<div id="outline-container-org6ab1d35" class="outline-3">
-<h3 id="org6ab1d35"><span class="section-number-3">5.3.</span> Выражение case</h3>
+<div id="outline-container-org223c25d" class="outline-3">
+<h3 id="org223c25d"><span class="section-number-3">5.3.</span> Выражение case</h3>
 <div class="outline-text-3" id="text-5-3">
 <p>
 не будет на экзамене,
 </p>
 </div>
-<div id="outline-container-org4a4cff7" class="outline-4">
-<h4 id="org4a4cff7"><span class="section-number-4">5.3.1.</span> <span class="todo TODO">TODO</span> добавить самостоятельно</h4>
+<div id="outline-container-org965fdbd" class="outline-4">
+<h4 id="org965fdbd"><span class="section-number-4">5.3.1.</span> <span class="todo TODO">TODO</span> добавить самостоятельно</h4>
 </div>
 </div>
-<div id="outline-container-orge796539" class="outline-3">
-<h3 id="orge796539"><span class="section-number-3">5.4.</span> Простые (не составные) значения</h3>
+<div id="outline-container-orgcb9be95" class="outline-3">
+<h3 id="orgcb9be95"><span class="section-number-3">5.4.</span> Простые (не составные) значения</h3>
 <div class="outline-text-3" id="text-5-4">
 <ul class="org-ul">
 <li>Числа: 5, 100500, 6.12324, -1 1/3&#x2026;</li>
@@ -920,8 +937,8 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </ul>
 </div>
 </div>
-<div id="outline-container-orgaed2422" class="outline-3">
-<h3 id="orgaed2422"><span class="section-number-3">5.5.</span> Функции высших порядков</h3>
+<div id="outline-container-org0ef1c20" class="outline-3">
+<h3 id="org0ef1c20"><span class="section-number-3">5.5.</span> Функции высших порядков</h3>
 <div class="outline-text-3" id="text-5-5">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1050;&#1086;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1080;&#1103; (lambda ...) &#1089;&#1090;&#1088;&#1086;&#1080;&#1090; &#1087;&#1088;&#1086;&#1094;&#1077;&#1076;&#1091;&#1088;&#1091;</span>
@@ -996,8 +1013,8 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div>
 </div>
 </div>
-<div id="outline-container-orgda67f02" class="outline-2">
-<h2 id="orgda67f02"><span class="section-number-2">6.</span> Лекция 3</h2>
+<div id="outline-container-org4c4e083" class="outline-2">
+<h2 id="org4c4e083"><span class="section-number-2">6.</span> Лекция 3</h2>
 <div class="outline-text-2" id="text-6">
 <ul class="org-ul">
 <li>1 порядок - простое возвр значение (не функция)</li>
@@ -1061,8 +1078,8 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div></li>
 </ul>
 </div>
-<div id="outline-container-org467e321" class="outline-3">
-<h3 id="org467e321"><span class="section-number-3">6.1.</span> let, let* и letrec</h3>
+<div id="outline-container-orgef7ec43" class="outline-3">
+<h3 id="orgef7ec43"><span class="section-number-3">6.1.</span> let, let* и letrec</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 Используются для определения вспомогательных переменных
@@ -1151,27 +1168,27 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div>
 </div>
 
-<div id="outline-container-orgd17b346" class="outline-2">
-<h2 id="orgd17b346"><span class="section-number-2">7.</span> Лекция 4</h2>
+<div id="outline-container-org7b1aa1f" class="outline-2">
+<h2 id="org7b1aa1f"><span class="section-number-2">7.</span> Лекция 4</h2>
 <div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-org48fe860" class="outline-3">
-<h3 id="org48fe860"><span class="section-number-3">7.1.</span> хвостовая рекурсия</h3>
+<div id="outline-container-org0d841c7" class="outline-3">
+<h3 id="org0d841c7"><span class="section-number-3">7.1.</span> хвостовая рекурсия</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
 может неявно компилироваться в цикл
 </p>
 </div>
-<div id="outline-container-org1ab6d9b" class="outline-4">
-<h4 id="org1ab6d9b"><span class="section-number-4">7.1.1.</span> рекурсия</h4>
+<div id="outline-container-org5f2dc50" class="outline-4">
+<h4 id="org5f2dc50"><span class="section-number-4">7.1.1.</span> рекурсия</h4>
 <div class="outline-text-4" id="text-7-1-1">
 <p>
 случай, когда задачу можно разбить на одну или несколько меньших задач, подобных исходной
 </p>
 </div>
 </div>
-<div id="outline-container-org011aaac" class="outline-4">
-<h4 id="org011aaac"><span class="section-number-4">7.1.2.</span> как цикл while выражать в виде рекурсии</h4>
+<div id="outline-container-orge0f0196" class="outline-4">
+<h4 id="orge0f0196"><span class="section-number-4">7.1.2.</span> как цикл while выражать в виде рекурсии</h4>
 <div class="outline-text-4" id="text-7-1-2">
 <p>
 цикл - выполнение n-ого количества одинаковых операций <br />
@@ -1196,7 +1213,7 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </ol>
 </div>
 <ol class="org-ol">
-<li><a id="orgb900a61"></a>примеры:<br />
+<li><a id="orge7617e1"></a>примеры:<br />
 <div class="outline-text-5" id="text-7-1-2-1">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">def</span> <span style="color: #c678dd;">gcd</span>(x, y):
@@ -1243,8 +1260,8 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </li>
 </ol>
 </div>
-<div id="outline-container-orgc0073a6" class="outline-4">
-<h4 id="orgc0073a6"><span class="section-number-4">7.1.3.</span> определение хвостовой рекурсии</h4>
+<div id="outline-container-orge3c2643" class="outline-4">
+<h4 id="orge3c2643"><span class="section-number-4">7.1.3.</span> определение хвостовой рекурсии</h4>
 <div class="outline-text-4" id="text-7-1-3">
 <p>
 рекурсивный вызов называется хвостовым, если он выполняется последним
@@ -1255,8 +1272,8 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </ul>
 </div>
 </div>
-<div id="outline-container-orgcf39409" class="outline-4">
-<h4 id="orgcf39409"><span class="section-number-4">7.1.4.</span> вызов подпрограммы</h4>
+<div id="outline-container-org2522817" class="outline-4">
+<h4 id="org2522817"><span class="section-number-4">7.1.4.</span> вызов подпрограммы</h4>
 <div class="outline-text-4" id="text-7-1-4">
 <ol class="org-ol">
 <li>сохраняем контекст</li>
@@ -1271,8 +1288,8 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </p>
 </div>
 </div>
-<div id="outline-container-orgcc18161" class="outline-4">
-<h4 id="orgcc18161"><span class="section-number-4">7.1.5.</span> <span class="todo TODO">TODO</span> fix name</h4>
+<div id="outline-container-orga979f96" class="outline-4">
+<h4 id="orga979f96"><span class="section-number-4">7.1.5.</span> <span class="todo TODO">TODO</span> fix name</h4>
 <div class="outline-text-4" id="text-7-1-5">
 <p>
 в общем случае вызов функции в Scheme работает как вызов подпрограммы
@@ -1286,7 +1303,7 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div>
 </div>
 <ol class="org-ol">
-<li><a id="org7c6f2c4"></a>хвостовая рекурсия<br />
+<li><a id="orgd24abc0"></a>хвостовая рекурсия<br />
 <div class="outline-text-5" id="text-7-1-5-1">
 <p>
 для хвостовых вызовов контекст вычисления можно не сохранять, т.к. он уже не нужен:
@@ -1298,7 +1315,7 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </ul>
 </div>
 </li>
-<li><a id="org97cd6f7"></a>нехвостовая рекурсия<br />
+<li><a id="org6905068"></a>нехвостовая рекурсия<br />
 <div class="outline-text-5" id="text-7-1-5-2">
 <p>
 стек вызовов будет расти <br />
@@ -1309,7 +1326,7 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </p>
 </div>
 </li>
-<li><a id="org84ba6d9"></a>пример нехвостовой рекурсии<br />
+<li><a id="org4e0aa58"></a>пример нехвостовой рекурсии<br />
 <div class="outline-text-5" id="text-7-1-5-3">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">fact</span> n<span style="color: #c678dd;">)</span>
@@ -1324,7 +1341,7 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div>
 </li>
 
-<li><a id="orgcf201b2"></a><span class="todo TODO">TODO</span> написать с goto; пример хвостовой рекурсии<br />
+<li><a id="orgedafdde"></a><span class="todo TODO">TODO</span> написать с goto; пример хвостовой рекурсии<br />
 <div class="outline-text-5" id="text-7-1-5-4">
 <div class="org-src-container">
 <pre class="src src-C"><span style="color: #ECBE7B;">int</span> <span style="color: #c678dd;">fact</span><span style="color: #51afef;">(</span><span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">n</span><span style="color: #51afef;">)</span> <span style="color: #51afef;">{</span>
@@ -1351,7 +1368,7 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div>
 </div>
 </li>
-<li><a id="org61962d6"></a>символы<br />
+<li><a id="orge81eca4"></a>символы<br />
 <div class="outline-text-5" id="text-7-1-5-5">
 <p>
 Если поставим одинарную кавычку перед именем переменной(или ключевым словом), получим символ:
@@ -1368,7 +1385,7 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 <p>
 Цитирование строк, чисел, литер их не измненяет
 </p>
-<pre class="example" id="orgb896e38">
+<pre class="example" id="orgb53521c">
 '1 -&gt; 1
 '"hello" -&gt; "hello"
 '#\a -&gt; #\a
@@ -1380,8 +1397,8 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </li>
 </ol>
 </div>
-<div id="outline-container-orga263da3" class="outline-4">
-<h4 id="orga263da3"><span class="section-number-4">7.1.6.</span> списки</h4>
+<div id="outline-container-orgf890eb9" class="outline-4">
+<h4 id="orgf890eb9"><span class="section-number-4">7.1.6.</span> списки</h4>
 <div class="outline-text-4" id="text-7-1-6">
 <p>
 Список - последовательность значений,
@@ -1474,7 +1491,7 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </div>
 </div>
 <ol class="org-ol">
-<li><a id="org01f20d0"></a>списки можно цитировать<br />
+<li><a id="org772fee2"></a>списки можно цитировать<br />
 <div class="outline-text-6" id="text-7-1-6-0-1">
 <div class="org-src-container">
 <pre class="src src-scheme">'<span style="color: #51afef;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">3</span> <span style="color: #da8548; font-weight: bold;">4</span><span style="color: #51afef;">)</span> -&gt; <span style="color: #51afef;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">3</span> <span style="color: #da8548; font-weight: bold;">4</span><span style="color: #51afef;">)</span>
@@ -1489,8 +1506,8 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </div>
 </div>
 
-<div id="outline-container-org36080fc" class="outline-2">
-<h2 id="org36080fc"><span class="section-number-2">8.</span> Лекция 5</h2>
+<div id="outline-container-org99eb613" class="outline-2">
+<h2 id="org99eb613"><span class="section-number-2">8.</span> Лекция 5</h2>
 <div class="outline-text-2" id="text-8">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">()</span> - &#1087;&#1091;&#1089;&#1090;&#1086;&#1081; &#1089;&#1087;&#1080;&#1089;&#1086;&#1082;
@@ -1546,8 +1563,8 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </pre>
 </div>
 </div>
-<div id="outline-container-org7b08ac8" class="outline-3">
-<h3 id="org7b08ac8"><span class="section-number-3">8.1.</span> функция map</h3>
+<div id="outline-container-org9cf62ee" class="outline-3">
+<h3 id="org9cf62ee"><span class="section-number-3">8.1.</span> функция map</h3>
 <div class="outline-text-3" id="text-8-1">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">map</span> f <span style="color: #c678dd;">(</span>x1 x2 ... xn<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span> -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;">(</span>f x1<span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span>f x2<span style="color: #c678dd;">)</span> .. <span style="color: #c678dd;">(</span>f xn<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
@@ -1582,8 +1599,8 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </div>
 </div>
 </div>
-<div id="outline-container-org0382bc1" class="outline-3">
-<h3 id="org0382bc1"><span class="section-number-3">8.2.</span> списков не существует (в Scheme)</h3>
+<div id="outline-container-org84a6a57" class="outline-3">
+<h3 id="org84a6a57"><span class="section-number-3">8.2.</span> списков не существует (в Scheme)</h3>
 <div class="outline-text-3" id="text-8-2">
 <p>
 А существуют cons-ячейки - пары(кортежи) из двух значений <br />
@@ -1626,8 +1643,8 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </div>
 </div>
 </div>
-<div id="outline-container-org0823492" class="outline-3">
-<h3 id="org0823492"><span class="section-number-3">8.3.</span> Функции с переменным числом параметров</h3>
+<div id="outline-container-org8425d5d" class="outline-3">
+<h3 id="org8425d5d"><span class="section-number-3">8.3.</span> Функции с переменным числом параметров</h3>
 <div class="outline-text-3" id="text-8-3">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">lambda</span> xs ...<span style="color: #51afef;">)</span>
@@ -1661,8 +1678,8 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </div>
 </div>
 
-<div id="outline-container-orgf3291db" class="outline-2">
-<h2 id="orgf3291db"><span class="section-number-2">9.</span> Лекция 6</h2>
+<div id="outline-container-org4b93954" class="outline-2">
+<h2 id="org4b93954"><span class="section-number-2">9.</span> Лекция 6</h2>
 <div class="outline-text-2" id="text-9">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span>apply func xs<span style="color: #51afef;">)</span>
@@ -1680,8 +1697,8 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </div>
 </div>
 
-<div id="outline-container-org075af42" class="outline-3">
-<h3 id="org075af42"><span class="section-number-3">9.1.</span> Вычислительная сложность</h3>
+<div id="outline-container-orgbfce5e1" class="outline-3">
+<h3 id="orgbfce5e1"><span class="section-number-3">9.1.</span> Вычислительная сложность</h3>
 <div class="outline-text-3" id="text-9-1">
 <p>
 Это оценка времени работы алгоритма
@@ -1711,8 +1728,8 @@ O(1) - константное время, не зависит от входны�
 </pre>
 </div>
 </div>
-<div id="outline-container-org0e66f23" class="outline-4">
-<h4 id="org0e66f23"><span class="section-number-4">9.1.1.</span> <span class="todo TODO">TODO</span> вынести комментарии из кода</h4>
+<div id="outline-container-org77eb138" class="outline-4">
+<h4 id="org77eb138"><span class="section-number-4">9.1.1.</span> <span class="todo TODO">TODO</span> вынести комментарии из кода</h4>
 <div class="outline-text-4" id="text-9-1-1">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">sum</span> xs<span style="color: #c678dd;">)</span>
@@ -1740,8 +1757,8 @@ O(1) - константное время, не зависит от входны�
 </div>
 </div>
 </div>
-<div id="outline-container-orgab6ea7e" class="outline-4">
-<h4 id="orgab6ea7e"><span class="section-number-4">9.1.2.</span> Сравнение на равенство</h4>
+<div id="outline-container-org8363cfd" class="outline-4">
+<h4 id="org8363cfd"><span class="section-number-4">9.1.2.</span> Сравнение на равенство</h4>
 <div class="outline-text-4" id="text-9-1-2">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span>= x y<span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1088;&#1072;&#1073;&#1086;&#1090;&#1072;&#1077;&#1090; &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1089; &#1095;&#1080;&#1089;&#1083;&#1086;&#1084;</span>
@@ -1813,8 +1830,8 @@ O(1) - константное время, не зависит от входны�
 </div>
 </div>
 
-<div id="outline-container-orgea334ca" class="outline-4">
-<h4 id="orgea334ca"><span class="section-number-4">9.1.3.</span> дз сдвигается на неделю (28.09 сдаем только первые 2 задачи)</h4>
+<div id="outline-container-orgb4366b5" class="outline-4">
+<h4 id="orgb4366b5"><span class="section-number-4">9.1.3.</span> дз сдвигается на неделю (28.09 сдаем только первые 2 задачи)</h4>
 <div class="outline-text-4" id="text-9-1-3">
 <p>
 множества пишем за O(n<sup>2</sup>), имитируя с помощью списков
@@ -1822,8 +1839,8 @@ O(1) - константное время, не зависит от входны�
 </div>
 </div>
 
-<div id="outline-container-org0f9008b" class="outline-4">
-<h4 id="org0f9008b"><span class="section-number-4">9.1.4.</span> как достигать линейной сложности</h4>
+<div id="outline-container-org9b74c85" class="outline-4">
+<h4 id="org9b74c85"><span class="section-number-4">9.1.4.</span> как достигать линейной сложности</h4>
 <div class="outline-text-4" id="text-9-1-4">
 <p>
 если хотим построить список в определенном порядке, иногда имеет смысл сделать список в обратном порядке, а потом реверсировать
@@ -1871,10 +1888,567 @@ push/reverse - Common Lisp <br />
 </div>
 </div>
 </div>
+
+<div id="outline-container-orgfb02222" class="outline-2">
+<h2 id="orgfb02222"><span class="section-number-2">10.</span> Лекция 7</h2>
+</div>
+<div id="outline-container-orgc3d875e" class="outline-2">
+<h2 id="orgc3d875e"><span class="section-number-2">11.</span> Лекция 8</h2>
+<div class="outline-text-2" id="text-11">
+</div>
+<div id="outline-container-сведения-ко-второй-части-домашнего-задания" class="outline-3">
+<h3 id="сведения-ко-второй-части-домашнего-задания"><span class="section-number-3">11.1.</span> Сведения ко второй части домашнего задания</h3>
+<div class="outline-text-3" id="text-сведения-ко-второй-части-домашнего-задания">
+</div>
+<div id="outline-container-тип-данных-vector" class="outline-4">
+<h4 id="тип-данных-vector"><span class="section-number-4">11.1.1.</span> Тип данных <code>vector</code></h4>
+<div class="outline-text-4" id="text-тип-данных-vector">
+<p>
+Списки &#x2014; основные структуры данных в языках семейства Lisp. В Scheme
+они не примитивный тип, а надстройка над cons-ячейками.
+</p>
+
+<p>
+Списки по своей сути однонаправленны &#x2014; можем их читать слева-направо
+при помощи <code>car</code> и =cdr= и наращивать справа-налево при помощи <code>cons</code>.
+</p>
+
+<p>
+Недостаток списков &#x2014; это производительность при доступе по номеру.
+</p>
+
+<p>
+Есть встроенная функция <code>(list-ref xs n)</code>, возвращающая n-й элемент:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">xs</span> '<span style="color: #c678dd;">(</span>a b c d<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+  <span style="color: #51afef;">(</span>list-ref xs <span style="color: #da8548; font-weight: bold;">2</span><span style="color: #51afef;">)</span>          &#8594;  c
+</pre>
+</div>
+
+<p>
+(элементы нумеруются с нуля)
+</p>
+
+<p>
+Но сложность той же <code>list-ref= --- =O(n)</code>, где =n= &#x2014; номер элемента.
+</p>
+
+<p>
+Для преодоления этого недостатка в Scheme есть встроенный тип данных
+<code>vector</code>, допускающий произвольный доступ к элементам для чтения
+и записи за константное время.
+</p>
+
+<p>
+Нужно помнить, что =vector= &#x2014; ссылочный тип, в том смысле, что если мы
+в две переменные положим один и тот же вектор, то изменения вектора
+через одну переменную будут видны через другую.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">v</span> #<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">3</span> <span style="color: #da8548; font-weight: bold;">4</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+  <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">w</span> v<span style="color: #51afef;">)</span>
+
+  <span style="color: #51afef;">(</span>vector-set! v <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">77</span><span style="color: #51afef;">)</span>
+  w                                  &#8594; #<span style="color: #51afef;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">77</span> <span style="color: #da8548; font-weight: bold;">4</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+Создаётся вектор при помощи литерала <code>#(…)</code>, при этом его содержимое
+неявно цитируется, также как и при <code>'(…)</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">a</span> <span style="color: #da8548; font-weight: bold;">100</span><span style="color: #51afef;">)</span>
+  <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">v</span> #<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">3</span> a <span style="color: #da8548; font-weight: bold;">4</span> <span style="color: #da8548; font-weight: bold;">5</span> <span style="color: #da8548; font-weight: bold;">6</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+  a                                  &#8594; #<span style="color: #51afef;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">3</span> a <span style="color: #da8548; font-weight: bold;">4</span> <span style="color: #da8548; font-weight: bold;">5</span> <span style="color: #da8548; font-weight: bold;">6</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+Т.е. <code>a</code> внутри вектора будет не переменной, а процитированным символом.
+</p>
+
+<p>
+Функция <code>make-vector</code> создаёт новый вектор:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span>make-vector size<span style="color: #51afef;">)</span>
+  <span style="color: #51afef;">(</span>make-vector size init<span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+где <code>size= --- размер вектора, а =init</code> начальное значение элементов.
+Т.к. вектора используются чаще для расчётов, инициализация
+по умолчанию &#x2014; <code>0</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span>make-vector <span style="color: #da8548; font-weight: bold;">10</span><span style="color: #51afef;">)</span>                   &#8594; #<span style="color: #51afef;">(</span><span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #51afef;">)</span>
+  <span style="color: #51afef;">(</span>make-vector <span style="color: #da8548; font-weight: bold;">10</span> 'a<span style="color: #51afef;">)</span>                &#8594; #<span style="color: #51afef;">(</span>a a a a a a a a a a<span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+Предикат типа &#x2014; <code>vector?</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span>vector? #<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">3</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>                 &#8594; #t
+  <span style="color: #51afef;">(</span>vector? '<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">3</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>                 &#8594; #f
+</pre>
+</div>
+
+<p>
+Обращения к элементам вектора:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span>vector-ref v n<span style="color: #51afef;">)</span>                   &#8594; n-&#1081; &#1101;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090; &#1074;&#1077;&#1082;&#1090;&#1086;&#1088;&#1072; <span style="color: #51afef;">(</span>&#1085;&#1072;&#1095;&#1080;&#1085;&#1072;&#1103; &#1089;&#160;<span style="color: #da8548; font-weight: bold;">0</span><span style="color: #51afef;">)</span>
+  <span style="color: #51afef;">(</span>vector-set! v n x<span style="color: #51afef;">)</span>                <span style="color: #5B6268;">; </span><span style="color: #5B6268;">&#1087;&#1088;&#1080;&#1089;&#1074;&#1072;&#1080;&#1074;&#1072;&#1077;&#1090; n-&#1084;&#1091; &#1101;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090;&#1091;</span>
+                                     <span style="color: #5B6268;">; </span><span style="color: #5B6268;">&#1085;&#1086;&#1074;&#1086;&#1077; &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1077; x</span>
+
+  <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">v</span> <span style="color: #c678dd;">(</span>make-vector <span style="color: #da8548; font-weight: bold;">5</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+  v                                  &#8594; #<span style="color: #51afef;">(</span><span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #51afef;">)</span>
+  <span style="color: #51afef;">(</span>vector-ref v <span style="color: #da8548; font-weight: bold;">2</span><span style="color: #51afef;">)</span>                   &#8594; <span style="color: #da8548; font-weight: bold;">0</span>
+  <span style="color: #51afef;">(</span>vector-set! v <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">100</span><span style="color: #51afef;">)</span>
+  v                                  &#8594; #<span style="color: #51afef;">(</span><span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">100</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #51afef;">)</span>
+  <span style="color: #51afef;">(</span>vector-ref v <span style="color: #da8548; font-weight: bold;">2</span><span style="color: #51afef;">)</span>                   &#8594; <span style="color: #da8548; font-weight: bold;">100</span>
+</pre>
+</div>
+
+<p>
+Что будет?
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">m</span> <span style="color: #c678dd;">(</span>make-vector <span style="color: #da8548; font-weight: bold;">4</span> <span style="color: #98be65;">(</span>make-vector <span style="color: #da8548; font-weight: bold;">4</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+На первый взгляд, мы создаём квадратную матрицу. На самом деле, мы
+создаём два вектора, все элементы одного вектора содержат <code>0</code>, все
+элементы второго &#x2014; ссылку на первый.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  m              &#8594; #<span style="color: #51afef;">(</span>#<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span> #<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span> #<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span> #<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+  <span style="color: #51afef;">(</span>vector-set! <span style="color: #c678dd;">(</span>vector-ref m <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #51afef;">)</span>
+  m              &#8594; #<span style="color: #51afef;">(</span>#<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span> #<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span> #<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span> #<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+Вектор можно преобразовать в список и наоборот
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span>vector-&gt;list #<span style="color: #c678dd;">(</span>a b c<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>            &#8594; <span style="color: #51afef;">(</span>a b c<span style="color: #51afef;">)</span>
+  <span style="color: #51afef;">(</span>list-&gt;vector '<span style="color: #c678dd;">(</span>a b c<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>            &#8594; #<span style="color: #51afef;">(</span>a b c<span style="color: #51afef;">)</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-строки" class="outline-4">
+<h4 id="строки"><span class="section-number-4">11.1.2.</span> Строки</h4>
+<div class="outline-text-4" id="text-строки">
+<p>
+Тип данных <code>string</code> хранит в себе последовательность литер (characters).
+Литерал для строки &#x2014; текст, записанный внутри двойных кавычек:
+<code>"Hello!"</code>.
+</p>
+
+<p>
+Внутри строк допустимы стандартные escape-последовательности языка Си:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #98be65;">"one line\ntwo lines"</span>              <span style="color: #5B6268;">; </span><span style="color: #5B6268;">&#1089;&#1090;&#1088;&#1086;&#1082;&#1072; &#1089;&#1086;&#160;&#1079;&#1085;&#1072;&#1082;&#1086;&#1084; &#1087;&#1077;&#1088;&#1077;&#1074;&#1086;&#1076;&#1072; &#1089;&#1090;&#1088;&#1086;&#1082;&#1080;</span>
+  <span style="color: #98be65;">"I say: \"Hello!\""</span>                <span style="color: #5B6268;">; </span><span style="color: #5B6268;">&#1079;&#1072;&#1101;&#1082;&#1088;&#1072;&#1085;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1085;&#1072;&#1103; &#1082;&#1072;&#1074;&#1099;&#1095;&#1082;&#1072;</span>
+</pre>
+</div>
+
+<p>
+Операции над строками:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span>make-string <span style="color: #da8548; font-weight: bold;">10</span> #\a<span style="color: #51afef;">)</span>               &#8594; <span style="color: #98be65;">"aaaaaaaaaa"</span>
+  <span style="color: #51afef;">(</span>string-ref <span style="color: #98be65;">"abcdef"</span> <span style="color: #da8548; font-weight: bold;">3</span><span style="color: #51afef;">)</span>            &#8594; #\d               <span style="color: #5B6268;">; </span><span style="color: #5B6268;">&#1089;&#1095;&#1105;&#1090; &#1090;&#1086;&#1078;&#1077; &#1089; 0</span>
+  <span style="color: #51afef;">(</span>string-&gt;list <span style="color: #98be65;">"abcdef"</span><span style="color: #51afef;">)</span>            &#8594; <span style="color: #51afef;">(</span>#\a #\b #\c #\d #\e #\f<span style="color: #51afef;">)</span>
+  <span style="color: #51afef;">(</span>list-&gt;string '<span style="color: #c678dd;">(</span>#\H #\e #\l #\l #\o<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span> &#8594; <span style="color: #98be65;">"Hello"</span>
+  <span style="color: #51afef;">(</span>string? <span style="color: #98be65;">"hello"</span><span style="color: #51afef;">)</span>                  &#8594; #t
+  <span style="color: #51afef;">(</span>string? 'hello<span style="color: #51afef;">)</span>                   &#8594; #f
+  <span style="color: #51afef;">(</span>string-append <span style="color: #98be65;">"&#1096;&#1090;&#1091;&#1082;&#1072;"</span> <span style="color: #98be65;">"&#1090;&#1091;&#1088;&#1082;&#1072;"</span><span style="color: #51afef;">)</span>    &#8594; <span style="color: #98be65;">"&#1096;&#1090;&#1091;&#1082;&#1072;&#1090;&#1091;&#1088;&#1082;&#1072;"</span>
+</pre>
+</div>
+
+<p>
+Литеры задаются так:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  #\x            <span style="color: #5B6268;">; </span><span style="color: #5B6268;">&#1073;&#1091;&#1082;&#1074;&#1072; &#171;&#1080;&#1082;&#1089;&#187;</span>
+  #\<span style="color: #da8548; font-weight: bold;">7</span>            <span style="color: #5B6268;">; </span><span style="color: #5B6268;">&#1094;&#1080;&#1092;&#1088;&#1072; &#171;&#1089;&#1077;&#1084;&#1100;&#187;</span>
+  #\(            <span style="color: #5B6268;">; </span><span style="color: #5B6268;">&#1083;&#1080;&#1090;&#1077;&#1088;&#1072; &#171;&#1082;&#1088;&#1091;&#1075;&#1083;&#1072;&#1103; &#1089;&#1082;&#1086;&#1073;&#1082;&#1072;&#187;</span>
+  #\space        <span style="color: #5B6268;">; </span><span style="color: #5B6268;">&#1087;&#1088;&#1086;&#1073;&#1077;&#1083;</span>
+  #\newline      <span style="color: #5B6268;">; </span><span style="color: #5B6268;">\n &#1074;&#160;&#1057;&#1080;</span>
+  #\return       <span style="color: #5B6268;">; </span><span style="color: #5B6268;">\r &#1074;&#160;&#1057;&#1080;</span>
+  #\tab          <span style="color: #5B6268;">; </span><span style="color: #5B6268;">\t &#1074;&#160;&#1057;&#1080;</span>
+  #\             <span style="color: #5B6268;">; </span><span style="color: #5B6268;">&#1093;&#1086;&#1090;&#1077;&#1083;&#1080; &#1087;&#1088;&#1086;&#1073;&#1077;&#1083;, &#1085;&#1086;&#160;&#1087;&#1086;&#1083;&#1091;&#1095;&#1080;&#1083;&#1080; &#1086;&#1096;&#1080;&#1073;&#1082;&#1091; &#1089;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;&#1072;#+end_src</span>
+
+&#1042;&#160;&#1044;&#1047; &#1087;&#1086;&#1090;&#1088;&#1077;&#1073;&#1091;&#1077;&#1090;&#1089;&#1103; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1103; =<span style="color: #51afef;">(</span>whitespace? char<span style="color: #51afef;">)</span>=, &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1097;&#1072;&#1102;&#1097;&#1072;&#1103; &#1080;&#1089;&#1090;&#1080;&#1085;&#1091;, &#1077;&#1089;&#1083;&#1080;
+&#1083;&#1080;&#1090;&#1077;&#1088;&#1072;&#160;--- &#1087;&#1088;&#1086;&#1073;&#1077;&#1083;&#1100;&#1085;&#1072;&#1103; <span style="color: #51afef;">(</span>&#1087;&#1088;&#1086;&#1073;&#1077;&#1083;, &#1090;&#1072;&#1073;&#1091;&#1083;&#1103;&#1094;&#1080;&#1103;, &#1085;&#1086;&#1074;&#1072;&#1103; &#1089;&#1090;&#1088;&#1086;&#1082;&#1072;, &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1090;
+&#1082;&#1072;&#1088;&#1077;&#1090;&#1082;&#1080;<span style="color: #51afef;">)</span>.
+
+#+begin_src scheme
+  <span style="color: #51afef;">(</span>whitespace? #\space<span style="color: #51afef;">)</span>              &#8594; #t
+  <span style="color: #51afef;">(</span>whitespace? #\z<span style="color: #51afef;">)</span>                  &#8594; #f
+  <span style="color: #51afef;">(</span>whitespace? <span style="color: #c678dd;">(</span>string-ref <span style="color: #98be65;">"a b"</span> <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span> &#8594; #t
+</pre>
+</div>
+
+<p>
+Выбор подстрок <code>(substring …)</code> изучить самостоятельно.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-императивное-программирование-на-языке-scheme" class="outline-3">
+<h3 id="императивное-программирование-на-языке-scheme"><span class="section-number-3">11.2.</span> Императивное программирование на языке Scheme</h3>
+<div class="outline-text-3" id="text-императивное-программирование-на-языке-scheme">
+<p>
+До этого мы рассматривали декларативное программирование, в котором
+у нас не было:
+</p>
+
+<ul class="org-ul">
+<li>присваиваний,</li>
+<li>циклов,</li>
+<li>процедур с побочными эффектами,</li>
+<li>недетерминированных процедур &#x2014; процедур, результат которых
+определяется не только значениями аргументов.</li>
+</ul>
+
+<p>
+В Scheme есть средства не только декларативного программирования,
+но и императивного. Т.е. можно и присваивать переменным новые значения,
+и пользоваться процедурами, которые вызываются не только ради
+возвращаемого значения, но и дополнительных действий (побочного
+эффекта).
+</p>
+
+<p>
+В Scheme не определён порядок вычисления аргументов в вызове процедуры.
+Но в императивном программировании порядок вычисления (а вернее,
+выполнения) операций существенен. Поэтому в первую очередь нам нужно
+средство упорядочивания выполнения операций.
+</p>
+</div>
+
+<div id="outline-container-begin" class="outline-4">
+<h4 id="begin"><span class="section-number-4">11.2.1.</span> 1. <code>begin</code></h4>
+<div class="outline-text-4" id="text-begin">
+<p>
+Если мы имеем вызов вида
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span>f <span style="color: #c678dd;">(</span>g &#8230;<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+то в Scheme гарантируется, что сначала вычислится <code>(g …)</code>, а потом
+<code>(f …)</code>. (В Haskell не гарантируется.)
+</p>
+
+<p>
+Но если мы имеем вызов вида
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span>f <span style="color: #c678dd;">(</span>g &#8230;<span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span>h &#8230;<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+то, что выполнится раньше &#x2014; <code>g</code> или =h= &#x2014; зависит от реализации.
+Разные реализации Scheme могут вычислять аргументы справа налево или
+слева направо.
+</p>
+
+<p>
+Но если нужно вывести на печать несколько значений, то порядок вызова
+будет существенен: функции должны вызваться в правильном порядке. Можно
+извратиться, например, конструкцией <code>let*</code>:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span><span style="color: #51afef;">let*</span> <span style="color: #c678dd;">(</span><span style="color: #98be65;">(</span>x <span style="color: #a9a1e1;">(</span>display <span style="color: #98be65;">"Hello, "</span><span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span>
+         <span style="color: #98be65;">(</span>y <span style="color: #a9a1e1;">(</span>display <span style="color: #98be65;">"World!"</span><span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span>
+    #f<span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+Но это избыточно, т.к. в Scheme уже есть особая форма <code>(begin …)</code>,
+гарантирующая порядок вычисления:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span><span style="color: #51afef;">begin</span>
+    <span style="color: #c678dd;">(</span>display <span style="color: #98be65;">"Hello, "</span><span style="color: #c678dd;">)</span>
+    <span style="color: #c678dd;">(</span>display <span style="color: #98be65;">"World!"</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+(На самом деле <code>begin</code> может быть библиотечным макросом, который неявно
+трансформируется в тот же <code>let*</code>).
+</p>
+
+<p>
+<code>begin</code> выполняет действия в том порядке, в котором они записаны.
+</p>
+
+<p>
+Результатом <code>begin</code>&rsquo;а является результат последнего действия.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span><span style="color: #51afef;">begin</span> <span style="color: #c678dd;">(</span>* <span style="color: #da8548; font-weight: bold;">7</span> <span style="color: #da8548; font-weight: bold;">3</span><span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span>+ <span style="color: #da8548; font-weight: bold;">6</span> <span style="color: #da8548; font-weight: bold;">4</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>            &#8594; <span style="color: #da8548; font-weight: bold;">10</span>
+</pre>
+</div>
+
+<p>
+Результат умножения будет отброшен, умножение тут вообще бессмысленно.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="неявный-begin"></a>Неявный <code>begin</code><br />
+<div class="outline-text-5" id="text-неявный-begin">
+<p>
+Некоторые конструкции Scheme позволяют записывать несколько действий
+подряд, например <code>lambda</code>, <code>define</code>, определяющий процедуру, <code>cond</code>,
+<code>let</code>, <code>let*</code>, <code>letrec</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #5B6268;">; </span><span style="color: #5B6268;">&#1089;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1081; &#1089;&#1072;&#1093;&#1072;&#1088;             ; &#1101;&#1082;&#1074;&#1080;&#1074;&#1072;&#1083;&#1077;&#1085;&#1090;&#1077;&#1085;</span>
+  <span style="color: #51afef;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #c678dd;">(</span>x y<span style="color: #c678dd;">)</span>                      <span style="color: #c678dd;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #98be65;">(</span>x y<span style="color: #98be65;">)</span>
+    <span style="color: #98be65;">(</span>display x<span style="color: #98be65;">)</span>                         <span style="color: #98be65;">(</span><span style="color: #51afef;">begin</span>
+    <span style="color: #a9a1e1;">(</span>display y<span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span>                           <span style="color: #98be65;">(</span>display x<span style="color: #98be65;">)</span>
+                                           <span style="color: #98be65;">(</span>display y<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+  <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">f</span> x y<span style="color: #c678dd;">)</span>                    <span style="color: #c678dd;">(</span><span style="color: #51afef;">define</span> <span style="color: #98be65;">(</span><span style="color: #c678dd;">f</span> x y<span style="color: #98be65;">)</span>
+    <span style="color: #98be65;">(</span>display x<span style="color: #98be65;">)</span>                         <span style="color: #98be65;">(</span><span style="color: #51afef;">begin</span>
+    <span style="color: #a9a1e1;">(</span>display y<span style="color: #a9a1e1;">)</span>                            <span style="color: #a9a1e1;">(</span>display x<span style="color: #a9a1e1;">)</span>
+    <span style="color: #a9a1e1;">(</span>+ x y<span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span>                               <span style="color: #98be65;">(</span>display y<span style="color: #98be65;">)</span>
+                                           <span style="color: #98be65;">(</span>+ x y<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+  <span style="color: #51afef;">(</span><span style="color: #51afef;">let</span> <span style="color: #c678dd;">(</span><span style="color: #98be65;">(</span>x <span style="color: #da8548; font-weight: bold;">100</span><span style="color: #98be65;">)</span>                      <span style="color: #98be65;">(</span><span style="color: #51afef;">let</span> <span style="color: #a9a1e1;">(</span><span style="color: #51afef;">(</span>x <span style="color: #da8548; font-weight: bold;">100</span><span style="color: #51afef;">)</span>
+        <span style="color: #51afef;">(</span>y <span style="color: #da8548; font-weight: bold;">200</span><span style="color: #51afef;">)</span><span style="color: #a9a1e1;">)</span>                           <span style="color: #a9a1e1;">(</span>y <span style="color: #da8548; font-weight: bold;">200</span><span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span>
+    <span style="color: #98be65;">(</span>display x<span style="color: #98be65;">)</span>                        <span style="color: #98be65;">(</span><span style="color: #51afef;">begin</span>
+    <span style="color: #a9a1e1;">(</span>display y<span style="color: #a9a1e1;">)</span>                          <span style="color: #a9a1e1;">(</span>display x<span style="color: #a9a1e1;">)</span>
+    <span style="color: #a9a1e1;">(</span>* x y<span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span>                             <span style="color: #98be65;">(</span>display y<span style="color: #98be65;">)</span>
+                                         <span style="color: #98be65;">(</span>* x y<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+  <span style="color: #51afef;">(</span><span style="color: #51afef;">cond</span> <span style="color: #c678dd;">(</span><span style="color: #98be65;">(</span>&gt; x y<span style="color: #98be65;">)</span>  <span style="color: #98be65;">(</span>display x<span style="color: #98be65;">)</span> <span style="color: #98be65;">(</span>- x y<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span>
+        &#8230;<span style="color: #51afef;">)</span>
+
+  <span style="color: #51afef;">(</span><span style="color: #51afef;">cond</span> <span style="color: #c678dd;">(</span><span style="color: #98be65;">(</span>&gt; x y<span style="color: #98be65;">)</span>  <span style="color: #98be65;">(</span><span style="color: #51afef;">begin</span> <span style="color: #a9a1e1;">(</span>display x<span style="color: #a9a1e1;">)</span> <span style="color: #a9a1e1;">(</span>- x y<span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span>
+       &#8230;<span style="color: #51afef;">)</span>
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-присваивания-set" class="outline-4">
+<h4 id="присваивания-set"><span class="section-number-4">11.2.2.</span> 2. Присваивания, <code>set!</code></h4>
+<div class="outline-text-4" id="text-присваивания-set">
+<p>
+Синтаксис:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">   <span style="color: #51afef;">(</span><span style="color: #51afef;">set!</span> &#8249;&#1080;&#1084;&#1103; &#1087;&#1077;&#1088;&#1077;&#1084;&#1077;&#1085;&#1085;&#1086;&#1081;&#8250; &#8249;&#1074;&#1099;&#1088;&#1072;&#1078;&#1077;&#1085;&#1080;&#1077;&#8250;<span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+Переменной может быть как имя, объявленное при помощи <code>define</code>, так
+и параметр процедуры или имя, определённое <code>let</code>, <code>let*</code>, <code>letrec</code>.
+</p>
+
+<p>
+Например
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">   <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">counter</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #51afef;">)</span>
+   counter                           &#8594; <span style="color: #da8548; font-weight: bold;">0</span>
+   <span style="color: #51afef;">(</span><span style="color: #51afef;">set!</span> counter <span style="color: #da8548; font-weight: bold;">100</span><span style="color: #51afef;">)</span>
+   counter                           &#8594; <span style="color: #da8548; font-weight: bold;">100</span>
+   <span style="color: #51afef;">(</span><span style="color: #51afef;">set!</span> counter <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #51afef;">)</span>
+
+   <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">next</span><span style="color: #c678dd;">)</span>
+     <span style="color: #c678dd;">(</span><span style="color: #51afef;">set!</span> counter <span style="color: #98be65;">(</span>+ counter <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span>
+     counter<span style="color: #51afef;">)</span>
+
+   <span style="color: #51afef;">(</span>next<span style="color: #51afef;">)</span>                            &#8594; <span style="color: #da8548; font-weight: bold;">1</span>
+   <span style="color: #51afef;">(</span>next<span style="color: #51afef;">)</span>                            &#8594; <span style="color: #da8548; font-weight: bold;">2</span>
+   <span style="color: #51afef;">(</span>next<span style="color: #51afef;">)</span>                            &#8594; <span style="color: #da8548; font-weight: bold;">3</span>
+   counter                           &#8594; <span style="color: #da8548; font-weight: bold;">3</span>
+   <span style="color: #51afef;">(</span><span style="color: #51afef;">set!</span> counter <span style="color: #da8548; font-weight: bold;">7</span><span style="color: #51afef;">)</span>
+   <span style="color: #51afef;">(</span>next<span style="color: #51afef;">)</span>                            &#8594; <span style="color: #da8548; font-weight: bold;">8</span>
+</pre>
+</div>
+</div>
+
+<ol class="org-ol">
+<li><a id="статические-переменные-в-scheme"></a>Статические переменные в Scheme<br />
+<div class="outline-text-5" id="text-статические-переменные-в-scheme">
+<p>
+В языке Си есть понятие *статическая переменная* &#x2014; глобальная
+переменная, видимость которой ограничена одной функцией. Объявляется она
+с использованием ключевого слова <code>static</code>:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  void f<span style="color: #51afef;">()</span> <span style="color: #51afef;">{</span>
+    int x = <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #5B6268;">;</span>
+    static int y = <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #5B6268;">;</span>
+
+    x = x + <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #5B6268;">;</span>
+    y = y + <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #5B6268;">;</span>
+
+    printf<span style="color: #c678dd;">(</span><span style="color: #98be65;">"x = %d\n"</span>, x<span style="color: #c678dd;">)</span><span style="color: #5B6268;">;</span>
+    printf<span style="color: #c678dd;">(</span><span style="color: #98be65;">"y = %d\n"</span>, y<span style="color: #c678dd;">)</span><span style="color: #5B6268;">;</span>
+  <span style="color: #51afef;">}</span>
+
+  int main<span style="color: #51afef;">(</span>int argc, char **argv<span style="color: #51afef;">)</span> <span style="color: #51afef;">{</span>
+    f<span style="color: #c678dd;">()</span><span style="color: #5B6268;">;</span>
+    f<span style="color: #c678dd;">()</span><span style="color: #5B6268;">;</span>
+    f<span style="color: #c678dd;">()</span><span style="color: #5B6268;">;</span>
+
+    return <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #5B6268;">;</span>
+  <span style="color: #51afef;">}</span>
+</pre>
+</div>
+
+<p>
+Напечатается:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  x = <span style="color: #da8548; font-weight: bold;">1</span>
+  y = <span style="color: #da8548; font-weight: bold;">1</span>
+  x = <span style="color: #da8548; font-weight: bold;">1</span>
+  y = <span style="color: #da8548; font-weight: bold;">2</span>
+  x = <span style="color: #da8548; font-weight: bold;">1</span>
+  y = <span style="color: #da8548; font-weight: bold;">3</span>
+</pre>
+</div>
+
+<p>
+Значение статической переменной сохраняется между вызовами функции
+(сравните выше поведение <code>x</code> и =y=).
+</p>
+
+<p>
+В языке Scheme статических переменных нет, но есть идиома (приём
+программирования), позволяющая их имитировать: т.е. создавать
+переменные, видимые только внутри функции, но при этом сохраняющие
+значение между вызовами.
+</p>
+
+<p>
+Вспомним, что конструкция
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">f</span> x y<span style="color: #c678dd;">)</span>
+    &#8249;&#1090;&#1077;&#1083;&#1086; &#1087;&#1088;&#1086;&#1094;&#1077;&#1076;&#1091;&#1088;&#1099;&#8250;<span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+есть синтаксический сахар для
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">f</span>
+    <span style="color: #c678dd;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #98be65;">(</span>x y<span style="color: #98be65;">)</span>
+      &#8249;&#1090;&#1077;&#1083;&#1086; &#1087;&#1088;&#1086;&#1094;&#1077;&#1076;&#1091;&#1088;&#1099;&#8250;<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+Что будет, если мы эту лямбду обернём в let-конструкцию?
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">f</span>
+    <span style="color: #c678dd;">(</span><span style="color: #51afef;">let</span> <span style="color: #98be65;">(</span>&#8249;&#1086;&#1073;&#1098;&#1103;&#1074;&#1083;&#1077;&#1085;&#1080;&#1103; &#1082;&#1072;&#1082;&#1080;&#1093;-&#1090;&#1086; &#1087;&#1077;&#1088;&#1077;&#1084;&#1077;&#1085;&#1085;&#1099;&#1093;&#8250;<span style="color: #98be65;">)</span>
+      <span style="color: #98be65;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #a9a1e1;">(</span>x y<span style="color: #a9a1e1;">)</span>
+        &#8249;&#1090;&#1077;&#1083;&#1086; &#1087;&#1088;&#1086;&#1094;&#1077;&#1076;&#1091;&#1088;&#1099;&#8250;<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+</pre>
+</div>
+
+<p>
+Let-конструкция свяжет с переменными значения и вернёт лямбду как свой
+результат. Переменная <code>f</code> будет связана с лямбдой. Что же будет
+с переменными?
+</p>
+
+<p>
+Эти переменные будут видимы внутри лямбды, не будут видимы вне
+конструкции let, их значения будут сохраняться между вызовами.
+</p>
+
+<p>
+Эти переменные будут вести себя как статические переменные в Си.
+</p>
+
+<p>
+Перепишем пример с =(next)=, чтобы переменная <code>counter</code> была
+статической.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-scheme">  <span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">next</span>
+    <span style="color: #c678dd;">(</span><span style="color: #51afef;">let</span> <span style="color: #98be65;">(</span><span style="color: #a9a1e1;">(</span>counter <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #a9a1e1;">)</span><span style="color: #98be65;">)</span>
+      <span style="color: #98be65;">(</span><span style="color: #51afef;">lambda</span> <span style="color: #a9a1e1;">()</span>
+        <span style="color: #a9a1e1;">(</span><span style="color: #51afef;">set!</span> counter <span style="color: #51afef;">(</span>+ counter <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #51afef;">)</span><span style="color: #a9a1e1;">)</span>
+        counter<span style="color: #98be65;">)</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
+
+  <span style="color: #51afef;">(</span>next<span style="color: #51afef;">)</span>                             &#8594; <span style="color: #da8548; font-weight: bold;">1</span>
+  <span style="color: #51afef;">(</span>next<span style="color: #51afef;">)</span>                             &#8594; <span style="color: #da8548; font-weight: bold;">2</span>
+  <span style="color: #51afef;">(</span>next<span style="color: #51afef;">)</span>                             &#8594; <span style="color: #da8548; font-weight: bold;">3</span>
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Starovoytov Alexandr, Grechko Georgy</p>
-<p class="date">Created: 2021-09-28 Tue 11:25</p>
+<p class="date">Created: 2021-10-04 Mon 19:04</p>
 </div>
 </body>
 </html>
