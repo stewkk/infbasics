@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-10-04 Mon 19:04 -->
+<!-- 2021-10-10 Sun 21:37 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Informatics basics</title>
@@ -226,96 +226,70 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org8fbe5a2">1. Преподаватель</a></li>
-<li><a href="#org667413d">2. Основные понятия информатики</a>
+<li><a href="#org63bb6e4">1. DEPRECATED in favor of the Konovalov&rsquo;s lectures</a>
 <ul>
-<li><a href="#org0490ac8">2.1. Данные</a></li>
-<li><a href="#orgabd9715">2.2. Алгоритм</a></li>
-<li><a href="#org684d670">2.3. Свойства алгоритма:</a></li>
-<li><a href="#orgbae777b">2.4. Компьютерная программа</a></li>
-<li><a href="#orgbdc1899">2.5. Язык программирования</a></li>
-<li><a href="#org0e6bf13">2.6. Компьютер</a></li>
-<li><a href="#org0055ab2">2.7. Подпрограмма</a></li>
-<li><a href="#orgdac1abf">2.8. Сопрограмма</a></li>
+<li><a href="#org4268d17">1.1. Преподаватель</a></li>
+<li><a href="#orgfafcecb">1.2. Основные понятия информатики</a>
+<ul>
+<li><a href="#org0979bc2">1.2.1. Данные</a></li>
+<li><a href="#org59de8f3">1.2.2. Алгоритм</a></li>
+<li><a href="#orge50e07a">1.2.3. Свойства алгоритма:</a></li>
+<li><a href="#org192b686">1.2.4. Компьютерная программа</a></li>
+<li><a href="#orgc705ae6">1.2.5. Язык программирования</a></li>
+<li><a href="#org9a20bb3">1.2.6. Компьютер</a></li>
+<li><a href="#orgbcaa081">1.2.7. Подпрограмма</a></li>
+<li><a href="#org0d4537a">1.2.8. Сопрограмма</a></li>
 </ul>
 </li>
-<li><a href="#org18c9295">3. Парадигмы программирования</a>
+<li><a href="#orgab32cef">1.3. Парадигмы программирования</a>
 <ul>
-<li><a href="#org24d05a7">3.1. Основные группы парадигм</a></li>
-<li><a href="#orgc33b4d1">3.2. примеры</a></li>
+<li><a href="#orgcc7453b">1.3.1. Основные группы парадигм</a></li>
+<li><a href="#orgac59ae0">1.3.2. примеры</a></li>
 </ul>
 </li>
-<li><a href="#orgdc98014">4. Язык Scheme</a>
+<li><a href="#org2a16775">1.4. Язык Scheme</a>
 <ul>
-<li><a href="#orga692228">4.1. информация о языке</a></li>
-<li><a href="#orgfd149bb">4.2. основные постулаты языка LISP</a></li>
-<li><a href="#org188a1c6">4.3. операторы</a></li>
+<li><a href="#org7be76fb">1.4.1. информация о языке</a></li>
+<li><a href="#org82fad29">1.4.2. основные постулаты языка LISP</a></li>
+<li><a href="#orgc70dd33">1.4.3. операторы</a></li>
 </ul>
 </li>
-<li><a href="#orgb71a1ab">5. Лекция 2</a>
+<li><a href="#org5830546">1.5. Лекция 2</a>
 <ul>
-<li><a href="#org894c625">5.1. Codestyle in if-statements</a></li>
-<li><a href="#org0eb8fee">5.2. Выражение cond</a></li>
-<li><a href="#org223c25d">5.3. Выражение case</a>
-<ul>
-<li><a href="#org965fdbd">5.3.1. <span class="todo TODO">TODO</span> добавить самостоятельно</a></li>
+<li><a href="#orgabcfa25">1.5.1. Codestyle in if-statements</a></li>
+<li><a href="#orgabf11d7">1.5.2. Выражение cond</a></li>
+<li><a href="#org68f9c25">1.5.3. Выражение case</a></li>
+<li><a href="#orgf314ba6">1.5.4. Простые (не составные) значения</a></li>
+<li><a href="#org4f58bdb">1.5.5. Функции высших порядков</a></li>
 </ul>
 </li>
-<li><a href="#orgcb9be95">5.4. Простые (не составные) значения</a></li>
-<li><a href="#org0ef1c20">5.5. Функции высших порядков</a></li>
+<li><a href="#org8c8c07d">1.6. Лекция 3</a>
+<ul>
+<li><a href="#org81b5f83">1.6.1. let, let* и letrec</a></li>
 </ul>
 </li>
-<li><a href="#org4c4e083">6. Лекция 3</a>
+<li><a href="#orgcf7365e">1.7. Лекция 4</a>
 <ul>
-<li><a href="#orgef7ec43">6.1. let, let* и letrec</a></li>
+<li><a href="#org2693176">1.7.1. хвостовая рекурсия</a></li>
 </ul>
 </li>
-<li><a href="#org7b1aa1f">7. Лекция 4</a>
+<li><a href="#org2f3206e">1.8. Лекция 5</a>
 <ul>
-<li><a href="#org0d841c7">7.1. хвостовая рекурсия</a>
-<ul>
-<li><a href="#org5f2dc50">7.1.1. рекурсия</a></li>
-<li><a href="#orge0f0196">7.1.2. как цикл while выражать в виде рекурсии</a></li>
-<li><a href="#orge3c2643">7.1.3. определение хвостовой рекурсии</a></li>
-<li><a href="#org2522817">7.1.4. вызов подпрограммы</a></li>
-<li><a href="#orga979f96">7.1.5. <span class="todo TODO">TODO</span> fix name</a></li>
-<li><a href="#orgf890eb9">7.1.6. списки</a></li>
+<li><a href="#orgdf0da4e">1.8.1. функция map</a></li>
+<li><a href="#orge193d8e">1.8.2. списков не существует (в Scheme)</a></li>
+<li><a href="#org1137c81">1.8.3. Функции с переменным числом параметров</a></li>
 </ul>
 </li>
+<li><a href="#orga66d1b7">1.9. Лекция 6</a>
+<ul>
+<li><a href="#org1bda3d5">1.9.1. Вычислительная сложность</a></li>
 </ul>
 </li>
-<li><a href="#org99eb613">8. Лекция 5</a>
+<li><a href="#org443a546">1.10. Лекция 7</a></li>
+<li><a href="#org5802e32">1.11. Лекция 8</a>
 <ul>
-<li><a href="#org9cf62ee">8.1. функция map</a></li>
-<li><a href="#org84a6a57">8.2. списков не существует (в Scheme)</a></li>
-<li><a href="#org8425d5d">8.3. Функции с переменным числом параметров</a></li>
-</ul>
-</li>
-<li><a href="#org4b93954">9. Лекция 6</a>
-<ul>
-<li><a href="#orgbfce5e1">9.1. Вычислительная сложность</a>
-<ul>
-<li><a href="#org77eb138">9.1.1. <span class="todo TODO">TODO</span> вынести комментарии из кода</a></li>
-<li><a href="#org8363cfd">9.1.2. Сравнение на равенство</a></li>
-<li><a href="#orgb4366b5">9.1.3. дз сдвигается на неделю (28.09 сдаем только первые 2 задачи)</a></li>
-<li><a href="#org9b74c85">9.1.4. как достигать линейной сложности</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#orgfb02222">10. Лекция 7</a></li>
-<li><a href="#orgc3d875e">11. Лекция 8</a>
-<ul>
-<li><a href="#сведения-ко-второй-части-домашнего-задания">11.1. Сведения ко второй части домашнего задания</a>
-<ul>
-<li><a href="#тип-данных-vector">11.1.1. Тип данных <code>vector</code></a></li>
-<li><a href="#строки">11.1.2. Строки</a></li>
-</ul>
-</li>
-<li><a href="#императивное-программирование-на-языке-scheme">11.2. Императивное программирование на языке Scheme</a>
-<ul>
-<li><a href="#begin">11.2.1. 1. <code>begin</code></a></li>
-<li><a href="#присваивания-set">11.2.2. 2. Присваивания, <code>set!</code></a></li>
+<li><a href="#сведения-ко-второй-части-домашнего-задания">1.11.1. Сведения ко второй части домашнего задания</a></li>
+<li><a href="#императивное-программирование-на-языке-scheme">1.11.2. Императивное программирование на языке Scheme</a></li>
 </ul>
 </li>
 </ul>
@@ -327,24 +301,29 @@
 <a href="https://github.com/stewkk/iu9-scheme/">Лабы и дз</a>
 </p>
 
-<div id="outline-container-org8fbe5a2" class="outline-2">
-<h2 id="org8fbe5a2"><span class="section-number-2">1.</span> Преподаватель</h2>
+<div id="outline-container-org63bb6e4" class="outline-2">
+<h2 id="org63bb6e4"><span class="section-number-2">1.</span> DEPRECATED in favor of <a href="https://github.com/bmstu-iu9/scheme-labs#%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8">the Konovalov&rsquo;s lectures</a></h2>
 <div class="outline-text-2" id="text-1">
+<p>
+this document is OUTDATED and no longer maintained
+</p>
+</div>
+
+<div id="outline-container-org4268d17" class="outline-3">
+<h3 id="org4268d17"><span class="section-number-3">1.1.</span> Преподаватель</h3>
+<div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>Коновалов Александр Владимирович</li>
-<li>89175404352</li>
-<li>akonovalov@bmstu.ru</li>
-<li>a.v.konovalov87@mail.ru</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org667413d" class="outline-2">
-<h2 id="org667413d"><span class="section-number-2">2.</span> Основные понятия информатики</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgfafcecb" class="outline-3">
+<h3 id="orgfafcecb"><span class="section-number-3">1.2.</span> Основные понятия информатики</h3>
+<div class="outline-text-3" id="text-1-2">
 </div>
-<div id="outline-container-org0490ac8" class="outline-3">
-<h3 id="org0490ac8"><span class="section-number-3">2.1.</span> Данные</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-org0979bc2" class="outline-4">
+<h4 id="org0979bc2"><span class="section-number-4">1.2.1.</span> Данные</h4>
+<div class="outline-text-4" id="text-1-2-1">
 <p>
 это представление фактов, понятий, инструкций в форме, приемлемой
 для обмена, интерпретации или обработки человеком или с помощью
@@ -352,9 +331,9 @@
 </p>
 </div>
 </div>
-<div id="outline-container-orgabd9715" class="outline-3">
-<h3 id="orgabd9715"><span class="section-number-3">2.2.</span> Алгоритм</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-org59de8f3" class="outline-4">
+<h4 id="org59de8f3"><span class="section-number-4">1.2.2.</span> Алгоритм</h4>
+<div class="outline-text-4" id="text-1-2-2">
 <p>
 это конечная совокупность точно заданных правил решения прозвольного класса
 задач или набор инструкций, описывающий порядок действий исполнителя для
@@ -362,9 +341,9 @@
 </p>
 </div>
 </div>
-<div id="outline-container-org684d670" class="outline-3">
-<h3 id="org684d670"><span class="section-number-3">2.3.</span> Свойства алгоритма:</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-orge50e07a" class="outline-4">
+<h4 id="orge50e07a"><span class="section-number-4">1.2.3.</span> Свойства алгоритма:</h4>
+<div class="outline-text-4" id="text-1-2-3">
 <ol class="org-ol">
 <li>Дискретность <br />
 делится на отдельные элементарные части,
@@ -384,33 +363,33 @@
 </ol>
 </div>
 </div>
-<div id="outline-container-orgbae777b" class="outline-3">
-<h3 id="orgbae777b"><span class="section-number-3">2.4.</span> Компьютерная программа</h3>
-<div class="outline-text-3" id="text-2-4">
+<div id="outline-container-org192b686" class="outline-4">
+<h4 id="org192b686"><span class="section-number-4">1.2.4.</span> Компьютерная программа</h4>
+<div class="outline-text-4" id="text-1-2-4">
 <p>
 это алгоритм, записанный на некотором языке программирования
 </p>
 </div>
 </div>
-<div id="outline-container-orgbdc1899" class="outline-3">
-<h3 id="orgbdc1899"><span class="section-number-3">2.5.</span> Язык программирования</h3>
-<div class="outline-text-3" id="text-2-5">
+<div id="outline-container-orgc705ae6" class="outline-4">
+<h4 id="orgc705ae6"><span class="section-number-4">1.2.5.</span> Язык программирования</h4>
+<div class="outline-text-4" id="text-1-2-5">
 <p>
 формальный язык, предназначенный для записи компьютерных программ
 </p>
 </div>
 </div>
-<div id="outline-container-org0e6bf13" class="outline-3">
-<h3 id="org0e6bf13"><span class="section-number-3">2.6.</span> Компьютер</h3>
-<div class="outline-text-3" id="text-2-6">
+<div id="outline-container-org9a20bb3" class="outline-4">
+<h4 id="org9a20bb3"><span class="section-number-4">1.2.6.</span> Компьютер</h4>
+<div class="outline-text-4" id="text-1-2-6">
 <p>
 программно управляемое устройство для обработки информации
 </p>
 </div>
 </div>
-<div id="outline-container-org0055ab2" class="outline-3">
-<h3 id="org0055ab2"><span class="section-number-3">2.7.</span> Подпрограмма</h3>
-<div class="outline-text-3" id="text-2-7">
+<div id="outline-container-orgbcaa081" class="outline-4">
+<h4 id="orgbcaa081"><span class="section-number-4">1.2.7.</span> Подпрограмма</h4>
+<div class="outline-text-4" id="text-1-2-7">
 <p>
 некоторый именованный блок кода. <br />
 Вызывающая программа приостанавливается, управление передается
@@ -419,9 +398,9 @@
 </p>
 </div>
 </div>
-<div id="outline-container-orgdac1abf" class="outline-3">
-<h3 id="orgdac1abf"><span class="section-number-3">2.8.</span> Сопрограмма</h3>
-<div class="outline-text-3" id="text-2-8">
+<div id="outline-container-org0d4537a" class="outline-4">
+<h4 id="org0d4537a"><span class="section-number-4">1.2.8.</span> Сопрограмма</h4>
+<div class="outline-text-4" id="text-1-2-8">
 <p>
 в отличие от подпрограммы работает поочередно с вызывающей программой.
 При повторном вызове возобновит выполнение с момента, где остановилась
@@ -429,9 +408,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org18c9295" class="outline-2">
-<h2 id="org18c9295"><span class="section-number-2">3.</span> Парадигмы программирования</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-orgab32cef" class="outline-3">
+<h3 id="orgab32cef"><span class="section-number-3">1.3.</span> Парадигмы программирования</h3>
+<div class="outline-text-3" id="text-1-3">
 <p>
 совокупность идей и понятий, определяющих стиль написания компьютерных
 программ (подход к программированию). Это способ концептуализации,
@@ -439,9 +418,9 @@
 компьютером.
 </p>
 </div>
-<div id="outline-container-org24d05a7" class="outline-3">
-<h3 id="org24d05a7"><span class="section-number-3">3.1.</span> Основные группы парадигм</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-orgcc7453b" class="outline-4">
+<h4 id="orgcc7453b"><span class="section-number-4">1.3.1.</span> Основные группы парадигм</h4>
+<div class="outline-text-4" id="text-1-3-1">
 <ol class="org-ol">
 <li>Императивные <br />
 способ записи программ, в котором указывается последовательность
@@ -496,10 +475,10 @@
 </ol>
 </div>
 </div>
-<div id="outline-container-orgc33b4d1" class="outline-3">
-<h3 id="orgc33b4d1"><span class="section-number-3">3.2.</span> примеры</h3>
-<div class="outline-text-3" id="text-3-2">
-<pre class="example" id="orgde27716">
+<div id="outline-container-orgac59ae0" class="outline-4">
+<h4 id="orgac59ae0"><span class="section-number-4">1.3.2.</span> примеры</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<pre class="example" id="orgaebbcbd">
 ИП: sort(array);
 ФП: sorted_list = sort(list)
     sorted_list - константа, т.к. нет присваивания
@@ -508,13 +487,13 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgdc98014" class="outline-2">
-<h2 id="orgdc98014"><span class="section-number-2">4.</span> Язык Scheme</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org2a16775" class="outline-3">
+<h3 id="org2a16775"><span class="section-number-3">1.4.</span> Язык Scheme</h3>
+<div class="outline-text-3" id="text-1-4">
 </div>
-<div id="outline-container-orga692228" class="outline-3">
-<h3 id="orga692228"><span class="section-number-3">4.1.</span> информация о языке</h3>
-<div class="outline-text-3" id="text-4-1">
+<div id="outline-container-org7be76fb" class="outline-4">
+<h4 id="org7be76fb"><span class="section-number-4">1.4.1.</span> информация о языке</h4>
+<div class="outline-text-4" id="text-1-4-1">
 <p>
 Lisp 1950-е годы Джон МакКарти <br />
 LISt Processing <br />
@@ -532,9 +511,9 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </ul>
 </div>
 </div>
-<div id="outline-container-orgfd149bb" class="outline-3">
-<h3 id="orgfd149bb"><span class="section-number-3">4.2.</span> основные постулаты языка LISP</h3>
-<div class="outline-text-3" id="text-4-2">
+<div id="outline-container-org82fad29" class="outline-4">
+<h4 id="org82fad29"><span class="section-number-4">1.4.2.</span> основные постулаты языка LISP</h4>
+<div class="outline-text-4" id="text-1-4-2">
 <ol class="org-ol">
 <li>единство кода и данных</li>
 <li>все есть список</li>
@@ -544,9 +523,9 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </ol>
 </div>
 </div>
-<div id="outline-container-org188a1c6" class="outline-3">
-<h3 id="org188a1c6"><span class="section-number-3">4.3.</span> операторы</h3>
-<div class="outline-text-3" id="text-4-3">
+<div id="outline-container-orgc70dd33" class="outline-4">
+<h4 id="orgc70dd33"><span class="section-number-4">1.4.3.</span> операторы</h4>
+<div class="outline-text-4" id="text-1-4-3">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&lt;&#1090;&#1077;&#1088;&#1084;&gt; ::= &lt;&#1072;&#1090;&#1086;&#1084;&gt;|&lt;&#1089;&#1087;&#1080;&#1089;&#1086;&#1082;&gt;</span>
 <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&lt;&#1072;&#1090;&#1086;&#1084;&gt; ::= &lt;&#1087;&#1077;&#1088;&#1077;&#1084;&gt;|&lt;&#1095;&#1080;&#1089;&#1083;&#1086;&gt;|&lt;&#1089;&#1080;&#1084;&#1086;&#1083;&gt;|&lt;&#1089;&#1090;&#1088;&#1086;&#1082;&#1072;&gt;</span>
@@ -849,13 +828,13 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </div>
 </div>
 
-<div id="outline-container-orgb71a1ab" class="outline-2">
-<h2 id="orgb71a1ab"><span class="section-number-2">5.</span> Лекция 2</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org5830546" class="outline-3">
+<h3 id="org5830546"><span class="section-number-3">1.5.</span> Лекция 2</h3>
+<div class="outline-text-3" id="text-1-5">
 </div>
-<div id="outline-container-org894c625" class="outline-3">
-<h3 id="org894c625"><span class="section-number-3">5.1.</span> Codestyle in if-statements</h3>
-<div class="outline-text-3" id="text-5-1">
+<div id="outline-container-orgabcfa25" class="outline-4">
+<h4 id="orgabcfa25"><span class="section-number-4">1.5.1.</span> Codestyle in if-statements</h4>
+<div class="outline-text-4" id="text-1-5-1">
 <ol class="org-ol">
 <li>Условное выражение лучше писать в 3 строки: <br />
 условие <br />
@@ -897,9 +876,9 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </ol>
 </div>
 </div>
-<div id="outline-container-org0eb8fee" class="outline-3">
-<h3 id="org0eb8fee"><span class="section-number-3">5.2.</span> Выражение cond</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-orgabf11d7" class="outline-4">
+<h4 id="orgabf11d7"><span class="section-number-4">1.5.2.</span> Выражение cond</h4>
+<div class="outline-text-4" id="text-1-5-2">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">cond</span> <span style="color: #c678dd;">(</span>c1 e1<span style="color: #c678dd;">)</span>
       <span style="color: #c678dd;">(</span>c2 e2<span style="color: #c678dd;">)</span>
@@ -912,20 +891,20 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </div>
 </div>
 </div>
-<div id="outline-container-org223c25d" class="outline-3">
-<h3 id="org223c25d"><span class="section-number-3">5.3.</span> Выражение case</h3>
-<div class="outline-text-3" id="text-5-3">
+<div id="outline-container-org68f9c25" class="outline-4">
+<h4 id="org68f9c25"><span class="section-number-4">1.5.3.</span> Выражение case</h4>
+<div class="outline-text-4" id="text-1-5-3">
 <p>
 не будет на экзамене,
 </p>
 </div>
-<div id="outline-container-org965fdbd" class="outline-4">
-<h4 id="org965fdbd"><span class="section-number-4">5.3.1.</span> <span class="todo TODO">TODO</span> добавить самостоятельно</h4>
+<ol class="org-ol">
+<li><a id="orgec93539"></a><span class="todo TODO">TODO</span> добавить самостоятельно<br /></li>
+</ol>
 </div>
-</div>
-<div id="outline-container-orgcb9be95" class="outline-3">
-<h3 id="orgcb9be95"><span class="section-number-3">5.4.</span> Простые (не составные) значения</h3>
-<div class="outline-text-3" id="text-5-4">
+<div id="outline-container-orgf314ba6" class="outline-4">
+<h4 id="orgf314ba6"><span class="section-number-4">1.5.4.</span> Простые (не составные) значения</h4>
+<div class="outline-text-4" id="text-1-5-4">
 <ul class="org-ul">
 <li>Числа: 5, 100500, 6.12324, -1 1/3&#x2026;</li>
 <li>строки: &ldquo;Hello&rdquo;, можно использовать esape-последовательности языка C</li>
@@ -937,9 +916,9 @@ Scheme 1970-е годы Абельсон и Сассман <br />
 </ul>
 </div>
 </div>
-<div id="outline-container-org0ef1c20" class="outline-3">
-<h3 id="org0ef1c20"><span class="section-number-3">5.5.</span> Функции высших порядков</h3>
-<div class="outline-text-3" id="text-5-5">
+<div id="outline-container-org4f58bdb" class="outline-4">
+<h4 id="org4f58bdb"><span class="section-number-4">1.5.5.</span> Функции высших порядков</h4>
+<div class="outline-text-4" id="text-1-5-5">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1050;&#1086;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1080;&#1103; (lambda ...) &#1089;&#1090;&#1088;&#1086;&#1080;&#1090; &#1087;&#1088;&#1086;&#1094;&#1077;&#1076;&#1091;&#1088;&#1091;</span>
 <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1087;&#1088;&#1080;&#1085;&#1103;&#1090;&#1085;&#1086; "&#1087;&#1088;&#1086;&#1094;&#1077;&#1076;&#1091;&#1088;&#1072;", &#1072; &#1085;&#1077; "&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1103;"</span>
@@ -1013,9 +992,9 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div>
 </div>
 </div>
-<div id="outline-container-org4c4e083" class="outline-2">
-<h2 id="org4c4e083"><span class="section-number-2">6.</span> Лекция 3</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-org8c8c07d" class="outline-3">
+<h3 id="org8c8c07d"><span class="section-number-3">1.6.</span> Лекция 3</h3>
+<div class="outline-text-3" id="text-1-6">
 <ul class="org-ul">
 <li>1 порядок - простое возвр значение (не функция)</li>
 <li>высшего порядка - возвращает функцию</li>
@@ -1078,9 +1057,9 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div></li>
 </ul>
 </div>
-<div id="outline-container-orgef7ec43" class="outline-3">
-<h3 id="orgef7ec43"><span class="section-number-3">6.1.</span> let, let* и letrec</h3>
-<div class="outline-text-3" id="text-6-1">
+<div id="outline-container-org81b5f83" class="outline-4">
+<h4 id="org81b5f83"><span class="section-number-4">1.6.1.</span> let, let* и letrec</h4>
+<div class="outline-text-4" id="text-1-6-1">
 <p>
 Используются для определения вспомогательных переменных
 </p>
@@ -1168,28 +1147,27 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div>
 </div>
 
-<div id="outline-container-org7b1aa1f" class="outline-2">
-<h2 id="org7b1aa1f"><span class="section-number-2">7.</span> Лекция 4</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-orgcf7365e" class="outline-3">
+<h3 id="orgcf7365e"><span class="section-number-3">1.7.</span> Лекция 4</h3>
+<div class="outline-text-3" id="text-1-7">
 </div>
-<div id="outline-container-org0d841c7" class="outline-3">
-<h3 id="org0d841c7"><span class="section-number-3">7.1.</span> хвостовая рекурсия</h3>
-<div class="outline-text-3" id="text-7-1">
+<div id="outline-container-org2693176" class="outline-4">
+<h4 id="org2693176"><span class="section-number-4">1.7.1.</span> хвостовая рекурсия</h4>
+<div class="outline-text-4" id="text-1-7-1">
 <p>
 может неявно компилироваться в цикл
 </p>
 </div>
-<div id="outline-container-org5f2dc50" class="outline-4">
-<h4 id="org5f2dc50"><span class="section-number-4">7.1.1.</span> рекурсия</h4>
-<div class="outline-text-4" id="text-7-1-1">
+<ol class="org-ol">
+<li><a id="org31accf8"></a>рекурсия<br />
+<div class="outline-text-5" id="text-1-7-1-1">
 <p>
 случай, когда задачу можно разбить на одну или несколько меньших задач, подобных исходной
 </p>
 </div>
-</div>
-<div id="outline-container-orge0f0196" class="outline-4">
-<h4 id="orge0f0196"><span class="section-number-4">7.1.2.</span> как цикл while выражать в виде рекурсии</h4>
-<div class="outline-text-4" id="text-7-1-2">
+</li>
+<li><a id="org663cb83"></a>как цикл while выражать в виде рекурсии<br />
+<div class="outline-text-5" id="text-1-7-1-2">
 <p>
 цикл - выполнение n-ого количества одинаковых операций <br />
 сводится к: выполнение одного шага + выполнение остальных <br />
@@ -1213,8 +1191,8 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </ol>
 </div>
 <ol class="org-ol">
-<li><a id="orge7617e1"></a>примеры:<br />
-<div class="outline-text-5" id="text-7-1-2-1">
+<li><a id="orgd2d143d"></a>примеры:<br />
+<div class="outline-text-6" id="text-1-7-1-2-1">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">def</span> <span style="color: #c678dd;">gcd</span>(x, y):
     <span style="color: #51afef;">while</span> y != <span style="color: #da8548; font-weight: bold;">0</span>:
@@ -1259,10 +1237,9 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div>
 </li>
 </ol>
-</div>
-<div id="outline-container-orge3c2643" class="outline-4">
-<h4 id="orge3c2643"><span class="section-number-4">7.1.3.</span> определение хвостовой рекурсии</h4>
-<div class="outline-text-4" id="text-7-1-3">
+</li>
+<li><a id="org2582d10"></a>определение хвостовой рекурсии<br />
+<div class="outline-text-5" id="text-1-7-1-3">
 <p>
 рекурсивный вызов называется хвостовым, если он выполняется последним
 </p>
@@ -1271,10 +1248,9 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 <li>стек FILO</li>
 </ul>
 </div>
-</div>
-<div id="outline-container-org2522817" class="outline-4">
-<h4 id="org2522817"><span class="section-number-4">7.1.4.</span> вызов подпрограммы</h4>
-<div class="outline-text-4" id="text-7-1-4">
+</li>
+<li><a id="org1eab4dd"></a>вызов подпрограммы<br />
+<div class="outline-text-5" id="text-1-7-1-4">
 <ol class="org-ol">
 <li>сохраняем контекст</li>
 <li>передаем управление на подпрограмму</li>
@@ -1287,10 +1263,9 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 Контексты вычислений образуют стек вызовов (для вложенных подпрограмм)
 </p>
 </div>
-</div>
-<div id="outline-container-orga979f96" class="outline-4">
-<h4 id="orga979f96"><span class="section-number-4">7.1.5.</span> <span class="todo TODO">TODO</span> fix name</h4>
-<div class="outline-text-4" id="text-7-1-5">
+</li>
+<li><a id="orgdaf93f8"></a><span class="todo TODO">TODO</span> fix name<br />
+<div class="outline-text-5" id="text-1-7-1-5">
 <p>
 в общем случае вызов функции в Scheme работает как вызов подпрограммы
 </p>
@@ -1303,8 +1278,8 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div>
 </div>
 <ol class="org-ol">
-<li><a id="orgd24abc0"></a>хвостовая рекурсия<br />
-<div class="outline-text-5" id="text-7-1-5-1">
+<li><a id="org6d034f2"></a>хвостовая рекурсия<br />
+<div class="outline-text-6" id="text-1-7-1-5-1">
 <p>
 для хвостовых вызовов контекст вычисления можно не сохранять, т.к. он уже не нужен:
 </p>
@@ -1315,8 +1290,8 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </ul>
 </div>
 </li>
-<li><a id="org6905068"></a>нехвостовая рекурсия<br />
-<div class="outline-text-5" id="text-7-1-5-2">
+<li><a id="orgdc509ee"></a>нехвостовая рекурсия<br />
+<div class="outline-text-6" id="text-1-7-1-5-2">
 <p>
 стек вызовов будет расти <br />
 </p>
@@ -1326,8 +1301,8 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </p>
 </div>
 </li>
-<li><a id="org4e0aa58"></a>пример нехвостовой рекурсии<br />
-<div class="outline-text-5" id="text-7-1-5-3">
+<li><a id="org17c327a"></a>пример нехвостовой рекурсии<br />
+<div class="outline-text-6" id="text-1-7-1-5-3">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">fact</span> n<span style="color: #c678dd;">)</span>
   <span style="color: #c678dd;">(</span><span style="color: #51afef;">if</span> <span style="color: #98be65;">(</span>&lt;= n <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #98be65;">)</span>
@@ -1341,8 +1316,8 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div>
 </li>
 
-<li><a id="orgedafdde"></a><span class="todo TODO">TODO</span> написать с goto; пример хвостовой рекурсии<br />
-<div class="outline-text-5" id="text-7-1-5-4">
+<li><a id="org3f9cab1"></a><span class="todo TODO">TODO</span> написать с goto; пример хвостовой рекурсии<br />
+<div class="outline-text-6" id="text-1-7-1-5-4">
 <div class="org-src-container">
 <pre class="src src-C"><span style="color: #ECBE7B;">int</span> <span style="color: #c678dd;">fact</span><span style="color: #51afef;">(</span><span style="color: #ECBE7B;">int</span> <span style="color: #dcaeea;">n</span><span style="color: #51afef;">)</span> <span style="color: #51afef;">{</span>
     <span style="color: #51afef;">return</span> loop<span style="color: #c678dd;">(</span>n, <span style="color: #da8548; font-weight: bold;">1</span>, <span style="color: #da8548; font-weight: bold;">1</span><span style="color: #c678dd;">)</span>;
@@ -1368,8 +1343,8 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div>
 </div>
 </li>
-<li><a id="orge81eca4"></a>символы<br />
-<div class="outline-text-5" id="text-7-1-5-5">
+<li><a id="org464a3ba"></a>символы<br />
+<div class="outline-text-6" id="text-1-7-1-5-5">
 <p>
 Если поставим одинарную кавычку перед именем переменной(или ключевым словом), получим символ:
 </p>
@@ -1385,7 +1360,7 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 <p>
 Цитирование строк, чисел, литер их не измненяет
 </p>
-<pre class="example" id="orgb53521c">
+<pre class="example" id="orgb892d57">
 '1 -&gt; 1
 '"hello" -&gt; "hello"
 '#\a -&gt; #\a
@@ -1396,10 +1371,9 @@ f'<span style="color: #51afef;">(</span>x<span style="color: #51afef;">)</span> 
 </div>
 </li>
 </ol>
-</div>
-<div id="outline-container-orgf890eb9" class="outline-4">
-<h4 id="orgf890eb9"><span class="section-number-4">7.1.6.</span> списки</h4>
-<div class="outline-text-4" id="text-7-1-6">
+</li>
+<li><a id="org0a65435"></a>списки<br />
+<div class="outline-text-5" id="text-1-7-1-6">
 <p>
 Список - последовательность значений,
 основная структура данных в языках семейства LISP <br />
@@ -1491,8 +1465,8 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </div>
 </div>
 <ol class="org-ol">
-<li><a id="org772fee2"></a>списки можно цитировать<br />
-<div class="outline-text-6" id="text-7-1-6-0-1">
+<li><a id="orgd2ac548"></a>списки можно цитировать<br />
+<div class="outline-text-7" id="text-1-7-1-6-0-1">
 <div class="org-src-container">
 <pre class="src src-scheme">'<span style="color: #51afef;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">3</span> <span style="color: #da8548; font-weight: bold;">4</span><span style="color: #51afef;">)</span> -&gt; <span style="color: #51afef;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">3</span> <span style="color: #da8548; font-weight: bold;">4</span><span style="color: #51afef;">)</span>
 '<span style="color: #51afef;">(</span>a b c d<span style="color: #51afef;">)</span> -&gt; <span style="color: #51afef;">(</span>a b c d<span style="color: #51afef;">)</span>
@@ -1502,13 +1476,14 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </div>
 </li>
 </ol>
-</div>
+</li>
+</ol>
 </div>
 </div>
 
-<div id="outline-container-org99eb613" class="outline-2">
-<h2 id="org99eb613"><span class="section-number-2">8.</span> Лекция 5</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-org2f3206e" class="outline-3">
+<h3 id="org2f3206e"><span class="section-number-3">1.8.</span> Лекция 5</h3>
+<div class="outline-text-3" id="text-1-8">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">()</span> - &#1087;&#1091;&#1089;&#1090;&#1086;&#1081; &#1089;&#1087;&#1080;&#1089;&#1086;&#1082;
 &#1060;&#1091;&#1085;&#1082;&#1094;&#1080;&#1103; <span style="color: #51afef;">(</span>length <span style="color: #ECBE7B;">&lt;&#1089;&#1087;&#1080;&#1089;&#1086;&#1082;&gt;</span><span style="color: #51afef;">)</span> -&gt; <span style="color: #ECBE7B;">&lt;&#1095;&#1080;&#1089;&#1083;&#1086;&gt;</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">O(n)</span>
@@ -1563,9 +1538,9 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </pre>
 </div>
 </div>
-<div id="outline-container-org9cf62ee" class="outline-3">
-<h3 id="org9cf62ee"><span class="section-number-3">8.1.</span> функция map</h3>
-<div class="outline-text-3" id="text-8-1">
+<div id="outline-container-orgdf0da4e" class="outline-4">
+<h4 id="orgdf0da4e"><span class="section-number-4">1.8.1.</span> функция map</h4>
+<div class="outline-text-4" id="text-1-8-1">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">map</span> f <span style="color: #c678dd;">(</span>x1 x2 ... xn<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span> -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;">(</span>f x1<span style="color: #c678dd;">)</span> <span style="color: #c678dd;">(</span>f x2<span style="color: #c678dd;">)</span> .. <span style="color: #c678dd;">(</span>f xn<span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span>
 <span style="color: #51afef;">(</span><span style="color: #51afef;">map</span> - '<span style="color: #c678dd;">(</span><span style="color: #da8548; font-weight: bold;">1</span> <span style="color: #da8548; font-weight: bold;">2</span> <span style="color: #da8548; font-weight: bold;">4</span><span style="color: #c678dd;">)</span><span style="color: #51afef;">)</span> -&gt; <span style="color: #51afef;">(</span><span style="color: #da8548; font-weight: bold;">-1</span> <span style="color: #da8548; font-weight: bold;">-2</span> <span style="color: #da8548; font-weight: bold;">-4</span><span style="color: #51afef;">)</span>
@@ -1599,9 +1574,9 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </div>
 </div>
 </div>
-<div id="outline-container-org84a6a57" class="outline-3">
-<h3 id="org84a6a57"><span class="section-number-3">8.2.</span> списков не существует (в Scheme)</h3>
-<div class="outline-text-3" id="text-8-2">
+<div id="outline-container-orge193d8e" class="outline-4">
+<h4 id="orge193d8e"><span class="section-number-4">1.8.2.</span> списков не существует (в Scheme)</h4>
+<div class="outline-text-4" id="text-1-8-2">
 <p>
 А существуют cons-ячейки - пары(кортежи) из двух значений <br />
 Функция cons порождает cons-ячейку, car и cdr - доступ к её элементам <br />
@@ -1643,9 +1618,9 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </div>
 </div>
 </div>
-<div id="outline-container-org8425d5d" class="outline-3">
-<h3 id="org8425d5d"><span class="section-number-3">8.3.</span> Функции с переменным числом параметров</h3>
-<div class="outline-text-3" id="text-8-3">
+<div id="outline-container-org1137c81" class="outline-4">
+<h4 id="org1137c81"><span class="section-number-4">1.8.3.</span> Функции с переменным числом параметров</h4>
+<div class="outline-text-4" id="text-1-8-3">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">lambda</span> xs ...<span style="color: #51afef;">)</span>
      <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">|-&gt; &#1073;&#1077;&#1079; &#1089;&#1082;&#1086;&#1073;&#1086;&#1082;</span>
@@ -1678,9 +1653,9 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </div>
 </div>
 
-<div id="outline-container-org4b93954" class="outline-2">
-<h2 id="org4b93954"><span class="section-number-2">9.</span> Лекция 6</h2>
-<div class="outline-text-2" id="text-9">
+<div id="outline-container-orga66d1b7" class="outline-3">
+<h3 id="orga66d1b7"><span class="section-number-3">1.9.</span> Лекция 6</h3>
+<div class="outline-text-3" id="text-1-9">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span>apply func xs<span style="color: #51afef;">)</span>
 </pre>
@@ -1697,9 +1672,9 @@ nested -&gt; <span style="color: #51afef;">(</span><span style="color: #c678dd;"
 </div>
 </div>
 
-<div id="outline-container-orgbfce5e1" class="outline-3">
-<h3 id="orgbfce5e1"><span class="section-number-3">9.1.</span> Вычислительная сложность</h3>
-<div class="outline-text-3" id="text-9-1">
+<div id="outline-container-org1bda3d5" class="outline-4">
+<h4 id="org1bda3d5"><span class="section-number-4">1.9.1.</span> Вычислительная сложность</h4>
+<div class="outline-text-4" id="text-1-9-1">
 <p>
 Это оценка времени работы алгоритма
 с точностью до сомножителя <br />
@@ -1728,9 +1703,9 @@ O(1) - константное время, не зависит от входны�
 </pre>
 </div>
 </div>
-<div id="outline-container-org77eb138" class="outline-4">
-<h4 id="org77eb138"><span class="section-number-4">9.1.1.</span> <span class="todo TODO">TODO</span> вынести комментарии из кода</h4>
-<div class="outline-text-4" id="text-9-1-1">
+<ol class="org-ol">
+<li><a id="orgf5f7987"></a><span class="todo TODO">TODO</span> вынести комментарии из кода<br />
+<div class="outline-text-5" id="text-1-9-1-1">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span><span style="color: #51afef;">define</span> <span style="color: #c678dd;">(</span><span style="color: #c678dd;">sum</span> xs<span style="color: #c678dd;">)</span>
      <span style="color: #c678dd;">(</span><span style="color: #51afef;">if</span> <span style="color: #98be65;">(</span>&gt; <span style="color: #a9a1e1;">(</span>length xs<span style="color: #a9a1e1;">)</span> <span style="color: #da8548; font-weight: bold;">0</span><span style="color: #98be65;">)</span>
@@ -1756,10 +1731,9 @@ O(1) - константное время, не зависит от входны�
 </pre>
 </div>
 </div>
-</div>
-<div id="outline-container-org8363cfd" class="outline-4">
-<h4 id="org8363cfd"><span class="section-number-4">9.1.2.</span> Сравнение на равенство</h4>
-<div class="outline-text-4" id="text-9-1-2">
+</li>
+<li><a id="org66b6c49"></a>Сравнение на равенство<br />
+<div class="outline-text-5" id="text-1-9-1-2">
 <div class="org-src-container">
 <pre class="src src-scheme"><span style="color: #51afef;">(</span>= x y<span style="color: #51afef;">)</span> <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1088;&#1072;&#1073;&#1086;&#1090;&#1072;&#1077;&#1090; &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1089; &#1095;&#1080;&#1089;&#1083;&#1086;&#1084;</span>
 <span style="color: #5B6268;">;; </span><span style="color: #5B6268;">&#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;, &#1088;&#1072;&#1073;&#1086;&#1090;&#1072;&#1102;&#1097;&#1080;&#1077; &#1089;&#1086; &#1074;&#1089;&#1077;&#1084;:</span>
@@ -1828,20 +1802,18 @@ O(1) - константное время, не зависит от входны�
 #t
 </pre>
 </div>
-</div>
+</li>
 
-<div id="outline-container-orgb4366b5" class="outline-4">
-<h4 id="orgb4366b5"><span class="section-number-4">9.1.3.</span> дз сдвигается на неделю (28.09 сдаем только первые 2 задачи)</h4>
-<div class="outline-text-4" id="text-9-1-3">
+<li><a id="org14d312e"></a>дз сдвигается на неделю (28.09 сдаем только первые 2 задачи)<br />
+<div class="outline-text-5" id="text-1-9-1-3">
 <p>
 множества пишем за O(n<sup>2</sup>), имитируя с помощью списков
 </p>
 </div>
-</div>
+</li>
 
-<div id="outline-container-org9b74c85" class="outline-4">
-<h4 id="org9b74c85"><span class="section-number-4">9.1.4.</span> как достигать линейной сложности</h4>
-<div class="outline-text-4" id="text-9-1-4">
+<li><a id="orgec1cb8c"></a>как достигать линейной сложности<br />
+<div class="outline-text-5" id="text-1-9-1-4">
 <p>
 если хотим построить список в определенном порядке, иногда имеет смысл сделать список в обратном порядке, а потом реверсировать
 </p>
@@ -1885,24 +1857,25 @@ push/reverse - Common Lisp <br />
 </pre>
 </div>
 </div>
-</div>
+</li>
+</ol>
 </div>
 </div>
 
-<div id="outline-container-orgfb02222" class="outline-2">
-<h2 id="orgfb02222"><span class="section-number-2">10.</span> Лекция 7</h2>
+<div id="outline-container-org443a546" class="outline-3">
+<h3 id="org443a546"><span class="section-number-3">1.10.</span> Лекция 7</h3>
 </div>
-<div id="outline-container-orgc3d875e" class="outline-2">
-<h2 id="orgc3d875e"><span class="section-number-2">11.</span> Лекция 8</h2>
-<div class="outline-text-2" id="text-11">
+<div id="outline-container-org5802e32" class="outline-3">
+<h3 id="org5802e32"><span class="section-number-3">1.11.</span> Лекция 8</h3>
+<div class="outline-text-3" id="text-1-11">
 </div>
-<div id="outline-container-сведения-ко-второй-части-домашнего-задания" class="outline-3">
-<h3 id="сведения-ко-второй-части-домашнего-задания"><span class="section-number-3">11.1.</span> Сведения ко второй части домашнего задания</h3>
-<div class="outline-text-3" id="text-сведения-ко-второй-части-домашнего-задания">
+<div id="outline-container-сведения-ко-второй-части-домашнего-задания" class="outline-4">
+<h4 id="сведения-ко-второй-части-домашнего-задания"><span class="section-number-4">1.11.1.</span> Сведения ко второй части домашнего задания</h4>
+<div class="outline-text-4" id="text-сведения-ко-второй-части-домашнего-задания">
 </div>
-<div id="outline-container-тип-данных-vector" class="outline-4">
-<h4 id="тип-данных-vector"><span class="section-number-4">11.1.1.</span> Тип данных <code>vector</code></h4>
-<div class="outline-text-4" id="text-тип-данных-vector">
+<ol class="org-ol">
+<li><a id="тип-данных-vector"></a>Тип данных <code>vector</code><br />
+<div class="outline-text-5" id="text-тип-данных-vector">
 <p>
 Списки &#x2014; основные структуры данных в языках семейства Lisp. В Scheme
 они не примитивный тип, а надстройка над cons-ячейками.
@@ -2054,11 +2027,10 @@ push/reverse - Common Lisp <br />
 </pre>
 </div>
 </div>
-</div>
+</li>
 
-<div id="outline-container-строки" class="outline-4">
-<h4 id="строки"><span class="section-number-4">11.1.2.</span> Строки</h4>
-<div class="outline-text-4" id="text-строки">
+<li><a id="строки"></a>Строки<br />
+<div class="outline-text-5" id="text-строки">
 <p>
 Тип данных <code>string</code> хранит в себе последовательность литер (characters).
 Литерал для строки &#x2014; текст, записанный внутри двойных кавычек:
@@ -2119,12 +2091,13 @@ push/reverse - Common Lisp <br />
 Выбор подстрок <code>(substring …)</code> изучить самостоятельно.
 </p>
 </div>
-</div>
+</li>
+</ol>
 </div>
 
-<div id="outline-container-императивное-программирование-на-языке-scheme" class="outline-3">
-<h3 id="императивное-программирование-на-языке-scheme"><span class="section-number-3">11.2.</span> Императивное программирование на языке Scheme</h3>
-<div class="outline-text-3" id="text-императивное-программирование-на-языке-scheme">
+<div id="outline-container-императивное-программирование-на-языке-scheme" class="outline-4">
+<h4 id="императивное-программирование-на-языке-scheme"><span class="section-number-4">1.11.2.</span> Императивное программирование на языке Scheme</h4>
+<div class="outline-text-4" id="text-императивное-программирование-на-языке-scheme">
 <p>
 До этого мы рассматривали декларативное программирование, в котором
 у нас не было:
@@ -2154,9 +2127,9 @@ push/reverse - Common Lisp <br />
 </p>
 </div>
 
-<div id="outline-container-begin" class="outline-4">
-<h4 id="begin"><span class="section-number-4">11.2.1.</span> 1. <code>begin</code></h4>
-<div class="outline-text-4" id="text-begin">
+<ol class="org-ol">
+<li><a id="begin"></a>1. <code>begin</code><br />
+<div class="outline-text-5" id="text-begin">
 <p>
 Если мы имеем вызов вида
 </p>
@@ -2236,7 +2209,7 @@ push/reverse - Common Lisp <br />
 
 <ol class="org-ol">
 <li><a id="неявный-begin"></a>Неявный <code>begin</code><br />
-<div class="outline-text-5" id="text-неявный-begin">
+<div class="outline-text-6" id="text-неявный-begin">
 <p>
 Некоторые конструкции Scheme позволяют записывать несколько действий
 подряд, например <code>lambda</code>, <code>define</code>, определяющий процедуру, <code>cond</code>,
@@ -2273,11 +2246,10 @@ push/reverse - Common Lisp <br />
 </div>
 </li>
 </ol>
-</div>
+</li>
 
-<div id="outline-container-присваивания-set" class="outline-4">
-<h4 id="присваивания-set"><span class="section-number-4">11.2.2.</span> 2. Присваивания, <code>set!</code></h4>
-<div class="outline-text-4" id="text-присваивания-set">
+<li><a id="присваивания-set"></a>2. Присваивания, <code>set!</code><br />
+<div class="outline-text-5" id="text-присваивания-set">
 <p>
 Синтаксис:
 </p>
@@ -2319,7 +2291,7 @@ push/reverse - Common Lisp <br />
 
 <ol class="org-ol">
 <li><a id="статические-переменные-в-scheme"></a>Статические переменные в Scheme<br />
-<div class="outline-text-5" id="text-статические-переменные-в-scheme">
+<div class="outline-text-6" id="text-статические-переменные-в-scheme">
 <p>
 В языке Си есть понятие *статическая переменная* &#x2014; глобальная
 переменная, видимость которой ограничена одной функцией. Объявляется она
@@ -2442,13 +2414,15 @@ Let-конструкция свяжет с переменными значен�
 </div>
 </li>
 </ol>
+</li>
+</ol>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Starovoytov Alexandr, Grechko Georgy</p>
-<p class="date">Created: 2021-10-04 Mon 19:04</p>
+<p class="date">Created: 2021-10-10 Sun 21:37</p>
 </div>
 </body>
 </html>
